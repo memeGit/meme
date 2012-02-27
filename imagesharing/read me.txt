@@ -1,0 +1,206 @@
+Scripteen Free Image Hosting Script v2.7
+www.Scripteen.com
+
+You can purchase 25$ copyright link removal per domain from 
+http://www.scripteen.com/scripts/scripteen-free-image-hosting-script.html
+
+
+
+*** >>> Changelog <<< ***
+V2.7 (12 April 2010)
+
+Fixed admin login
+Fixed installation bug.
+Fixed bug with ad manager.
+Fixed bug with registration.
+Added gallery security fixes.
+Fixed "Can't get image dimentions" issue in view.php
+
+
+
+V2.6 (14 Oct 2009)
+Fixed bug with deleting images in "my photos" page.
+Added recaptcha in login form to block bots.
+Images in admin panel can be now sorted by user name.
+Added search box in gallery page that searches public images by file name.
+
+
+
+
+V2.5 (3 August 2009)
+Major security fix.
+Improved thumbnail quality.
+Fixed a bug with file naming in v2.4
+Fixed a bug with image deletion in v2.4 
+Fixed a bug in my photos page where images were showing as public all the time.
+
+
+V2.4 (27 Jul 2009)
+Added feature where users will be able to change photo status private/public any time from "my images" page.
+Fixed bug with password changing when editing profile.
+Fixed "wrong reset code" problem in account activation.
+Fixed bug with the old images cleaner.
+Fixed security bug.
+
+
+
+
+V2.3 (22 April 2009)
+Fixed but with deleting servers.
+Fixed bug with user edit in admin panel
+Fixed bug with deleting images in admin panel.
+
+
+V2.2 (6 April 2009)
+Added hotlink protection system.
+Fixed bug in pagination in gallery.
+Fixed bug with gif images being static after upload.
+Fixed multi-server bug where the script was keeping local copy of the images.
+Optimized Javascript code so the script loads now faster.
+
+
+
+V2.1 (30 Jan 2009)
+Fixed design issues in gallery.
+
+
+V2.0 (20 Jan 2009)
+
+New Features
+
+Added .bmp file support.
+Users can report images as adult.
+Admin/Moderator can handle reports.
+Admin can disable / enable watermarking.
+Admin can disable ads for registered users.
+Admin can disable / enable new image uploads.
+Admin can disable / enable new user registrations.
+Admin can disable / enable image uploading servers.
+Home page now shows random image on the left corner.
+Admin can delete photos directly from the gallery page.
+Admin can delete photos directly from the image viewing page.
+Added predefined grouping system: Admin >>> Moderator >>> User.
+Moderators can delete images, Edit/delete/suspend,Activate users.
+Admin/Moderator can delete photos directly from the gallery page.
+Admin/Moderator can delete photos directly from the image viewing page.
+
+Bug Fixes
+Fixed bug with generated image code for "Code to post photo in your website"
+Fixed sorting images by bandwidth in admin/images.php
+
+
+
+
+
+V1.4.6 (23 Nov 2008)
+
+Fixed the download package of the previous version.
+
+
+V1.4.5 (18 Nov 2008)
+Uploading now supports up to 15 files at the same time.
+Latest uploaded images will show up first in gallery.
+Fixed admin panel redirect loop bug.
+Fixed .htaccess file (internal server error)
+Fixed bug with images not being deleted from admin/view.php page.
+
+
+
+
+V1.4.4 (28 Sept 2008)
+Fixed minor bugs.
+Fixed bug with uploading images with caps in extension.
+Fixed bug with page freezing when doing multi upload from url.
+Fixed bug with generated linking codes on view.php
+
+
+
+V1.4.3 (4 Sept 2008)
+Fixed bug with registration.
+Fixed bug with image linking codes in image viewing page.
+
+
+V1.4.2 (31 Aug 2008)
+Upload now works on php 4 again.
+More organized gallery page.
+SEO done for image viewing page.
+Image links added in image viewing page.
+Improved stats page in admin panel.
+Fixed design bug with IE.
+Fixed bug with uploading jpeg files.
+Fixed bug with linking codes having extra ".
+
+
+V1.4.1 (7 Aug 2008)
+Design bug fix.
+
+
+V1.4 (5 Aug 2008)
+Security improvements.
+Improved user registration/login with remember me option.
+Option to enable/disable terms acceptance on upload.
+Resolved bug with file size limit.
+
+
+V1.3 (25 Jul 2008)
+Security fix.
+Fixed some typos and spellings.
+Fixed user email verification system.
+Advanced image renaming to keep original image names.
+
+
+V1.2.1 (30 June 2008)
+
+Fix for missing files in package of version 1.2
+
+V1.2 (25 June 2008)
+
+Smart installer.
+Fixed login bug.
+Protected images folder.
+Added .psd file for the logo.
+More search engine friendly design code.
+
+V1.1 (3 June 2008)
+
+Fixed minor bugs
+Added "remember me" option for admin login
+
+V 1.0
+
+Front-end features.
+
+Nice and user friendly design.
+High CTR ad placements.
+Dynamic navigation bar with 3 link groups for guests/members/admin.
+Ajax Multi file upload.
+Url upload (uploading from links).
+Auto thumbnail generation.
+Enhanced Photo gallery.
+Auto generation of diffent linking types.
+Send links to email.
+Member registration system with email confirmation.
+Advanced user control panel.
+Members can see all photos and their links from user cp.
+Members can see where their photos are posted.
+Members can see how much bandwidth their phots are using.
+Members can delete photos from user cp.
+
+
+
+Back-end (Admin)
+
+Welcome page with site stats.
+Advanced sonfiguration page to set detailed options for users/guests like file types/max file size / max bandwidth and more.
+Ability to add multiple servers to distribute site disk and bandwidth usage.
+Admin can view/search/edit/ban/delete users.
+Admin can view/delete images.
+Image cleaner to delete unused images.
+Ad manager to control adversising slots all over the site.
+IP blocker to block users violating terms from uploading more photos.
+
+
+
+
+Thanks for downloading our script.
+www.Scripteen.com

@@ -1,0 +1,79 @@
+/*1328740906,169776067*/
+
+.fbxPhoto .fbPhotoImageStage{width:100%}
+.fbxPhoto .fbPhotoImageStage .stageContainer,.fbxPhoto .fbPhotoImageStage .buttonsContainer{width:100%}
+.fbxPhoto .fbPhotoImageStage .fbPhotoPageError{text-align:left}
+.fbxPhoto .fbPhotosPhotoButtons .likeCommentGroup,.fbxPhoto .fbPhotosPhotoButtons .fbPhotosPhotoActionsTag{margin:6px}
+.fbxPhoto .fbPhotoImageStage .stageContainer{background-color:#f6f6f6;height:453px}
+.imageLoading .fbPhotoImageStage .stageContainer{background:#f6f6f6 url(../../../../../static.ak.fbcdn.net/rsrc.php/v1/y9/r/jKEcVPZFk-2.gif) no-repeat center center}
+.fbxPhoto .fbPhotoImageStage .stageWrapper{display:inline-block;position:relative;z-index:1}
+.fbxPhoto .fbPhotoImage{display:inline-block;height:auto;image-rendering:optimizeQuality;vertical-align:middle;width:auto}
+.taggingMode .fbPhotoImage{cursor:crosshair}
+.fbxPhoto .fbPhotoImageStage .stageTagApproval,.fbxPhoto .fbPhotoImageStage .stageActions{cursor:pointer;height:0;left:0;position:absolute;top:0;width:0}
+.fbxPhoto .fbPhotoImageStage .stageTagApproval{cursor:auto;width:100%;z-index:1}
+.fbxPhoto .fbPhotoImageStage .stageButtons{position:relative;text-align:center;z-index:1;zoom:1}
+.dataLoading .fbPhotoPageInfo .fbPhotoUfiCol *,.dataLoading .fbPhotoPageInfo .fbPhotoDataCol *{display:none}
+.photocrop .bg,.photocrop .guard,.photocrop .wrapper,.photocrop .wrapper *{position:absolute}
+.photocrop .bg{background:#000;filter:alpha(opacity=60)}
+.photocrop .guard{height:100%;left:0;top:0;width:100%}
+.photocrop .highlight{left:0;top:0}
+.photocrop .viewport{background:url(../../y4/r/-PAXP-deijE.gif) no-repeat;cursor:move}
+.photocrop .viewport div{background-color:#d8dfea;height:10px;filter:alpha(opacity=50);width:10px}
+.photocrop .viewport .nw{cursor:nw-resize;left:-5px;top:-5px}
+.photocrop .viewport .ne{cursor:ne-resize;right:-5px;top:-5px}
+.photocrop .viewport .se{cursor:se-resize;bottom:-5px;right:-5px}
+.photocrop .viewport .sw{cursor:sw-resize;bottom:-5px;left:-5px}
+.fbPhotoTagger{border:1px solid #000;cursor:crosshair;display:none;left:auto;position:absolute;right:auto;text-align:left;top:0;z-index:103}
+.taggingMode .fbPhotoTagger{display:block}
+.fbPhotoTagger .faceBox{border:4px solid #ccc;border-color:rgba(255, 255, 255, .8);height:90px;position:relative;width:90px}
+.fbPhotoTagger .typeaheadWrapper{cursor:default;left:50%;position:absolute;top:100%}
+.fbPhotoTagger .typeaheadContainer{left:-50%;position:relative;top:4px}
+.fbPhotoTagger .arrow{background-image:none;height:7px;position:absolute;top:-5px;width:100%;width:222px;z-index:1}
+.fbPhotoTagger .arrow .nub{background-image:url(../../../../../static.ak.fbcdn.net/rsrc.php/v1/yF/r/Mj5nS9bWTJX.png);background-repeat:no-repeat;background-position:-51px -128px;background-image:url(../../yt/r/svvNExt7NO2.gif);left:50%;margin-left:-6px;position:absolute;height:7px;top:0;width:11px}
+.fbPhotoTagger .typeaheadLabel{display:none}
+.fbPhotoTagger .typeaheadBackdrop,.fbPhotoTagger .uiTypeaheadView{background:#fff;border:#333 solid 1px;padding:4px}
+.fbPhotoTagger .typeaheadBackdrop{margin-top:6px}
+.fbPhotoTagger .uiTypeaheadView{border-top:0;left:-5px;margin-top:2px;padding-top:0;padding:4px 7px}
+.fbPhotoTagger .photoTagTypeahead,.fbPhotoTagger .photoTagTypeahead .wrap{border-color:#ccc}
+.fbPhotoTagger .uiTypeaheadView .compact{border:0;margin-top:4px}
+.fbPhotoTagger .uiTypeaheadView .compact .hintText{cursor:default;height:14px;min-height:0;padding-left:6px}
+.fbPhotoTagger .photoTagTokenizer{width:212px}
+.fbPhotoTagger .tokenarea{display:none}
+.bulkEditTagger{display:block}
+.bulkEditTagger .faceBox{border-width:3px;height:52px;width:52px}
+.fbxPhoto .newTagBox{height:99px;left:auto;position:absolute;right:auto;top:0;width:99px}
+.fbPhotoBulkEditor .newTagBox{height:60px;width:60px;z-index:2}
+.fbxPhoto .newTagBox .tag{top:105%}
+.sp_drrzal{background-image:url(../../../../../static.ak.fbcdn.net/rsrc.php/v1/yA/r/qvlBdBk7Gmt.png);background-image:url(../../yl/r/TmHFbcYU9pf.gif);background-repeat:no-repeat;display:inline-block;height:10px;width:15px}
+.sx_7dd7e9{width:11px;height:11px;background-position:-0px -69px}
+.sx_c8e494{width:10px;background-position:-10px -0px}
+.selected .sx_c8e494{background-position:-0px -0px}
+.sx_a68945{width:9px;height:12px;background-position:-9px -11px}
+.selected .sx_a68945{background-position:-0px -11px}
+.sx_5a957d{width:13px;background-position:-0px -58px}
+.sx_8c7a6b{height:16px;background-position:-0px -24px}
+.sx_1430f4{height:16px;background-position:-0px -41px}
+.uiStickyPlaceholderInput{display:inline-block;position:relative}
+.uiStickyPlaceholderInput input, .uiStickyPlaceholderInput textarea{background-color:transparent;position:relative}
+.uiStickyPlaceholderInput .placeholder{color:#999;cursor:text;display:none;height:100%;left:0;padding:4px 0 0 5px;position:absolute;top:0;width:100%}
+.uiTypeahead .uiStickyPlaceholderInput .placeholder{padding:3px 0 0 4px}
+div.uiStickyPlaceholderTextarea .placeholder{padding:6px 0 0 6px}
+div.uiStickyPlaceholderEmptyInput .placeholder{display:block}
+.uiTypeahead .uiStickyPlaceholderInput{width:100%}
+.uiClearableTypeahead .selected .uiStickyPlaceholderInput{margin-right:16px}
+.uiToken{background:#e2e6f0;border:1px solid #9daccc;color:#1c2a47;cursor:default;display:block;float:left;height:14px;margin:0 4px 4px 0;padding:0 3px;position:relative;white-space:nowrap}
+.uiToken .remove{margin:2px 0 -2px 1px;outline:none}
+.uiTokenSelected{background-color:#6d84b4;border-color:#3b5998;color:#fff}
+.uiTokenizer{background:#fff}
+.uiNormalTokenizer .uiTypeahead{width:100%}
+.uiNormalTokenizer .tokenarea{overflow:hidden;padding-top:6px}
+.uiInlineTokenizer{cursor:text;padding-left:2px;border:1px solid #bdc7d8}
+.uiInlineTokenizer .DOMControl_placeholder{margin-left:-2px}
+.uiInlineTokenizer .tokenarea{padding-bottom:1px}
+.uiInlineTokenizer .uiToken{top:2px}
+.uiInlineTokenizer .uiTypeahead{border:0;float:left}
+.uiInlineTokenizer .uiTypeahead .wrap{border:0}
+div.uiInlineTokenizerView{width:200px}
+.uiInlineTokenizer .textInput[disabled]{background:#fff}
+
+#bootloader_i_Jp9 { height: 42px; }

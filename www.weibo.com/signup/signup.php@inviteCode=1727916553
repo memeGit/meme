@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="新浪微博注册首页，永久免费注册新浪微博。你可以通过三种方式开通微博，即通过邮箱申请新浪微博，通过手机号码开通新浪微博，或通过校园专属通道免费注册新浪微博。" />
+<title>新浪微博注册 新浪微博-随时随地分享身边的新鲜事儿</title>
+<script type="text/javascript">
+var $CONFIG = {
+	$encode_key     : "BD325CE52FC6BA090AC0C7A2039236587F99C30FA518F601F2AD33019514EE5A4340A964853E1BDF5374AB4AC22F5CFF3288E5DB94E6752B4999972DF4E23DACACAE4E4DCFB6CBAE256F1B19C4BA892D54C7A3E068F93AB47EC50635556FC223F02CB1F520631E2F03E5509B6C1E24DFB7962BCD6DC74159BF0E5AFC03D9A00D",
+	$key_plus     : "10001",
+	$lang			: "zh",
+	$oid			: "",
+	$uid			: "",
+	$severtime		: "1329233982",
+	$token			: "435b5b0c4c088f96eb8e51e23c6c77cc",
+	$product		: "register",
+	$pageid			: "register",
+	$cuser_status	: "full",
+	$skin			: "skin_001",
+	$domain         : "weibo.com/",
+	$FW			: ""
+	
+};
+var scope = $CONFIG;
+
+</script>
+<link href="../../img1.t.sinajs.cn/t35/style/css/common/layer.css@version=20120214231812"  type="text/css" rel="stylesheet" />
+<link href="../../img.t.sinajs.cn/t35/appstyle/regedit/css/regv4.css@version=20120214231812" type="text/css" rel="stylesheet" />
+<link href="../../img1.t.sinajs.cn/t35/style/css/common/layout.css@version=20120214231812"  type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" type="image/ico" href="../../weibo.com/favicon.ico">
+</head>
+<body class="regbody">
+<div class="cloud"></div>
+<div class="regv4 "> <a href="javascript:void(0)" class="guidelink"></a>
+  <div class="reg_title"></div>
+  <div class="reg_con">
+    <!--fuen 内容框-->
+    <div class="reg_conbg" id="information_box">
+              <div class="reg_con3">
+        <div class="lf"><img src="../../tp2.sinaimg.cn/1727916553/50/5611987678/1" alt="9GAG" /></div>
+        <div class="rt">
+          <p class="info">Hi 我是<b>9GAG</b>快来注册新浪微博吧！获取资讯、记录生活，都在这儿，再不来你就OUT啦！</p>
+        </div>
+      </div>
+                  <div class="reg_left">
+      	<div class="reg_tab reg_tab_big"  >
+      		<span class="tab1"><a href="signup.php@lang=zh-cn&inviteCode=1727916553" class="cur">电子邮箱注册</a></span>
+      					<span class="tab2"><a href="mobile.php@lang=zh-cn&inviteCode=1727916553">手机号码注册</a></span>
+			      	</div>
+      	<div style="display:none;" id="notice_tommail" class="notice1"><i></i>TOM邮件服务器故障，您有可能收不到来自新浪微博的激活信。<a href="javascript:void(0);" id="changemail">换个邮箱</a></div>
+        <div class="new_construct">
+          <div class="new_item">
+            <div class="tit"><em>*</em>我的邮箱</div>
+            <div class="bdmain">
+              <div positionleft="7" class="jh_yanzheng"><strong>
+			  <input name="fromip" type="hidden" value="155.69.203.1" />
+              <input name="inviteCode" type="hidden" value="1727916553" />
+              <input name="r" id="r" type="hidden" value="" />
+			  <input name="url" type="hidden" value="" />
+              <input name="entry" id="entry" type="hidden" value="" />
+              <input name="param" id="param" type="hidden" value="" />
+              <input name="mcode" id="mcode" type="hidden" value="" />
+              <input type="hidden" value="" id="info_school_id" name="school_id">
+              <input type="hidden" value="0" id="info_apply" name="apply">
+              <input type="hidden" value="0" id="info_province" name="school_province">
+              <input type="hidden" value="0" id="info_city" name="school_city">
+              <input type="hidden" value="0" id="info_area" name="school_area">
+              <input type="hidden" value="0" id="info_year" name="school_year">
+              <input type="hidden" value="ab3f2cacedd04bde74fc24795125918e" id="sinaId" name="sinaId">
+			  <input type="hidden" value="" id="isrealname" name="isrealname">
+              <input name="lang" id="lang" type="hidden" value="zh-cn" />
+              <input type="text" class="textinp" id="reg_username" style="width: 230px; color: rgb(153, 153, 153);" name="username" autocomplete="off" />
+              <input type="hidden" name="7bae1d30fac9afb719585ca5f67ee4f6" value="8cfd23c4fa49b7e04260793ec24e780b">
+<input type="hidden" name="36283e5c4df6bcaf0a8bab7fb92d5ca8" value="1505e459be65e116f7222560905fa927">
+<input type="hidden" name="19c3cef3bcb6ab17ad2a3808fd5a3eeb" value="cfcb02432b6af3f6601993daf33689ee">
+<input type="hidden" name="93edf0b2d8d84decd451ae030fd9318d" value="a41bb0fc3d45d125080d72845dc8b761">
+<input type="hidden" name="58c548309c7c1d44425648a60f368569" value="12290889feddb5607192798c440eb039">
+<input type="hidden" name="7186a90b8a267529bbbef934efaa4443" value="d716357f9bc0ed84d4015dd93830974e">
+<input type="hidden" name="fae35b27ac0a478bc650dc3f8845c316" value="7ee9dbe2041f5b885692bde31e77b5b0">
+<input type="hidden" name="75dcc371e57c767c6d4b798c360dc975" value="505a7376b985ede9af0fd4b98ed88ab3">
+<input type="hidden" name="38be2826679ee45c30fbb1963758e2a3" value="df90f0dc726b96fb8ef56d4f22a6716a">
+<input type="hidden" name="regtime" value="1329233982">
+<input type="hidden" name="ed5c1920ec7ffdedda80c35f793d3810" value="17">              </strong></div>
+              </div>
+            <div class="new_plus" id="red_reg_username">
+              <p class="plus_a"><a target="_blank" href="../../mail.sina.com.cn/default.htm" id="nomail">我没有邮箱</a></p>
+            </div>
+          </div>
+          <div class="new_item">
+            <div class="tit"><em>*</em>创建密码</div>
+            <div class="bdmain">
+              <div positionleft="7" class="jh_yanzheng"><strong>
+                <input type="password" class="textinp" id="reg_password" style="width: 230px; color: rgb(153, 153, 153);" name="password">
+                </strong></div>
+            </div>
+			<div id="red_reg_password" class="new_plus"></div>
+            <div class="new_plus">
+              <div class="pw_weight" id="red_password_weight"><span class="w0"></span></div>
+            </div>
+          </div>
+          <div class="new_item">
+            <div class="tit"><em>*</em>昵称</div>
+            <div class="bdmain">
+              <div positionleft="7" class="jh_yanzheng"><strong>
+                <input type="text" class="textinp" id="nickname" style="width: 230px; color: rgb(153, 153, 153);" name="nickname" autocomplete="off" />
+                </strong></div>
+            </div>
+            <div class="new_plus" id="red_nickname"></div>
+			<div id="use_name"></div>
+          </div>
+          <div class="new_item">
+            <div class="tit"><em>*</em>性别</div>
+            <div class="bdmain" id="gender">
+              <div class="fragm">
+                <label>
+                  <input type="radio" value="1" name="gender" id="rdoboy" class="ra" checked="checked" />
+                  男</label>
+              </div>
+              <div class="fragm">
+                <label>
+                  <input type="radio" value="2" name="gender" id="rdogirl" class="ra" />
+                  女</label>
+              </div>
+            </div>
+            <div class="new_plus" id="red_gender"></div>
+          </div>
+          <div class="new_item">
+            <div class="tit"><em>*</em>所在地</div>
+            <div class="bdmain">
+              <div class="fakesel"> <strong>
+                <select class="nob" truevalue="400" id="province" name="province">
+                </select>
+                </strong> </div>
+              <div class="fakesel"> <strong>
+                <select class="nob" truevalue="11" id="city" name="city">
+                  <option></option>
+                </select>
+                </strong> </div>
+            </div>
+            <div class="new_plus" id="red_province">
+            </div>
+          </div>  
+		            <div class="new_item">
+            <div class="tit">学校</div>
+            <div class="bdmain">
+              <div positionleft="7" class="jh_yanzheng"><strong>
+                <input type="text" id="school" autocomplete="off" name="school" value="" class="textinp" style="width: 230px; color: rgb(153, 153, 153);" />
+                </strong></div>
+            </div>
+            <div class="new_plus" id="red_school"></div>
+          </div>
+		  		            <div class="new_item">
+        		<div class="tit"><em>*</em>验证码</div>
+        		<div class="bdmain">
+	          	<div positionleft="185" class="jh_yanzheng"><strong><input type="text" class="textinp" name="basedoor" id="door" style="color: rgb(153, 153, 153);" autocomplete="off" /></strong></div>
+	          	<div class="jh_yanzhimg"><img width="100" height="35" src="pincode/pin1.php@r=20120214231812&lang=zh&sinaId=ab3f2cacedd04bde74fc24795125918e" style="" id="check_img"><span class="noti1"><a onclick="App.refreshCheckCode()" href="javascript:void(0);">换一换</a></span></div>
+	          </div>   
+          	 <div style="" id="red_door" class="new_plus"></div>
+        	</div>
+        </div>
+        <div class="reg_bt"><a href="javascript:void(0);" id="submit" class="btn2" title="立即开通"></a><p><a target="_blank" href="../../login.sina.com.cn/regagreement.html">《新浪网络使用协议》</a></p>
+		<p style="width:225px"><a href="../../news.sina.com.cn/c/2011-12-23/141623682749.shtml" target="_blank">《北京市微博客发展管理若干规定》</a></p></div>
+      </div>
+		                <div class="reg_right">
+	  <div class="reg_title2">已有新浪微博帐号？<p>
+                <a onclick="App.ModLogin();App.sudaTrack('weibo_login_right');" href="javascript:void(0);" class="btn_normal btns"><em>登录</em></a>
+                </p></div>
+		        <div class="hezuo_login bord_bt_none">
+			<i class="icon_ent"></i><a target="_blank" href="../../a.weibo.com/reg/reg_guide.php@lang=zh-cn">企业用户注册</a>
+		</div>
+        <div class="hezuo_login">
+			<strong>使用合作网站帐号登录</strong>
+			<span>
+				<i class="hezuo_login1"></i><a href="javascript:void(0);" onclick="App.connectMSN();">MSN</a></span><b>|</b><span>
+				<i class="hezuo_login3"></i><a  href="../../weibo.com/bind/gotooauth.php@company=189.cn" target="_blank" onclick="App.sudaTrack('weibo_login_189');">天翼</a></span><b>|</b><span>
+				<i class="hezuo_login4"></i><a href="../../weibo.com/bind/gotooauth.php@company=wo.com.cn" target="_blank" onclick="App.sudaTrack('weibo_login_unicom');">联通</a>
+			</span>
+		</div>
+		        <div class="reg_con2"> <b>新浪微博</b>
+          <p>最具人气的微博产品，平均每人</p>
+          <p>找到<i>98</i>位朋友</p>
+          <p>拥有<i>287</i>名粉丝</p>
+          <p>找到<i>25</i>条感兴趣的话题</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="regv4_foot">
+    <div class="lf">
+			<p class="p1"><a href="../../help.weibo.com/@refer=didao" target="_blank" id="aeaoofnhgocdbnbeljkmbjdmhbcokfdb-mousedown">微博帮助</a><a href="../../weibo.com/k/weijianyi" target="_blank">意见反馈</a><a href="../../weibo.com/pub/verified" target="_blank">微博认证及合作</a><a href="../../open.weibo.com/default.htm" target="_blank">开放平台</a><a href="../../hr.weibo.com/default.htm" target="_blank">微博招聘</a><a href="../../news.sina.com.cn/guide/default.htm" target="_blank">新浪网导航</a><a href="../../weibo.com/complaint/complaint.php@url=http_253A_252F_252Fweibo.com_252Femblem" target="_blank"><img src="../../img.t.sinajs.cn/t35/style/images/common/transparent.gif" class="informIcon">不良信息举报</a></p>
+			<p>服务热线：4000 960 960（个人） 4000 980 980（企业） (按当地市话标准计费）</p>      <p class="p1">北京微梦创科网络技术有限公司　<a href="../../weibo.com/licence/jww.html" target="_blank">京网文[2011]0398-130号</a><a href="../../www.miibeian.gov.cn/default.htm" target="_blank">京ICP证100780号</a></p>
+	</div>
+    <div class="rt copy2011">      
+        	            
+                        <p>
+             语言：
+             <select id="lang_select" onchange="location.href=this.value">
+             	<option value="signup.php@inviteCode=1727916553&lang=zh-cn" >中文(简体)</option>
+             	<option value="signup.php@inviteCode=1727916553&lang=zh-tw" >中文(繁体)</option>
+             	<option value="signup.php@inviteCode=1727916553&lang=en-us" >英文</option>
+             </select>
+            </p>
+                        <p>Copyright © 1996-2012 SINA</p>
+    </div>
+  </div>
+<script type="text/javascript" src="../../js.t.sinajs.cn/t35/register/js/lang_zh.js@version=20120214231812"></script>
+
+</div>
+<!-- SUDA_CODE_START -->
+<div style='position:absolute;top:0;left:0;width:0;height:0;z-index:1'><div style='position:absolute;top:0;left:0;width:1;height:1;'></div><div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden' id='SUDA_CS_DIV'></div></div>
+<noScript>
+<div style='position:absolute;top:0;left:0;width:0;height: 0;visibility:hidden'><img width=0 height=0 dynamic-src='../../beacon.sina.com.cn/a.gif@noScript' border='0' alt='' /></div> </noScript>
+<!-- SUDA_CODE_END --><script type="text/javascript" src="../../js.t.sinajs.cn/t35/register/js/register.js@version=20120214231812"></script> 
+<script type="text/javascript" src="../../js.t.sinajs.cn/t35/register/static/js/sso.js@version=20120214231812"></script>
+</body>
+</html>

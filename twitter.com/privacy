@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <link href="../a3.twimg.com/a/1329190354/stylesheets/internal.css@1328380281" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="../a1.twimg.com/a/1329190354/stylesheets/terms.css@1328380281" media="screen, projection" rel="stylesheet" type="text/css" />
+
+    <title>Twitter / Twitter 隐私政策</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <style>/*
+    Twitter mobile (m2) stylesheet
+                                                      */
+
+/* Global
+===================================================== */
+
+/* No list-markers by default, since lists are used more often for semantics. */
+ul, ol, li {
+  list-style: none; margin: 0px; padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em;
+}
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+  margin: 0; padding: 0
+}
+
+a img, :link img, :visited img {
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Basics
+===================================================== */
+
+body {
+  font-family: 'Lucida Grande',sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  background-color: #ddeef6;
+  background: #c0deed url("images/clouds-short.gif") repeat-x;
+  margin: 5px;
+}
+
+.logo {
+  margin: .4em .4em 0em .7em;
+  float: left;
+}
+
+a {
+  color: #2377bb;
+  text-decoration: none;
+}
+
+/* Headers
+===================================================== */
+
+.head span {
+  text-align: right;
+  float: right;
+  margin-top: .8em;
+  margin-right: .4em;
+}
+
+.head span a {
+  color: #fff;
+}
+
+.notice {
+  background-color: #ffc;
+  border: 1px solid #ff6;
+  margin: .8em .4em 0 .4em;
+  padding: .4em 1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-bottom-radius: 5px;
+}
+
+/* Body
+===================================================== */
+
+.body {
+  background-color: #fff;
+  border: 1px solid #8ec1da;
+  margin: 0em .4em;
+  padding: .4em 1em;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.headline {
+  font-weight: bold;
+  margin-bottom: .6em;
+}
+
+/* Lists (Timelines, Users, etc.)
+===================================================== */
+
+.wide-button,
+.more {
+  border: 1px solid #d9d9d9;
+  border-right: 1.5px solid #a9a9a9;
+  border-bottom: 1.5px solid #a9a9a9;
+  padding: .4em 4em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0em 0em 1em 0em;
+  background-color: #f2f7fa;
+}
+
+.link-btn {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #2377bb;
+}
+
+/* Forms
+===================================================== */
+
+textarea {
+  padding: .2em;
+  margin: .2em 0em;
+  font: 1em 'Lucida Grande', sans-serif;
+  border: 1px solid #aaccee;
+  width: 100%;
+}
+
+.search input {
+  padding: .2em;
+  margin: .4em 0;
+  font: 1em 'Lucida Grande', sans-serif;
+  border: 1px solid #aaccee;
+}
+
+.tweet-btns {
+  border: 1px solid #ace;
+  background-color: #2377bb;
+  color: #fff;
+  font-size: .8em;
+  padding: .3em 1em;
+  margin: 0em 0em .3em 0em;
+}
+
+.input-narrow {
+  width: 200px;
+}
+
+label {
+  font-size: .8em;
+  color: #555;
+}
+
+/* View-specific
+===================================================== */
+
+/* Signup */
+
+.head {
+  border: 1px solid #8ec1da;
+  border-bottom: none;
+  background-color:#dfeff8;
+  margin: .8em .4em 0em .4em;
+  padding: .4em 1em;
+  color: #333;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+h1 {
+  font-size: 1.1em;
+}
+
+.step {
+  margin: .6em 0;
+}
+
+/* Footer
+===================================================== */
+
+.footer {
+  padding: 1em 0px;
+  font-size: .7em;
+  color: #778899;
+  text-align: center;
+}
+
+.footer a {
+  white-space: nowrap;
+  padding-right: .2em;
+  color: #27B;
+  text-decoration: none;
+}
+
+.copy {
+  text-align: center;
+  font-size: .6em;
+  color: #778899;
+}
+
+/* Oauth
+===================================================== */
+.app-icon {
+  width: 4em;
+  float: left;
+  margin: 4px 4px 0 0;
+}
+
+.profile-image {
+  float: right;
+  margin-top: 8px;
+}
+
+.profile-image img {
+  width: 4em;
+}
+
+.profile-image .you {
+  width: 4em;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 1.2em;
+}
+
+.pipeline {
+  text-align: center;
+  border: 1px dotted #AAA;
+  margin: 1.4em 6em;
+  padding: 0.5em 0.2em;
+  font-size: .9em;
+}
+
+.buttons {
+  text-align: center;
+  margin: 1.4em 0;
+}
+
+.deny { color: #999; }
+
+.allow strong { color: #00B722; }
+.deny strong { color: #800; }
+
+.permissions {
+  font-size: 90%;
+}
+
+.permissions li {
+  list-style: disc inside;
+}
+
+.app-info {
+  color: #999;
+  font-size: 80%;
+}
+
+.app-info a {
+  color: #27B;
+}
+
+.disclaimer {
+  color: #999;
+  font-size: 80%;
+  padding: .5em 0;
+}
+
+.not-signed-up {
+  font-size: 80%;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 100%;
+}
+
+.buttons button {
+  font-size: 90%;
+  margin-right: 1em;
+  padding: 0.5em 1em;
+  -webkit-border-radius: 5px;
+}
+
+.oauth-step {
+  padding: 0.2em 0;
+}
+
+li.oauth-step {
+  list-style-type: decimal;
+  margin-left: 1.3em;
+}
+
+.oauth-step input {
+  border: 1px solid #ACE;
+  padding: 0.4em;
+}
+
+#oauth_pin {
+  font-family: monospace;
+  background-color: #EEE;
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  padding: .8em;
+  margin: .8em;
+}
+/*----------- TOS/Terms -------------*/
+.help p {
+  margin: 1em 0;
+}
+.help p.tip {
+  padding: 5px 10px;
+  margin-bottom: 26px;
+  display: block;
+  width: 91.3%;
+  color: #444;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow:0 1px 2px #CCCCCC;
+  -moz-box-shadow:0 1px 2px #CCCCCC;
+  border: 1px solid #f1f1f1;
+  text-align: left;
+}
+.help span.tip {
+  color: #fff;
+  display: inline;
+  padding: 1px 9px 2px 5px;
+  font: 9px Lucida Grande, Tahoma, Arial, sans-serif;
+  margin: 0 4px 0 0;
+  line-height: 11px;
+  background: #FFCC00 url("images/arrow-small-right.gif") no-repeat right center;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border: none;
+  vertical-align: baseline;
+}
+.help .tip {
+  color: #333;
+  background-color: #e5eef2;
+  border: 1px solid #c7e0ed;
+  padding: 10px;
+  margin: 20px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.help address {
+  margin-bottom: 1em;
+}</style>  </head>
+
+  <body class="help ie ie6 asian zh-cn" id="privacy">    <div class="timeline-head">
+      <div><img alt="Twitter" class="logo" src="../a3.twimg.com/a/1329190354/images/twitter_logo_100x23.png" /></div>
+    </div>
+
+    <br clear="all" />
+
+    
+    <div class="head">
+      <h1>隐私政策</h1>
+    </div>
+
+    <div class="body">
+      
+
+
+
+
+
+
+
+<h2>Twitter 隐私政策</h2>
+
+<p>本隐私条款说明 Twitter 对于收集、使用和披露你的信息数据的政策和步骤。 Twitter 通过我们的各种网站、短信、应用程序接口（API）、应用程序、服务和第三方（“服务”）来接收你的信息。例如，你在通过我们的网站使用 Twitter 时，通过短信发布或接收推文时，添加 Twitter 小工具到你的网站时，或通过一个应用程序访问 Twitter 时（如Twitter for Mac、Twitter for Android 或 TweetDeck），你都在给我们发送信息。你使用我们的任意服务则意味着你同意 Twitter 收集、传输、操作、储存、披露和以在本隐私政策中所述的其它方式使用你的信息。无论你居住在什么国家或者从什么地方创建信息，你的信息都可能被 Twitter 在美国或任何其它 Twitter 运营的国家使用。</p>
+
+<p>如果你对本隐私政策有任何疑问或意见，请发送电子邮件至 <a href="mailto_3A_2570_2572_2569_2576_2561_2563_2579_40_2574_2577_2569_2574_2574_2565_2572._2563_256f_256d">privacy@twitter.com</a>。
+      </p>
+
+<h3>信息收集与使用</h3>
+
+<p class="tip">
+  <span class="tip">提示</span> 我们收集和使用你的数据以评估我们的服务使用状况，并持续改善我们的服务质量。
+</p>
+
+<p><b>在注册时收集的信息：</b>在你注册或重新设置你的 Twitter 账号时，你会提供一些个人信息，诸如你的姓名、用户名、密码和电子邮件地址。这些信息中的一部分，例如你的姓名和用户名，会在我们的“服务”（包括你的用户页和搜索结果）中列出。部分“服务”，例如搜索、查看公开用户的用户页和查看列表，无需注册即可使用。
+      </p>
+
+<p><b>额外信息：</b>你可能会给我们提供可向外界公开的信息，比如你的个人简介、你的地理位，或者一张图片。你可以通过提供诸如用于接受短信的手机号码或你的地址簿的方式来个性化你的账号，以便我们帮你找到你可认识的Twitter用户。我们也可能用你的联系信息给你发送关于我们服务的信息和对你进行市场营销。你可按照信息中包含的或在我们网站上存放的指示步骤退订这些消息。如果你向我们发送电子邮件，我们可能会保存你发送的信息、电子邮件地址和联系信息用以回复你的请求。是否提供本节所述的额外信息完全是自愿的。</p>
+
+<p style="margin-bottom:10px"><b>推文、关注、列表和其他公开信息:</b> 我们的“服务”主要被设计帮助你与世界分享信息。你提供给我们的大部分信息都是你要求公开的，这不仅包括你发的推文和推文的源数据如何时发的推，也包括你创建的列表、你关注的人、你收藏或转推的推文以及其他一些信息。我们默认是让这些你提供的信息公开的，但是如果你希望的话，我们也给你准备了 <a href="account/settings">设置 (http://twitter.com/account/settings)</a> 使这些信息变为私有。你的公开信息是立刻可扩散的。举个例子，你的公开推文在许多搜索引擎可以搜索到，并且会立刻通过短信和我们的 <a href="../dev.twitter.com/pages/api_faq">API (http://dev.twitter.com/pages/api_faq)</a> 发送到许多用户和服务。在对待你提供给 Twitter 的所有公开信息时都应该保持谨慎，而不仅仅是你的推文。</p>
+
+<p class="tip">
+  <span class="tip">提示</span> 你在 Twitter 上的发言将即时传遍世界。
+</p>
+
+<p><b>位置信息:</b> 你可以选择在你的推文中标注你的所在地。如果你开启定位功能，那么就意味着我们可能会保留你的地理坐标用来改进我们的服务，你可以在 <a href="account/settings">账号设置 (http://twitter.com/account/settings)</a> 中控制你的地理信息设置。</p>
+
+<p><b>日志数据：</b>我们的服务器自动记录你使用服务产生的信息（“日志数据”）。日志数据可能包括诸如你的IP地址、浏览器类型、来源域名、你访问过的页面、你的移动运营商、设备和应用程序的ID、以及搜索关键字。其他行为，诸如和我们网站、应用程序和广告的交互也有可能被包含在日志数据中。如果我们在先前没有删除过日志数据，我们将在18个月后删除或者从中移除任何常见的用以识别账号的信息，如你的用户名、IP地址或电子邮件地址。</p>
+
+<p><b>链接:</b> 你在使用我们提供的所有服务时，包括第三方服务、客户端或来自其他渠道的访问，Twitter 可能会持续跟踪记录你对推文中的链接的交互。我们这样做是为了帮助改善我们的服务，包括广告，并且能够分享点击的统计数据，例如一个特定链接的点击次数。</p>
+
+<p><b>Cookies:</b> Like many websites, we use "cookie" technology to collect additional website usage data and to improve our Services, but we do not require cookies for many parts of our Services such as searching and looking at public user profiles or lists. A cookie is a small data file that is transferred to your computer's hard disk. Twitter may use both session cookies and persistent cookies to better understand how you interact with our Services, to monitor aggregate usage by our users and web traffic routing on our Services, and to improve our Services. Most Internet browsers automatically accept cookies. You can instruct your browser, by editing its options, to stop accepting cookies or to prompt you before accepting a cookie from the websites you visit.</p>
+
+<p><b>第三方服务: </b>Twitter 使用各种由第三方托管的服务，以帮助提供我们的“服务”， 例如托管的我们的各种博客和 wiki； 此外还有一些第三方托管服务可以帮助我们了解我们“服务”的使用情况，例如 Google Analytics。这些服务可能会收集由你的浏览器作为网页请求的一部分发送的信息，例如 Cookie 或者你的 IP 请求。
+      </p>
+
+<h3>信息共享与披露</h3>
+
+<p class="tip">
+  <span class="tip">提示 </span>我们不会泄露你的私人信息，但是这里所描述的情况除外。
+</p>
+
+<p><b>你同意：</b>我们可以在你的许可下共享或公开你的信息，例如当你使用第三方 Web 客户端或应用程序来访问你的 Twitter 账号时。
+      </p>
+
+<p><b>服务提供商：</b>我们依靠一些我们信任的第三方机构为我们实现功能和提供服务。我们可能会将你的个人信息提供给这些第三方机构，但只限于功能和服务需要，并且按照此隐私政策中关于保护个人隐私的内容执行。
+      </p>
+
+<p><b>法律及危害:</b> 我们可能会在下列情况下使用或披露你的信息: 用于配合遵守法律、法规或法律要求；用于解决欺诈、安全或技术问题；或者用于保护 Twitter 的财产或权利。</p>
+
+<p><b>业务转让：</b>如果 Twitter 破产、被兼并、被收购、被重组或出售资产，你的信息也会作为此交易的一部分出售或转让。本隐私政策的承诺在你的信息转移到新的实体后仍然适用。</p>
+
+<p><b>不涉及隐私的或非个人信息：</b>我们可能会分享或公开你的不涉及隐私的、聚合的或其他非个人的信息，例如你公开的推文，或者点击特定链接的用户数（即使只有一个用户点击）。
+      </p>
+
+<h3>修改你的个人信息
+      </h3>
+
+<p>如果你已是我们的“服务”的注册用户，我们为你提供了工具来访问或修改你提供给我们的并与你的账号相关联的个人信息。
+      </p>
+
+<p>你也可永久删除你的 Twitter 账号。如果你按照以下说明进行操作（<a href="../https@support.twitter.com/articles/15358-how-to-deactivate-your-account">链接 （https://support.twitter.com/articles/15358-how-to-deactivate-your-account）</a>），你的账号将会被停用然后被删除。当你的账号已停用时，将无法阅览 twitter。如果你的账号因为意外或错误停用，在30天内你仍可以恢复你的账号。30天后，我们将开始从系统中删除你的账号，其过程可长达一周。</p>
+
+<h3>我们的儿童政策</h3>
+
+<p>我们不向13岁以下的儿童提供服务。如果你发现你的孩子没有经过你的许可向我们提交个人信息，请发邮件到 <a href="mailto_3A_2570_2572_2569_2576_2561_2563_2579_40_2574_2577_2569_2574_2574_2565_2572._2563_256f_256d">privacy@twitter.com</a> 联系我们。我们不会有意收集13岁以下儿童的个人信息。如果我们发现13岁以下儿童向我们提供个人信息，我们会采取措施去删除这些信息以及终止孩子的账号。</p>
+
+<h3>此政策的变更</h3>
+<p>我们可能会不时地修改本隐私政策。最新的政策将规定我们（应该如何）使用你的信息，并且永远都能在 <a href="privacy">http://twitter.com/privacy</a> 访问到。我们如果在经过谨慎的考虑后对本政策做出了重要的修改，我们将通过 @Twitter 账号更新或与你的账号关联的邮箱通知你。在改动生效后，你的继续访问或使用本服务，将视为同意并接受修改后的隐私政策。</p>
+
+<p><em>自 June 23, 2011 起生效</em></p>
+
+<p><a href="privacy/previous">过去隐私政策的存档</a><br />
+有关于此隐私政策的想法或问题？请<a href="mailto_3A_2570_2572_2569_2576_2561_2563_2579_40_2574_2577_2569_2574_2574_2565_2572._2563_256f_256d">告诉我们</a>。</p>
+
+    </div>
+
+    <div class="footer">
+      <a href="home">主页</a> -
+      <a href="logout">退出</a>      <br /><br />
+      &#169; 2006-2012 Twitter, Inc.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="新浪微博登录首页。登录新浪微博，用一句话随意记录生活，用手机随时随地发微博。迅速获取最热最火最快最酷最新的资讯。手机微博weibo.cn，发送任意短信到 1066888866开通微博。" />
+<title>新浪微博登录 新浪微博-随时随地分享身边的新鲜事儿</title>
+
+<meta http-equiv=X-UA-Compatible content=IE=EmulateIE7 />
+<meta name="msapplication-tooltip" content="新浪微博" />
+<meta name="msapplication-window" content="width=1024;height=768" />
+<meta name="msapplication-task" content="name=新浪微博; action-uri=/; icon-uri=http://img1.t.sinajs.cn/t35/style/images/common/favicon/home.ico" />
+<meta name="msapplication-task" content="name=我的微博; action-uri=/; icon-uri=http://img1.t.sinajs.cn/t35/style/images/common/favicon/mypage.ico" />
+<meta name="msapplication-task" content="name=微博广场; action-uri=/pub/?source=toptray; icon-uri=http://img1.t.sinajs.cn/t35/style/images/common/favicon/square.ico" />
+<meta content="#2994ce" name="msapplication-navbutton-color" />
+<meta name="msapplication-starturl" content="./" /> 
+
+<script type="text/javascript">
+var $CONFIG = {
+	$lang			: "zh",
+	$oid			: "",
+	$uid			: "",
+	$severtime		: "1329205544",
+	$token			: "b85b158144832b8f50aaa02074b1e391",
+	$str_uid		: "",
+	$product		: "miniblog",
+	$pageid			: "login",
+	$cuser_status	: "full",
+	$skin			: "skin_001",
+	$domain         : "www.weibo.com/",
+	$FW			    : "0"
+	
+};
+var scope = $CONFIG;
+scope.version = "20120213193142";
+</script><link href="../img.t.sinajs.cn/t35/style/css/register/login.css@version=20120213193142" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js.t.sinajs.cn/t35/miniblog/js/lang_zh.js@version=20120213193142"></script>
+<script type="text/javascript">
+    scope.redirect = "http%3A%2F%2Fwww.weibo.com%2Fjx%2Fpic.php%3Fclass%3D6"; 
+    scope.is_private_ip="0";
+    </script>
+</head>
+
+<body style="background:#C4EFF4 url(../simg.sinajs.cn/miniblog/images/common/login/zlogin3.jpg) no-repeat center 461px">
+<div class="loginWarp">
+  <div class="warpB1"></div>
+  <div class="warpC">
+    <div class="loginMain">
+      <div class="loginMain2" id="login_form">
+        <table class="regTab"><tr><th>还没有新浪微博帐号？</th><td class="regBg"><a href="signup/signup.php@c=http_253A_252F_252Fwww.weibo.com_252Fjx_252Fpic.php_253Fclass_253D6&lang=zh-cn" id="register_now">立即注册</a></td>
+
+</tr></table> 
+      <table class="loginTable">
+      <tr>
+        <th> </th>
+             </tr>
+        <tr>
+          <th>登录名：</th>
+          <td><div class="input_login"><input type="text" id="loginname" name="loginname" value="" tabindex="1" /></div></td>
+
+        </tr>
+        <tr>
+          <th>密码：</th>
+          <td><div class="input_login"><input type="password" class="input_login" id="password" value="" name="password" tabindex="2" /><a href="../account.weibo.com/forgot/password@from=login" class="linlk" id="forgot_pwd">忘记密码</a></div></td>
+        </tr>
+        <tr>
+		<tr style='display:none' id="door_p">
+          <th>验证码：</th>
+          <td><div class="input_code_new"><input type="text"  id="door" style="width:52px;"><img id="door_img"><a href="javascript:;" class="login_voice" id='door_playvoice' title="收听验证码" alt="收听验证码"></a><a href="javascript:void(0);" id="door_change">换一换</a></div></td>
+        </tr>
+		<tr style='display:none' id="login_keyP">
+            <th>动态码：</th>
+            <td><div class="input_login">
+                <input tabindex="2" name="shield_login" id="login_key" type="password" class="input_login" maxlength='6'>
+                <a class="linlk" href="../weibo.com/forgot/vdun">微盾挂失</a></div></td> 
+          </tr>
+        <th></th>
+          <td><input type="checkbox" id="remusrname" name="isremember" value="1" tabindex="3" checked="checked" class="saveLoginStatus labelbox"  />
+              <label for="remusrname" id="remusernameTip">记住登录状态</label>
+              <a id="helpTip" href="../help.weibo.com/faq/q/85/12524#12524" target="_blank" class="icon_askS"></a>
+          </td>
+
+        </tr>
+      </table>
+	  <p style="margin:7px 0 0 67px"><a href="javascript:;" id="login_submit_btn" style="float:left"><img src="../img.t.sinajs.cn/t35/style/images/common/login/btn.jpg" /></a> <span class="sj">手机访问  <a href="../news.sina.com.cn/wap/wbk.html" id="mobile_weibo" target="_blank">http://weibo.cn</a></span></p>
+      <div class="hezuo_login">
+	  <strong>使用其他帐号登录：</strong>
+	  <span><i class="hezuo_login1"></i><a href="javascript:void(0);" class="msnlink" onclick="App.connectMSN();">MSN</a></span><b>|</b><span><i class="hezuo_login3"></i><a target="_blank" href="bind/gotooauth.php@company=189.cn">天翼</a></span><b>|</b><span><i class="hezuo_login4"></i><a target="_blank" href="bind/gotooauth.php@company=wo.com.cn">联通</a></span></div>
+      </div>
+    </div>
+  </div>
+   <div class="bottomLinks">
+    	<div class="MIB_foot_new MIB_txtbr MIB_linkbr">
+            <div class="lf">
+                <p class="p1"><a href="../help.weibo.com/@refer=didao" target="_blank">微博帮助</a><a href="k/weijianyi" target="_blank">意见反馈</a><a href="pub/verified" target="_blank">微博认证及合作</a><a href="../news.sina.com.cn/guide/default.htm" target="_blank">新浪网导航</a><a href="complaint/complaint.php@url=http_253A_252F_252Fwww.weibo.com_252Fjx_252Fpic.php_253Fclass_253D6" target="_blank">不良信息举报</a></p>
+                <p>客服电话：4000 960 960（个人） 4000 980 980（企业） （按当地市话标准计费）</p>
+                <p class="p1">北京微梦创科网络技术有限公司　<a href="../weibo.com/licence/jww.html" target="_blank">京网文[2011]0398-130号</a><a href="../www.miibeian.gov.cn/default.htm" target="_blank">京ICP证100780号</a></p>
+            </div>        
+            <div class="rt">
+               <p>
+             语言：
+             <select id="lang_select" onchange="location.href=this.value">
+                 <option value="login.php@url=http_253A_252F_252Fwww.weibo.com_252Fjx_252Fpic.php_253Fclass_253D6&lang=zh-cn" selected="selected">中文(简体)</option>
+                 <option value="login.php@url=http_253A_252F_252Fwww.weibo.com_252Fjx_252Fpic.php_253Fclass_253D6&lang=zh-tw" >中文(繁体)</option>
+             </select>
+            </p>
+                <p>Copyright &copy; 1996-2011 SINA</p>
+            </div>
+            <div class="clearit"></div>
+        </div>    
+    </div>
+</div>
+<script type="text/javascript" src="../js.t.sinajs.cn/t35/miniblog/js/login.js@version=20120213193142"></script>
+<script type="text/javascript" src="../js.t.sinajs.cn/t35/miniblog/static/js/sso.js@v=20120213193142"></script>
+<script type="text/javascript" src="../tjs.sjs.sinajs.cn/open/analytics/js/suda.js@v=20120213193142"></script>
+<iframe frameborder="0" scrolling="no" width="1" height="1" src="../js.t.sinajs.cn/t35/miniblog/static/html/cache.html@v=20120213193142"></iframe>
+<!-- SUDA_CODE_START -->
+<div style='position:absolute;top:0;left:0;width:0;height:0;z-index:1'><div style='position:absolute;top:0;left:0;width:1;height:1;'></div><div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden' id='SUDA_CS_DIV'></div></div>
+<noScript>
+<div style='position:absolute;top:0;left:0;width:0;height: 0;visibility:hidden'><img width=0 height=0 src='../beacon.sina.com.cn/a.gif@noScript' border='0' alt='' /></div> </noScript>
+<!-- SUDA_CODE_END --> 
+</body>
+</html>

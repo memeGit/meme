@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Twitter / 授权应用程序</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <style>/*
+    Twitter mobile (m2) stylesheet
+                                                      */
+
+/* Global
+===================================================== */
+
+/* No list-markers by default, since lists are used more often for semantics. */
+ul, ol, li {
+  list-style: none; margin: 0px; padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em;
+}
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+  margin: 0; padding: 0
+}
+
+a img, :link img, :visited img {
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Basics
+===================================================== */
+
+body {
+  font-family: 'Lucida Grande',sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  background-color: #ddeef6;
+  background: #c0deed url("../images/clouds-short.gif") repeat-x;
+  margin: 5px;
+}
+
+.logo {
+  margin: .4em .4em 0em .7em;
+  float: left;
+}
+
+a {
+  color: #2377bb;
+  text-decoration: none;
+}
+
+/* Headers
+===================================================== */
+
+.head span {
+  text-align: right;
+  float: right;
+  margin-top: .8em;
+  margin-right: .4em;
+}
+
+.head span a {
+  color: #fff;
+}
+
+.notice {
+  background-color: #ffc;
+  border: 1px solid #ff6;
+  margin: .8em .4em 0 .4em;
+  padding: .4em 1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-bottom-radius: 5px;
+}
+
+/* Body
+===================================================== */
+
+.body {
+  background-color: #fff;
+  border: 1px solid #8ec1da;
+  margin: 0em .4em;
+  padding: .4em 1em;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.headline {
+  font-weight: bold;
+  margin-bottom: .6em;
+}
+
+/* Lists (Timelines, Users, etc.)
+===================================================== */
+
+.wide-button,
+.more {
+  border: 1px solid #d9d9d9;
+  border-right: 1.5px solid #a9a9a9;
+  border-bottom: 1.5px solid #a9a9a9;
+  padding: .4em 4em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0em 0em 1em 0em;
+  background-color: #f2f7fa;
+}
+
+.link-btn {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #2377bb;
+}
+
+/* Forms
+===================================================== */
+
+textarea {
+  padding: .2em;
+  margin: .2em 0em;
+  font: 1em 'Lucida Grande', sans-serif;
+  border: 1px solid #aaccee;
+  width: 100%;
+}
+
+.search input {
+  padding: .2em;
+  margin: .4em 0;
+  font: 1em 'Lucida Grande', sans-serif;
+  border: 1px solid #aaccee;
+}
+
+.tweet-btns {
+  border: 1px solid #ace;
+  background-color: #2377bb;
+  color: #fff;
+  font-size: .8em;
+  padding: .3em 1em;
+  margin: 0em 0em .3em 0em;
+}
+
+.input-narrow {
+  width: 200px;
+}
+
+label {
+  font-size: .8em;
+  color: #555;
+}
+
+/* View-specific
+===================================================== */
+
+/* Signup */
+
+.head {
+  border: 1px solid #8ec1da;
+  border-bottom: none;
+  background-color:#dfeff8;
+  margin: .8em .4em 0em .4em;
+  padding: .4em 1em;
+  color: #333;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+h1 {
+  font-size: 1.1em;
+}
+
+.step {
+  margin: .6em 0;
+}
+
+/* Footer
+===================================================== */
+
+.footer {
+  padding: 1em 0px;
+  font-size: .7em;
+  color: #778899;
+  text-align: center;
+}
+
+.footer a {
+  white-space: nowrap;
+  padding-right: .2em;
+  color: #27B;
+  text-decoration: none;
+}
+
+.copy {
+  text-align: center;
+  font-size: .6em;
+  color: #778899;
+}
+
+/* Oauth
+===================================================== */
+.app-icon {
+  width: 4em;
+  float: left;
+  margin: 4px 4px 0 0;
+}
+
+.profile-image {
+  float: right;
+  margin-top: 8px;
+}
+
+.profile-image img {
+  width: 4em;
+}
+
+.profile-image .you {
+  width: 4em;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 1.2em;
+}
+
+.pipeline {
+  text-align: center;
+  border: 1px dotted #AAA;
+  margin: 1.4em 6em;
+  padding: 0.5em 0.2em;
+  font-size: .9em;
+}
+
+.buttons {
+  text-align: center;
+  margin: 1.4em 0;
+}
+
+.deny { color: #999; }
+
+.allow strong { color: #00B722; }
+.deny strong { color: #800; }
+
+.permissions {
+  font-size: 90%;
+}
+
+.permissions li {
+  list-style: disc inside;
+}
+
+.app-info {
+  color: #999;
+  font-size: 80%;
+}
+
+.app-info a {
+  color: #27B;
+}
+
+.disclaimer {
+  color: #999;
+  font-size: 80%;
+  padding: .5em 0;
+}
+
+.not-signed-up {
+  font-size: 80%;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 100%;
+}
+
+.buttons button {
+  font-size: 90%;
+  margin-right: 1em;
+  padding: 0.5em 1em;
+  -webkit-border-radius: 5px;
+}
+
+.oauth-step {
+  padding: 0.2em 0;
+}
+
+li.oauth-step {
+  list-style-type: decimal;
+  margin-left: 1.3em;
+}
+
+.oauth-step input {
+  border: 1px solid #ACE;
+  padding: 0.4em;
+}
+
+#oauth_pin {
+  font-family: monospace;
+  background-color: #EEE;
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  padding: .8em;
+  margin: .8em;
+}
+/*----------- TOS/Terms -------------*/
+.help p {
+  margin: 1em 0;
+}
+.help p.tip {
+  padding: 5px 10px;
+  margin-bottom: 26px;
+  display: block;
+  width: 91.3%;
+  color: #444;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow:0 1px 2px #CCCCCC;
+  -moz-box-shadow:0 1px 2px #CCCCCC;
+  border: 1px solid #f1f1f1;
+  text-align: left;
+}
+.help span.tip {
+  color: #fff;
+  display: inline;
+  padding: 1px 9px 2px 5px;
+  font: 9px Lucida Grande, Tahoma, Arial, sans-serif;
+  margin: 0 4px 0 0;
+  line-height: 11px;
+  background: #FFCC00 url("../images/arrow-small-right.gif") no-repeat right center;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border: none;
+  vertical-align: baseline;
+}
+.help .tip {
+  color: #333;
+  background-color: #e5eef2;
+  border: 1px solid #c7e0ed;
+  padding: 10px;
+  margin: 20px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.help address {
+  margin-bottom: 1em;
+}</style>  </head>
+
+  <body class="oauth ie ie6 asian zh-cn" id="authenticate">    <div class="timeline-head">
+      <div><img alt="Twitter" class="logo" src="../../a3.twimg.com/a/1329190354/images/twitter_logo_100x23.png" /></div>
+    </div>
+
+    <br clear="all" />
+
+    
+    <div class="head">
+      <h1>授权应用</h1>
+    </div>
+
+    <div class="body">
+      <h2>一个应用程序想要<strong>访问</strong>你的 Twitter 账号。
+      </h2>
+<br/>
+
+<h3>
+  <img alt="" class="app-icon" src="../../a3.twimg.com/client_application_images/134380/9gag_logo.jpg" title="由 9GAG 开发的 9gag" />
+  <b>9gag</b>
+</h3>
+<p class="app-info">
+  9GAG
+  <br />9gag.com
+  <br /><a href="../../9gag.com/connect@twitter_login=2&denied=eGPNfY5opXwexL71LiaXSGIgkPUKOovspswo5BWayI" class="deny">返回到应用程序</a>
+</p>
+<br/>
+<div class="permissions allow">
+  <p>该应用程序<strong>将能够</strong>:</p>
+  <ul>
+    <li>从你的时间轴中阅读推文。</li>
+    
+    <li>查看你关注的用户，并关注其他用户。</li>
+    <li>更新你的个人资料。
+      </li>
+    <li>为你发布推文。</li>
+
+
+    
+    
+  </ul>
+</div>
+
+<br/>
+<form action="https://twitter.com/oauth/authenticate" id="login_form" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="a2d0739072844f8fba52382904978eb587d304f9" /></div>
+  <input id="oauth_token" name="oauth_token" type="hidden" value="eGPNfY5opXwexL71LiaXSGIgkPUKOovspswo5BWayI" />    
+
+    <div class="oauth-step"><b>用户名或电子邮件地址</b></div>
+    <div class="oauth-step"><input class="text" id="username_or_email" name="session[username_or_email]" type="text" value="" /></div>
+    <div class="oauth-step"><b>密码</b></div>
+    <div class="oauth-step"><input class="password" id="session[password]" name="session[password]" type="password" value="" /></div>
+    <br />
+
+  <div class="buttons">
+    <input type="submit" class="strong" name="" id="signin" tabindex="3" value="登录"/>
+    <input type="submit" class="" name="cancel" id="cancel" tabindex="4" value="取消"/>
+  </div>
+</form>
+  Don't have a Twitter account? <a href="../account/new@oauth_token=eGPNfY5opXwexL71LiaXSGIgkPUKOovspswo5BWayI">立即注册!</a>  <br />
+
+<div class="permissions deny">
+  <p>该应用程序<strong>将不能</strong>:</p>
+  <ul>
+
+    
+    
+    <li>访问你的私信。
+      </li>
+    
+
+    <li>查看你的 Twitter 密码。
+      </li>
+  </ul>
+</div>
+
+<br />
+
+
+
+<div class="disclaimer" role="contentinfo">
+  
+<p class="tip">你可以在设置页面的<a href="../settings/applications">应用程序标签页</a>随时撤销任意应用程序的访问权。</p>
+<p><small>通过授权应用程序你仍继续按 <a href="../tos">Twitter 服务条款</a>操作。特别地，部分使用信息将回馈给 Twitter。详情参见<a href="../privacy">隐私政策</a>。
+      </small></p>
+
+</div>
+
+    </div>
+
+    <div class="footer">
+      <a href="../home">主页</a> -
+      <a href="../logout">退出</a>      <br /><br />
+      &#169; 2006-2012 Twitter, Inc.
+    </div>
+  </body>
+</html>

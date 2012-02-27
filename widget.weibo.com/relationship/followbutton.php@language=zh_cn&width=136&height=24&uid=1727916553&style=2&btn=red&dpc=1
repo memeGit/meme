@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../../timg.sjs.sinajs.cn/t35/appstyle/opent/css/widgets/follow_button/follow_button.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../tjs.sjs.sinajs.cn/t35/apps/opent/js/widget/followbtn_iframe.js@v=201112221533"></script>
+<script type="text/javascript" src="../../tjs.sjs.sinajs.cn/t35/miniblog/static/js/sso.js@version=201112221533"></script>
+<title>关注按钮-新浪微博</title>
+</head>
+<body>
+<script type="text/javascript">
+
+scope.uid = '1727916553';
+scope.btn = 'red';
+scope.write = '1';
+scope.refer = '9gag.com';
+scope.uname = '9GAG';
+scope.appkey = '2331954988';
+scope.language = 'zh_cn';
+
+</script>
+<!-- 含粉丝数 -->
+<div class=" clearfix weibo_widgets includeFans">
+			 <div class="attbutton" id="addButton">
+			<a class="add_attr_normal" href="javascript:;" id="followBtn" title="关注9GAG的微博"><em><span class="img_bg"><span class="addImg"></span></span><span id="followTxt" class="text">加关注</span></em></a>
+							<a href="../../weibo.com/9gag" title="9GAG" target="_blank" class="iframe_pop"><em><span id="fansNum">2104</span></em></a>
+					</div>
+	</div>
+<!-- /含粉丝数 -->
+
+
+<!-- SUDA_CODE_START -->
+<script type="text/javascript" charset="utf-8" src="../../tjs.sjs.sinajs.cn/open/analytics/js/suda.js"></script>
+<!-- SUDA_CODE_END -->
+
+</body>
+</html>

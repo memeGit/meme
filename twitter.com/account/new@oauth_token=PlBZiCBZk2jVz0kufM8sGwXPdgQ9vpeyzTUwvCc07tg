@@ -1,0 +1,27 @@
+<html><head>
+    <script type="text/javascript">
+      //<![CDATA[
+      (function(g){
+        var l    = g.location,
+            a    = l.href.replace("#%21","#!"),
+            ssl  = g.navigator.userAgent.search(/webkit/i) != -1,
+            protocol = ssl ? "https:" : "http:";
+
+        a=a.split("#!")[1];
+
+        if( a ){
+          g.location.hash = "";
+          g.location=protocol + "//mobile.twitter.com" + a.replace(/^([^\/])/,"../$1");
+        } else {
+          g.location=protocol + "//mobile.twitter.com/account/new";
+        }
+      })(window);
+      //]]>
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=../../mobile.twitter.com/account/new"></meta>
+    </noscript>
+    <meta http-equiv="refresh" content="1;url=../../mobile.twitter.com/account/new"></meta>
+  </head>
+  <body style="background-color: #ddeef6"></body>
+</html>

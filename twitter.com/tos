@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <link href="../a3.twimg.com/a/1329190354/stylesheets/internal.css@1328380281" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="../a1.twimg.com/a/1329190354/stylesheets/terms.css@1328380281" media="screen, projection" rel="stylesheet" type="text/css" />
+
+    <title>Twitter / Twitter 服务条款</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <style>/*
+    Twitter mobile (m2) stylesheet
+                                                      */
+
+/* Global
+===================================================== */
+
+/* No list-markers by default, since lists are used more often for semantics. */
+ul, ol, li {
+  list-style: none; margin: 0px; padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em;
+}
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
+  margin: 0; padding: 0
+}
+
+a img, :link img, :visited img {
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Basics
+===================================================== */
+
+body {
+  font-family: 'Lucida Grande',sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  background-color: #ddeef6;
+  background: #c0deed url("images/clouds-short.gif") repeat-x;
+  margin: 5px;
+}
+
+.logo {
+  margin: .4em .4em 0em .7em;
+  float: left;
+}
+
+a {
+  color: #2377bb;
+  text-decoration: none;
+}
+
+/* Headers
+===================================================== */
+
+.head span {
+  text-align: right;
+  float: right;
+  margin-top: .8em;
+  margin-right: .4em;
+}
+
+.head span a {
+  color: #fff;
+}
+
+.notice {
+  background-color: #ffc;
+  border: 1px solid #ff6;
+  margin: .8em .4em 0 .4em;
+  padding: .4em 1em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-bottom-radius: 5px;
+}
+
+/* Body
+===================================================== */
+
+.body {
+  background-color: #fff;
+  border: 1px solid #8ec1da;
+  margin: 0em .4em;
+  padding: .4em 1em;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.headline {
+  font-weight: bold;
+  margin-bottom: .6em;
+}
+
+/* Lists (Timelines, Users, etc.)
+===================================================== */
+
+.wide-button,
+.more {
+  border: 1px solid #d9d9d9;
+  border-right: 1.5px solid #a9a9a9;
+  border-bottom: 1.5px solid #a9a9a9;
+  padding: .4em 4em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0em 0em 1em 0em;
+  background-color: #f2f7fa;
+}
+
+.link-btn {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #2377bb;
+}
+
+/* Forms
+===================================================== */
+
+textarea {
+  padding: .2em;
+  margin: .2em 0em;
+  font: 1em 'Lucida Grande', sans-serif;
+  border: 1px solid #aaccee;
+  width: 100%;
+}
+
+.search input {
+  padding: .2em;
+  margin: .4em 0;
+  font: 1em 'Lucida Grande', sans-serif;
+  border: 1px solid #aaccee;
+}
+
+.tweet-btns {
+  border: 1px solid #ace;
+  background-color: #2377bb;
+  color: #fff;
+  font-size: .8em;
+  padding: .3em 1em;
+  margin: 0em 0em .3em 0em;
+}
+
+.input-narrow {
+  width: 200px;
+}
+
+label {
+  font-size: .8em;
+  color: #555;
+}
+
+/* View-specific
+===================================================== */
+
+/* Signup */
+
+.head {
+  border: 1px solid #8ec1da;
+  border-bottom: none;
+  background-color:#dfeff8;
+  margin: .8em .4em 0em .4em;
+  padding: .4em 1em;
+  color: #333;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+h1 {
+  font-size: 1.1em;
+}
+
+.step {
+  margin: .6em 0;
+}
+
+/* Footer
+===================================================== */
+
+.footer {
+  padding: 1em 0px;
+  font-size: .7em;
+  color: #778899;
+  text-align: center;
+}
+
+.footer a {
+  white-space: nowrap;
+  padding-right: .2em;
+  color: #27B;
+  text-decoration: none;
+}
+
+.copy {
+  text-align: center;
+  font-size: .6em;
+  color: #778899;
+}
+
+/* Oauth
+===================================================== */
+.app-icon {
+  width: 4em;
+  float: left;
+  margin: 4px 4px 0 0;
+}
+
+.profile-image {
+  float: right;
+  margin-top: 8px;
+}
+
+.profile-image img {
+  width: 4em;
+}
+
+.profile-image .you {
+  width: 4em;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 1.2em;
+}
+
+.pipeline {
+  text-align: center;
+  border: 1px dotted #AAA;
+  margin: 1.4em 6em;
+  padding: 0.5em 0.2em;
+  font-size: .9em;
+}
+
+.buttons {
+  text-align: center;
+  margin: 1.4em 0;
+}
+
+.deny { color: #999; }
+
+.allow strong { color: #00B722; }
+.deny strong { color: #800; }
+
+.permissions {
+  font-size: 90%;
+}
+
+.permissions li {
+  list-style: disc inside;
+}
+
+.app-info {
+  color: #999;
+  font-size: 80%;
+}
+
+.app-info a {
+  color: #27B;
+}
+
+.disclaimer {
+  color: #999;
+  font-size: 80%;
+  padding: .5em 0;
+}
+
+.not-signed-up {
+  font-size: 80%;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 100%;
+}
+
+.buttons button {
+  font-size: 90%;
+  margin-right: 1em;
+  padding: 0.5em 1em;
+  -webkit-border-radius: 5px;
+}
+
+.oauth-step {
+  padding: 0.2em 0;
+}
+
+li.oauth-step {
+  list-style-type: decimal;
+  margin-left: 1.3em;
+}
+
+.oauth-step input {
+  border: 1px solid #ACE;
+  padding: 0.4em;
+}
+
+#oauth_pin {
+  font-family: monospace;
+  background-color: #EEE;
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  padding: .8em;
+  margin: .8em;
+}
+/*----------- TOS/Terms -------------*/
+.help p {
+  margin: 1em 0;
+}
+.help p.tip {
+  padding: 5px 10px;
+  margin-bottom: 26px;
+  display: block;
+  width: 91.3%;
+  color: #444;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow:0 1px 2px #CCCCCC;
+  -moz-box-shadow:0 1px 2px #CCCCCC;
+  border: 1px solid #f1f1f1;
+  text-align: left;
+}
+.help span.tip {
+  color: #fff;
+  display: inline;
+  padding: 1px 9px 2px 5px;
+  font: 9px Lucida Grande, Tahoma, Arial, sans-serif;
+  margin: 0 4px 0 0;
+  line-height: 11px;
+  background: #FFCC00 url("images/arrow-small-right.gif") no-repeat right center;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border: none;
+  vertical-align: baseline;
+}
+.help .tip {
+  color: #333;
+  background-color: #e5eef2;
+  border: 1px solid #c7e0ed;
+  padding: 10px;
+  margin: 20px 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.help address {
+  margin-bottom: 1em;
+}</style>  </head>
+
+  <body class="help ie ie6 asian zh-cn" id="tos">    <div class="timeline-head">
+      <div><img alt="Twitter" class="logo" src="../a3.twimg.com/a/1329190354/images/twitter_logo_100x23.png" /></div>
+    </div>
+
+    <br clear="all" />
+
+    
+    <div class="head">
+      <h1>服务条款</h1>
+    </div>
+
+    <div class="body">
+      
+
+  <p class="tip translation-notice">为了你的阅读方便，我们提供了翻译过的版本，但是本条款的<a href="tos@lang=en">英语版本</a>才是具有法定约束力的版本。</p>
+
+
+
+
+
+
+
+<p>该服务条款（下称<strong>“条款”</strong>）管理你对 Twitter 网站的访问和对其服务的使用（下称<strong>“服务”</strong>），以及任何上传的、下载的或在”服务“中出现的任何信息、文字、图像、照片或其它材料（下统称<strong>“内容”</strong>）的行为和权限。你使用“服务”的行为和权限以你接受及遵守该“条款”为条件。你访问或使用“服务”即表示你同意遵守该“条款”。
+</p>
+
+<h3>基本条款</h3>
+
+<p>你须对你使用“服务”的行为，对任何你发布到“服务”的“内容”，及对由此产生的任何后果负责。你提交、发布或显示的“内容”将对其他“服务”使用者及第三方服务及网站可见 (前往<a href="settings/account">账号设置</a>页面以控制你的“内容”对哪些人可见)。你应在该“条款”约束下，提供你乐意与他人分享的“内容”。</p>
+
+<p class="tip"><span class="tip">提示</span> 你在 Twitter 上发送的推文可以立刻被全世界看到。你的推文就代表你!</p>
+
+<p>只有在你能与 Twitter 订立一份有约束力的合同，并且你本人未被美国或其他适用的司法机构的法律禁止接受服务的情况下，你才可使用“服务”。你须在遵守该“条款”及所有适用的本地、州、国及国际法律、规定和规章的情况下使用“服务”。
+      </p>
+
+<p>Twitter 提供的服务将不断扩展，Twitter 提供的服务的性质可能随时变更，恕不另行通知。此外，Twitter 可能会停止 (永久或暂时) 向你或一般用户提供服务 (或服务中的任何功能)，可能无法事先通知你。我们将保留如下权利: 在没有事先通知你的情况下，我们在任何时候可自行决定使用和储存的限制。</p>
+
+<p>“服务”可能包括广告，其可能指向“服务”上的“内容”或信息、“服务”中进行的查询，或其他信息。Twitter 在“服务”上部署的广告类型和范围是可变的。考虑到 Twitter 赋予你访问及使用“服务”的权限，你同意 Twitter 及其第三方提供商及合作伙伴可在“服务”中放置该类广告，或随你或其他人提交至“服务”的信息一同显示。
+      </p>
+
+<h3>隐私</h3>
+
+
+<p>你向 Twitter 提供的所有信息需受我们<a href="privacy">隐私政策</a>的约束，隐私政策将管理对你的个人信息的收集与使用。你应了解通过使用我们的服务代表你同意我们(在隐私政策的规定下)对你信息的收集与使用，包括由 Twitter 将你的信息传输到美国和/或其他的国家以储存，处理及使用。作为向你提供服务的一部分，我们或许需要向你提供一些特定的消息，如服务公告和管理信息。这些消息是 Twitter 服务和你的账号的一部分，是你所不能选择退出的。</p>
+
+<p class="tip"><span class="tip">提示</span> 你可以选择退订 Twitter 的大多数通讯，比如新闻期刊、新关注者的电子邮件提醒等。请查看“设置”中的“通知”标签页以了解详情。</p>
+
+<h3>密码</h3>
+
+<p>你应该保障你用以访问服务和在其下进行的活动和行为的密码的安全。我们鼓励你在你账号中使用“高强度”密码（带有大小写字母、数字和符号的密码）。Twitter 不能且不会为你由于未能遵守以上要求而产生的损失负责。</p>
+
+<h3>服务内容</h3>
+
+<p>所有的内容，无论是公开张贴或私下传送的，由发送人负唯一责任。我们可能无法通过服务进行监视或控制公布的内容，对此我们不承担任何责任。任何相关内容的材料或之后的用途由你自己承担风险。</p>
+
+<p>我们不认可、支持、代表或保证通过“服务”发布的任何“内容”，及通过“服务”传递的任何观点的完整性、真实性、准确性或可靠性。你应了解到，在使用“服务”的同时，你将可能会接触到无礼的、有害的、失准的或存在其他失宜之处的“内容”，又或在某些情况下，被错误归类或是带有欺骗性的发布内容。在任何情况下，对于任何“内容”，包括但不仅限于其发生的任何错误或遗漏；或是由于使用通过“服务”发布、电邮、传达、其他方式所释出的或在别处传播的“内容”，而造成的任何损失或伤害，Twitter 都不以任何形式承担责任。</p>
+
+<h3>你的权利</h3>
+
+<p>你保留对你在或通过“服务”提交、发布或展示的所有内容的权利。你在或通过“服务”提交、发布或展示“内容”的同时，你也授予了我们在任一和所有媒体或 (目前已知的或今后开发的) 发布途径上使用、复制、再创作、加工、改编、调整、发布、传达、展示和发放此类内容的全球范围内的、非独家的 (含有颁布从属许可权的) 免版税的许可。</p>
+
+<p class="tip"><span class="tip">提示</span> 本许可让你可以向全世界发表你的推文，当然，对别人也是一样。</p>
+
+<p>遵循我们对该类“内容”使用的条款与条件，你同意该许可证包含 Twitter 之权利之提供该类“内容”给其他和 Twitter 合作的公司、组织或个人以促成该类“内容”在其它媒体和服务上的企业联合组织化、广播、分发或出版。
+      </p>
+
+
+<p class="tip"><span class="tip">提示</span> Twitter 有一套不断完善的<a href="apirules">规则</a>规则以规定 Twitter 合作伙伴如何使用你的内容。这些规定在确保你的权利同时也保证了开放的生态系统。但你的就是你的 - 你拥有你自己的内容 (你的照片也是内容的一部分)</p>
+
+<p>以上这些由 Twitter 以及与 Twitter 合作的公司、组织或个人对你通过 Twitter 服务提交、发布、传播或以其他方式释出的内容的使用可以无偿进行。 
+      </p>
+
+<p>我们可能会对你的内容做必要的修改或调整，通过计算机网络和各种媒体 和/或 修改和调整你的内容来适应任何网络、设备、内容、服务或媒体的要求或限制，以方便传输、显示或分发，
+      </p>
+
+<p>你将对你对“服务”的使用，对你提供的所有“内容”，以及对由此发生的，包括他人和我们的第三方合作人使用你的“内容”在内的所有后果负责。你清楚你的“内容”将有可能被我们的第三方合作人再传播，而且如果你并没有权利提交用于该用途的“内容”，你将承担其责任。依照本“条款”，Twitter 将不会对对你的“内容”的任何使用承担责任。你代表并担保你拥有在此对你所提交的任何“内容”授予权利所必需的权利、能力和权威。 
+      </p>
+
+<p>作为 Twitter 的服务的一部分，Twitter 将给你一个个人化的、全球的、免版税的、不可转让和非排他性的软件使用协议。这个协议惟一的目的就是让你在使用规则下尽可能自由而愉快地使用并获益。
+      </p>
+
+<h3>Twitter 保留的权利</h3>
+
+<p>所有权利，所有权和利益和服务(不包括由用户提供的内容)，并将继续 Twitter 和其授权的独家财产。受美国和外国的版权，商标，和其他法律服务。在本条款中没有任何东西给你有权使用 Twitter 的名称或任何 Twitter 的商标，标识，域名，以及其他鲜明的品牌特征。你可能会提供有关 Twitter 或“服务”的任何反馈，意见或建议完全是自愿的，我们将免费使用这样的反馈，意见或建议，我们认为合适的，没有任何义务向你。</p>
+
+<h3>内容与服务使用限制</h3>
+
+
+<p>我们在任何时候都保留 (但没有义务通知) 移除或拒绝分发任何“服务”的“内容”以及终止用户的使用、收回用户名。请查阅 <a href="../support.twitter.com/articles/18311-the-twitter-rules">Twitter 守则</a> (这是这些条款的一部分)以更好地理解在“服务”里什么是被禁止的。我们也保留在任何我们认为必要的时候访问、阅读、保留、公开任何信息的权利: (i)满足任何法律、规则、司法程序或政府要求时；(ii) 实行条款，包括调查可能的滥用行为；(iii)检测、防止欺诈、安全或技术问题；(iv) 回应用户支持请求；(v) 保护 Twitter、Twitter 用户、公众的权利和财产。</p>
+
+<p class="tip"><span class="tip">提示</span> 除隐私政策中规定的例外情况外，Twitter 不会将你的个人身份泄露给第三方。</p>
+
+
+<p>除非得到服务（或这些条款）允许，若你想复制、修改、创造衍生作品、分发、销售、传输、公共展示、公共表演、运输或用其它方式使用内容或服务，你必须使用 <a href="../dev.twitter.com/default.htm">Twitter 应用程序接口 (API)</a>。</p>
+
+<p class="tip"><span class="tip">提示</span> 我们允许和鼓励内容广泛的再利用。 Twitter API 保证了这一点。</p>
+
+<p>你在使用“服务”时不能: (i)访问、篡改或使用“服务”的非公开内容、Twitter 的计算机系统或 Twitter 提供商的技术传输系统；(ii)调查、扫描或测试任何系统或网络的漏洞，或破坏、绕过任何安全或认证方式；(iii)使用任何非 Twitter 发布的界面来访问、搜索，及企图访问或搜索“服务”(例如自动处理程序)，除非你与我们有特定的协议并获得了许可(注意: 搜索引擎依照 robots.txt 抓取“服务”信息是允许的，但是未经 Twitter 许可而删除“服务”信息是严令禁止的)；(iv)在任何电子邮件或发布的文章中使用仿造的 TCP/IP 报头或其部分，或使用“服务”以发送任何经过修改的、具有欺骗性的或虚假的来源证明信息；(v)干扰、妨碍(或企图这样做)用户、主机、网络的访问，包括但不限定发送病毒、过载、洪水攻击、发送垃圾信息、邮箱轰炸“服务”或通过修改“内容”来向“服务”干涉或设立一个不当的负荷。
+      </p>
+
+<h3>版权政策</h3>
+
+<p>Twitter 尊重他人的知识产权，享受 Twitter 服务的用户也有义务这样做。我们将涉嫌侵权的通知，遵守适用法律，正确地提供给我们反馈。如果你认为你的内容已经复制的方式构成版权侵权，请提供以下信息: (i) 物理或电子签名的版权拥有人或授权以其名义行事的的人；(ii) 识别声称被侵权的版权作品；(iii) 鉴定的声称被侵权或侵权活动的主题，这是被删除或它是被禁用的访问的材料和信息合理足以让我们找到的材料；(iv) 你的联系信息，包括你的地址、电话号码、电子邮件地址；(v) 由你的一份声明中说你有充分的理由相信，使用的材料的方式投诉并非由版权拥有者，其代理人或法律；及 (vi) 一份声明，通知中的信息是准确的，并根据伪证处罚，授权，你被授权代表版权行为所有者。</p>
+
+<p>我们保留不经事先通知，移除被我们判断为除涉嫌侵权的“内容”的权利。在适当的情况下，如果用户被认定为频繁发布侵权内容，Twitter 将终止用户账号。我们为接收“服务“上出现的涉嫌侵犯版权内容的通知指定了版权代理:
+      </p>
+
+<address>Twitter, Inc. <br/> Copyright Agent <br/> 795 Folsom Street, Suite 600 <br/> San Francisco, CA 94107 <br/> 电子邮箱: <a href="mailto:&#099;&#111;&#112;&#121;&#114;&#105;&#103;&#104;&#116;&#064;&#116;&#119;&#105;&#116;&#116;&#101;&#114;&#046;&#099;&#111;&#109;">&#099;&#111;&#112;&#121;&#114;&#105;&#103;&#104;&#116;&#064;&#116;&#119;&#105;&#116;&#116;&#101;&#114;&#046;&#099;&#111;&#109;</a></address>
+
+<h3>本“服务”的可用性以现状为准。</h3>
+<p>你对服务和任何内容的访问和使用都是自担风险。你理解并同意提供给你的服务是以“原样”和“现有”为基础的。在不限制上述规定的情况下，Twitter 及其合作伙伴不提供针对适销性、特定用途的适用性、或者非侵权的任何质量保证，不管是明示或是暗示的。我们对于服务或者其上任何内容的完整性、准确性、可用性、及时性、安全和可靠性不提供任何质量保证且不承担任何责任和法定责任。Twitter 不对由你访问或使用服务或任何内容带来的对你的计算机系统的损害、数据丢失、或其他损害负责或承担法律责任。你还同意 Twitter 不对于任何内容和由服务维护的其他通信的删除、存储或传输失败负责或承担负法律责任。我们不作任何保证说该服务能够满足你的需求或能以不间断、安全或无错为基础保持可用。任何从 Twitter 或是通过服务得到的建议或信息，不管是口头的还是书面的，都不构成任何质量担保，除非其中明确说明。</p>
+
+<h3>链接</h3>
+<p>此服务可能包含含第三方网站或资源的链接。你承认并同意我们将对以下条款内容不承担任何责任或义务: (i)此类网站或资源的可用性或准确性；或(ii)此类网站或资源所含的内容，产品，信息或其他相关内容。此类网站或资源的链接并不意味着Twitter认可其内容，产品，信息或其他相关内容。假设使用此类网站或资源会带来风险，你承认将单独承担责任。</p>
+
+<h3>责任范围</h3>
+<p>适用法律，Twitter 和其子公司，关联公司，职员，雇员，代理商，合作伙伴和许可不会对任何直接，间接，附带，特别，衍生性或惩罚性的损害负责，包括但不限于损失，允许的最大范围内利润，数据，使用，善意的，或其他无形损失，(i)你访问或使用或无法访问或使用的服务；(ii)任何行为或任何第三方内容服务的，包括但不限于，其他用户或第三方的任何诽谤，攻击性或非法行为；(iii)从服务获得的任何内容；(iv)未经授权的访问，使用或更改你的传输或内容，无论是基于保证，合同，侵权(包括过失)或任何其他法律理论，是否 Twitter 已被告知此类损害的可能性，即使补救办法规定，此处发现有失败，其根本目的。
+
+      </p>
+
+<h3>排除</h3>
+<p>某些司法辖区不允许排除特定的有限责任和附带损害，因此上述限制可能对你不适用。</p>
+
+<h3>放弃与终止</h3>
+<p>Twitter 若未能履行任何条款所涉及的权利或规定将不会被视为放弃这些权利或规定。若条款所涉任意规定被裁定为无效，条款所涉的其余规定依然完全有效。</p>
+
+<h3>法律控制与司法权</h3>
+<p>此述“条款”及相关的其他行为将受到加利福尼亚州的法律管辖，并不考虑你所居住的州或国家之法律原则的冲突。所有因为“服务”导致的请求、法律处理或诉讼需完全在美国加利福尼亚州的旧金山县市 (三藩市县市) 得以处理。你赞同该县市的法院对此的管辖权和审判权，并放弃任何关于法院所在地不方便抗辩的理由。如果你代表美利坚合众国联邦政府实体无法接受法律管辖权或审判权，那么此述法律管辖并不使用，取而代之的是，此述“条款”及相关的其他行为将受美利坚合众国法律对此述“条款”的管辖 (并不考虑法律原则的冲突) 且在联邦法律及其许可范围缺位的情况下，受到加利福尼亚州的法律管辖 (法律选择的情况下除外)。</p>
+
+<h3>完整协议</h3>
+<p>这些条款、Twitter 守则以及我们的隐私政策是 Twitter 和你之间完整且唯一的关于服务 (除了一些有独立协议并且明确说明附加于或代替这些条款的 Twitter 服务) 的协议，这些条款取代且替代了 Twitter 和你先前关于服务的任何协议。除了 Twitter 的子公司，任何其他人员或公司都不会成为这些条款的第三方受益者。</p>
+
+
+<p>我们可能不时会修改这些条款，最新的版本可在 <a href="tos">twitter.com/tos</a> 查阅到。如果这样的修改是单方面决定的，我们会通过 @Twitter 账号更新以及与你的账号相关联的电子邮箱通知你。在这些修改生效前要继续使用“服务”，你必须同意这些修改的条款。</p>
+
+
+<p>这些服务的经营和提供商是 Twitter Inc., 795 Folsom Street, Suite 600, San Francisco, CA 94107. 如果你对这些条款有任何问题，请<a href="about/contact">联系我们</a>。</p>
+
+<p><em>自 June 01, 2011 起生效</em></p>
+
+
+
+<p><a href="tos/previous">过去条款的存档</a></p>
+
+    </div>
+
+    <div class="footer">
+      <a href="home">主页</a> -
+      <a href="logout">退出</a>      <br /><br />
+      &#169; 2006-2012 Twitter, Inc.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../themes.googleusercontent.com/static/fonts/varelaround/v3/APH4jr0uSos5wiut5cpjrnZ2MAKAc2x4R1uOSeegc5U.eot');
+  src: local('Varela Round'), local('VarelaRound-Regular'), url('../themes.googleusercontent.com/static/fonts/varelaround/v3/APH4jr0uSos5wiut5cpjrnZ2MAKAc2x4R1uOSeegc5U.eot') format('embedded-opentype'), url('../themes.googleusercontent.com/static/fonts/varelaround/v3/APH4jr0uSos5wiut5cpjrnhCUOGz7vYGh680lGh-uXM.woff') format('woff');
+}

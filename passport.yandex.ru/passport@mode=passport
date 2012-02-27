@@ -1,0 +1,506 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="i-ua_js_no i-ua_css_standard">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=edge"><!--[if gt IE 7]><!--><link rel="stylesheet" href="css/90/_pass.css">
+<!--<![endif]--><!--[if lt IE 8]><link rel=stylesheet href="css/90/_pass.ie.css"><![endif]--><link rel="shortcut icon" type="image/x-icon" href="../yandex.st/lego/_/pDu9OWAQKB0s2J9IojKpiS_Eho.ico" /><title>Яндекс: Паспорт</title>
+<script type="text/javascript" charset="utf-8" src="../yandex.st/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/90/_passport.js"></script>
+<script type="text/javascript">//<!--
+(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standard","i-ua_css_quirks")}(document));
+//--></script>
+<script type="text/javascript">
+    Lego.init({
+        locale: "ru",
+        id: 'passport',
+        'pass-host': "../pass.yandex.ru/",
+		'lego-static-host': "../yandex.st/lego/2.8-30",
+        'passport-host': "./",
+        'retpath': "passport@mode=passport",
+        'social-host': "../social.yandex.ru/",
+        'social-startUrl': "//social.yandex.ru/broker/start",
+        'social-retpath': "i-social__closer.html",
+        
+        'click-host': "clck.yandex.ru"
+    })
+
+	Passport.messages = {
+	    'b-passwd-validator:space': "пробел",
+	    'b-passwd-validator:symbol_one': "символов",
+	    'b-passwd-validator:symbol_some': "символов",
+	    'b-passwd-validator:symbol_many' : "символов"
+	};
+    
+    Passport.domain = "ru";
+
+    </script><script type="text/javascript">
+                function Validate(fname) {
+                    document.forms['MainLogin'].timestamp.value = new Date().getTime();
+                    if(fname.passwd.value.length > 0) {
+                        if(fname.code) {
+                            if(fname.code.value != '') {
+                                return true;
+                            }
+                            else {
+                                alert("Вы не ввели контрольные символы!");
+                                return false;
+                            }   
+                        }
+                        else { 
+                            return true;
+                        }    
+                    }
+                    alert("Вы не ввели пароль!");
+                    return false;
+                }
+                </script>
+
+</head>
+<body>
+<table class="l-head"><tr>
+<td class="l-head__g"><i class="l-head__gap"></i></td>
+<td class="l-head__l"><div class="b-head-logo">    <div class="b-head-logo__logo"><a href="../www.yandex.ru/default.htm"><img border="0" alt="Яндекс" src="../lego.static.yandex.net/2.2.3/common/block/b-head-logo/b-head-logo.png"></a></div></div></td>
+<td class="l-head__gl"><i class="l-head__gap"></i></td>
+<td class="l-head__c">
+<!--noindex-->
+
+
+
+
+
+
+
+
+
+
+<table
+	onclick="return { name: 'b-head-tabs', 'default': '' }"
+	role="navigate"
+	class="b-head-tabs b-head-tabs_preset_search-and-content g-js"
+	
+	>
+	<tr>
+	
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../www.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Поиск
+    
+        </a>
+	</td>
+
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../mail.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Почта
+    
+        </a>
+	</td>
+
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../maps.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Карты
+    
+        </a>
+	</td>
+
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../market.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Маркет
+    
+        </a>
+	</td>
+
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../news.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Новости
+    
+        </a>
+	</td>
+
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../slovari.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Словари
+    
+        </a>
+	</td>
+
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../blogs.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Блоги
+    
+        </a>
+	</td>
+
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../video.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Видео
+    
+        </a>
+	</td>
+
+		
+			
+	<td class="b-head-tabs__tab">
+		<a href="../images.yandex.ru/default.htm" class="b-head-tabs__link_reset">
+    
+        Картинки
+    
+        </a>
+	</td>
+
+		
+	
+
+    
+		<td class="b-head-tabs__more b-head-tabs__tab">
+			<div class="b-dropdowna b-dropdowna_is-bem_yes i-bem" onclick="return {'b-dropdowna':{}}">
+				<span class="b-dropdowna__switcher">
+					<span class="b-pseudo-link b-pseudo-link_is-bem_yes i-bem" onclick="return {'b-pseudo-link':{}}">
+						ещё
+					</span>
+				</span>
+				<div class="b-popupa b-popupa_theme_ffffff b-popupa_direction_down b-dropdowna__popup i-bem" onclick="return {'b-popupa':{}}">
+					<i class="b-popupa__tail"><i class="b-popupa__tail-i"></i></i>
+					<i class="b-popupa__shadow"></i>
+					<table cellpadding="0" cellspacing="0" class="b-popupa__wrap"><tr>
+						<td class="b-popupa__wrap-cell"><div class="b-popupa__content"><div class="b-menu b-menu_layout_vert b-dropdowna__menu">
+							<ul class="b-menu__layout-vert">
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../auto.yandex.ru/default.htm">
+    
+        Авто
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../afisha.yandex.ru/default.htm">
+    
+        Афиша
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../money.yandex.ru/default.htm">
+    
+        Деньги
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../yaca.yandex.ru/default.htm">
+    
+        Каталог
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../moikrug.ru/default.htm">
+    
+        Мой&nbsp;Круг
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../narod.yandex.ru/default.htm">
+    
+        Народ
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../cards.yandex.ru/default.htm">
+    
+        Открытки
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../pogoda.yandex.ru/default.htm">
+    
+        Погода
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../rasp.yandex.ru/default.htm">
+    
+        Расписания
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../tv.yandex.ru/default.htm">
+    
+        Телепрограмма
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../fotki.yandex.ru/default.htm">
+    
+        Фотки
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../my.ya.ru/default.htm">
+    
+        Я.Ру
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../soft.yandex.ru/default.htm">
+    
+        Программы
+    
+			</a>
+		</div>
+	</li>
+
+		
+			
+	<li class="b-menu__layout-vert-cell">
+		<div class="b-menu__item b-menu__item_layout_vert">
+			<a class="b-head-tabs__link" href="../www.yandex.ru/all">
+    
+        Все сервисы
+    
+			</a>
+		</div>
+	</li>
+
+		
+		
+		
+							</ul>
+						</div></div></td>
+					</tr></table>
+				</div>
+			</div>
+		</td>    		</tr>
+</table>
+<!--/noindex--><div class="b-head-line"><strong class="b-head-name">паспорт</strong></div>
+
+
+</td><td class="l-head__gr"><i class="l-head__gap"></i></td>
+<td class="l-head__r">
+<table class="b-head-userinfo"><tr>    <td class="b-head-userinfo__td"></td>
+    <td class="b-head-userinfo__entry">                    <!--Войти-->    </td></tr>
+<tr>
+<td class="b-head-userinfo__td" colspan="2">
+<div class="b-head-userinfo__help">    
+    <a class="b-head-userinfo__link" href="../help.yandex.ru/passport/default.htm" target="_blank">Помощь</a>
+</div>
+</td>
+</tr>
+<tr>
+<td class="b-head-userinfo__td" colspan="2"><img style="position:absolute" width="1" height="1" src="../clck.yandex.ru/click/dtype=stred/pid=8/cid=2328/path=Passport.passport/rnd=978278/_2Ahttp_3A/passport.yandex.ru" alt="" /></td>
+</tr>
+<tr>
+<td class="b-head-userinfo__td" colspan="2"></td>
+</tr>
+</table>
+</td>
+<td class="l-head__g"><i class="l-head__gap"></i></td></tr></table>
+
+  <table class="l-page l-page_layout_12-60-16 l-page_indent"><tr>
+    <td class="l-page__gap"><i></i></td>
+    <td class="l-page__left"><br />    </td>
+    <td class="l-page__gap-left"><i></i></td>    <td class="l-page__center">                    <form
+            name="MainLogin"
+                        class="b-domik b-domik_type_bigform g-js"                        onclick="return {name:'b-domik_type_bigform'}"            action="http://passport.yandex.ru/passport?mode=auth"
+            onsubmit="return typeof okButtonClick !== 'undefined' ? okButtonClick(this) : true"
+            
+            method="post">
+            <input type="hidden" name="from" value="passport" />                <input type="hidden" name="retpath" value="http://passport.yandex.ru/passport?mode=passport" />                <input type="hidden" name="display" value="page" />            
+
+            <i class="b-domik__roof"></i>
+            <table class="b-domik__shadow" cellspacing="0">
+            <tr>
+                <td class="b-domik__shadow__lt">&nbsp;</td>
+                <td class="b-domik__shadow__t"></td>
+                <td class="b-domik__shadow__rt">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="b-domik__shadow__l">&nbsp;</td>
+                <td class="b-domik__shadow__m">
+                    <div class="b-domik__form">
+                        <div class="b-domik__title">Вход</div>
+                        <div class="b-domik__username">                            <label onclick="return {name:'b-hint-input'}" class="b-hint-input g-js" for="b-domik-username">логин</label>
+                            <div class="b-input">
+                                <input class="b-input__text" id="b-domik-username" name="login"
+                                    value="" tabindex="5"/>
+                            </div>                        </div>
+                        <div class="b-domik__password">
+                            <label for="b-domik-password" class="b-hint-input g-js" onclick="return {name:'b-hint-input'}">пароль</label>
+                            <div class="b-domik__lock"></div>
+                            <div class="b-input"><input class="b-input__text" id="b-domik-password" name="passwd" type="password" maxlength="100" tabindex="10"/></div>
+                        </div>
+                        <div class="b-domik__permanent">                            <input
+                                class="b-domik__check"
+                                id="b-domik-permanent"
+                                name="twoweeks"
+                                type="checkbox"
+                                value="yes"
+                                
+                                tabindex="15"
+                                /><label class="b-domik__permanent-label" for="b-domik-permanent">запомнить меня</label><span class="b-domik__help">&nbsp;(<a class="b-domik__link" href="../help.yandex.ru/passport/@id=922493" tabindex="20">что&nbsp;это</a>)</span>                        </div>
+                        
+            
+                        
+                        <div class="b-domik__button">
+                            <input class="b-domik__submit" type="submit" value="Вход" tabindex="25"/>
+                        </div>
+            
+                        <div class="b-domik__social"></div>
+            
+                        <div class="b-domik__register"><a class="b-domik__link" href="passport@mode=register" tabindex="30">Зарегистрироваться</a>                        </div>
+                        <div class="b-domik__remember">
+                            <a class="b-domik__remind" href="passport@mode=restore" tabindex="30">Вспомнить пароль</a>
+                        </div>
+                    </div>
+                </td>
+                <td class="b-domik__shadow__r">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="b-domik__shadow__lb">&nbsp;</td>
+                <td class="b-domik__shadow__b"></td>
+                <td class="b-domik__shadow__rb">&nbsp;</td>
+            </tr>
+            </table>
+        </form>    </td>    <td class="l-page__gap-right"><i></i></td>
+    <td class="l-page__right"><br />    </td>
+    <td class="l-page__gap"><i></i></td>
+</tr></table>    <div class="b-foot"><table class="b-foot__layout"><tr>
+        <td class="b-foot__layout__gap"><i class="b-foot__layout__gap__i"></i></td>
+        <td class="b-foot__layout__column b-foot__layout__column_left"></td>
+        <td class="b-foot__layout__column"></td>
+        <td class="b-foot__layout__column"></td>
+        <td class="b-foot__layout__column">
+            <div class="b-foot__links">                <a class="b-foot__link" href="passport@mode=passport&_dvc=mobile">Мобильная версия</a>            </div>
+        </td>
+        <td class="b-foot__layout__column b-foot__layout__column_penultima">
+            <div class="b-foot__info"></div>
+        </td>
+        <td class="b-foot__layout__column b-foot__layout__column_right">
+            <div class="b-copyright">©&nbsp;2001—2012&nbsp;«<a class="b-copyright__link" href="../www.yandex.ru/default.htm">Яндекс</a>»</div>
+        </td>
+        <td class="b-foot__layout__gap"><i class="b-foot__layout__gap__i"></i></td>
+    </tr></table></div>
+<i class="b-statcounter">
+    <span style="display:none" class="b-statcounter__metrika b-statcounter__metrika_type_js g-js" onclick="return {name:'b-statcounter__metrika',counter:784657}"></span>
+    <noscript><img src="../mc.yandex.ru/watch/784657@ut=noindex" style="position:absolute" alt=""></noscript>
+</i>
+
+</body>
+</html>

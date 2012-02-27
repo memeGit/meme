@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <script type="text/javascript">
+//<![CDATA[
+(function(g){var c=g.location.href.split("#!");if(c[1]){g.location.replace(g.HBR = (c[0].replace(/\/*$/, "") + "/" + c[1].replace(/^\/*/, "")));}else return true})(window);
+//]]>
+</script>
+    <script type="text/javascript" charset="utf-8">
+      if (!twttr) {
+        var twttr = {}
+      }
+
+      // Benchmarking load time.
+      // twttr.timeTillReadyUnique = '1465ec5911ea793d';
+      // twttr.timeTillReadyStart = new Date().getTime();
+    </script>
+
+        <script type="text/javascript">
+//<![CDATA[
+var page={};var onCondition=function(D,C,A,B){D=D;A=A?Math.min(A,5):5;B=B||100;if(D()){C()}else{if(A>1){setTimeout(function(){onCondition(D,C,A-1,B)},B)}}};
+//]]>
+</script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="no" http-equiv="imagetoolbar" />
+<meta content="width = 780" name="viewport" />
+<meta content="4FTTxY4uvo0RZTMQqIyhh18HsepyJOctQ+XTOu1zsfE=" name="verify-v1" />
+<meta content="" name="page" />
+<meta content="NOODP" name="robots" />
+<meta content="n" name="session-loggedin" />
+    <title id="page_title">Twitter</title>
+    <link href="../a1.twimg.com/a/1329190354/images/twitter_57.png" rel="apple-touch-icon" />
+<link href="oexchange.xrd" rel="http://oexchange.org/spec/0.8/rel/related-target" type="application/xrd+xml" />
+<link href="../a3.twimg.com/a/1329190354/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+    <link href="../a1.twimg.com/a/1329190354/stylesheets/twitter.css@1328380281" media="screen" rel="stylesheet" type="text/css" />
+<link href="../a1.twimg.com/a/1329190354/stylesheets/geo.css@1328380281" media="screen" rel="stylesheet" type="text/css" />
+<link href="../a2.twimg.com/a/1329190354/stylesheets/buttons_new.css@1328380281" media="screen" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      
+        body { background: #C0DEED url('../a3.twimg.com/a/1329190354/images/bg-clouds.png') repeat-x; }
+      
+      
+      
+    </style>
+    
+  </head>
+
+  <body class="sessions ie ie6 asian zh-cn" id="new">    <div class="fixed-banners">
+      
+      
+    </div>
+    <script type="text/javascript">
+//<![CDATA[
+document.domain = '127.0.0.1';function fn(){document.write = "";window.top.location = window.self.location;setTimeout(function(){document.body.innerHTML = '';},0);window.self.onload = function(evt){document.body.innerHTML = '';};}if(window.top !== window.self){try{if(window.top.location.host){}else{fn();}}catch(e){fn();}}
+//]]>
+</script>
+    <div id="dim-screen"></div>
+    <ul id="accessibility" class="offscreen">
+  <li><a href="#content" accesskey="0">跳过导航</a></li>
+  <li>用手机浏览? 看这里 <a href="../m.twitter.com/default.htm">m.twitter.com</a>!</li>
+  <li><a href="#footer" accesskey="2">跳至导航</a></li>
+    <li><a href="#signin">转到登录页面</a></li>
+</ul>
+
+    
+    
+
+    
+      
+      
+            <div id="top-stuff">
+        <link href="../a3.twimg.com/a/1329190354/stylesheets/layout_newtwitter_topbar.css@1328380281" media="screen" rel="stylesheet" type="text/css" />
+
+
+<div class="topbar">
+  <div class="topbar-bg"></div>
+  <div class="topbar-inner">
+    <div class="fixed-container clearfix">
+      <a href="default.htm" title="Twitter / Home" accesskey="1" id="logo">Twitter</a>
+
+      <form id="search-form" action="/search" method="GET">
+        <span class="glass"><i></i></span>
+        <input value="" placeholder="搜索" name="q" id="search-query" type="text">
+      </form>
+      
+      <form method="post" id="sign_out_form" action="/sessions/destroy" style="display:none;">
+        <input name="authenticity_token" value="66383470b0f71877c45f48ef1c2bb47521180ed9" type="hidden"/>
+      </form>
+
+      
+      <div class="active-links">
+        <div id="session">
+          <a id="signin-link" href="login">
+            <em>已有账号?</em>
+            <strong>登录</strong><i></i>
+          </a>
+          <a id="signup-link" href="signup@context=login">
+            <em>新来 Twitter?</em>
+            <strong>现在就加入&#32;&raquo;</strong>
+          </a>
+          <div id="signin-dropdown" class="dropdown dark">
+            <div id="signin_menu" class="common-form standard-form offscreen">
+  
+    <form method="post" id="signin" action="https://twitter.com/sessions">
+  
+  <input id="authenticity_token" name="authenticity_token" type="hidden" value="66383470b0f71877c45f48ef1c2bb47521180ed9" />  <input id="redirect_after_login" name="redirect_after_login" type="hidden" value="/login?redirect_after_login=%2Fsettings%2Fapplications" />  <p class="textbox">
+    <label for="username">用户名或电子邮件地址</label>
+    <input type="text" id="username" name="session[username_or_email]" value="" title="username" tabindex="4"/>
+  </p>
+
+  <p class="textbox">
+    <label for="password">密码</label>
+    <input type="password" id="password" name="session[password]" value="" title="password" tabindex="5"/>
+  </p>
+
+  <p class="remember">
+    <input type="submit" id="signin_submit" value="登录" tabindex="7"/>
+    <input type="checkbox" id="remember" name="remember_me" value="1" tabindex="6"/>
+    <label for="remember">记住我</label>
+  </p>
+
+  <p class="forgot">
+    <a href="account/resend_password" id="resend_password_link">忘记密码?</a>
+  </p>
+
+  <p class="forgot-username">
+    <a href="account/resend_password" id="forgot_username_link" title="如果你记得密码，可尝试使用你的 Email 登入">忘记用户名?</a>
+  </p>
+    <p class="complete">
+      <a href="account/complete" id="account_complete_link">已经在手机上使用 Twitter?</a>
+    </p>
+  <input type="hidden" name="q" id="signin_q" value=""/>
+  </form>
+</div>
+
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- /fixed-container -->
+  </div> <!-- /topbar-inner -->
+</div>
+
+
+      </div>
+    
+
+    <div id="container" class="subpage" style="display:none;">
+      <script type="text/javascript">
+//<![CDATA[
+if(window.top === window.self) {document.getElementById('container').style.display='block';}
+//]]>
+</script>      <span id="loader" style="display:none"><img alt="Loader" src="../a3.twimg.com/a/1329190354/images/loader.gif" /></span>
+      
+      
+      
+
+      <div class="content-bubble-arrow"></div>
+      
+      
+      
+        <table cellspacing="0" class="columns">
+          <tbody>
+            <tr>
+              <td id="content" class="round-left column">
+                                <div class="wrapper">
+                  
+                  <form action="https://twitter.com/sessions" class="signin" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="66383470b0f71877c45f48ef1c2bb47521180ed9" /></div>  <input id="authenticity_token" name="authenticity_token" type="hidden" value="66383470b0f71877c45f48ef1c2bb47521180ed9" />  <input id="redirect_after_login" name="redirect_after_login" type="hidden" value="/settings/applications" />  
+  <fieldset class="common-form standard-form">
+    <table cellspacing="0">
+      <tr>
+        <th><label for="username_or_email">用户名或电子邮件地址</label></th>
+        <td><input id="username_or_email" name="session[username_or_email]" type="text" value="" /></td>
+      </tr>
+      <tr>
+        <th><label for="password">密码</label></th>
+        <td><input id="password" name="session[password]" type="password" value="" /> <small><a href="account/resend_password">忘记了?</a></small></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><input id="remember_me" name="remember_me" type="checkbox" value="1" /> <label for="remember_me" class="inline">记住我</label></td>
+      </tr>
+      
+      <tr>
+        <th></th>
+        <td><input class="btn btn-m" id="signin_submit" name="commit" type="submit" value="登录" /></td>
+      </tr>
+      <tr>
+          <th></th>
+        <td>
+          <p>如果你在手机上使用过 Twitter，请<a href="account/complete">点击这里</a>注册网页版。</p>
+                  </td>
+      </tr>
+    </table>
+  </fieldset>
+</form>
+
+
+
+
+
+                </div>
+                              </td>
+              
+                <td id="side_base" class="column round-right">
+                                  
+                  <div id="side">
+                      <div class="section">
+  <div class="section-header">
+    <h1>创建你的账号
+      </h1>
+  </div>
+  <div class="join">
+    <form name="account_signup_form" id="account_signup_form" action="/signup">
+      <input id="join" name="commit" type="submit" value="加入!" />
+    </form>
+    <p class="complete">
+      已经在手机上<br />使用 Twitter 了?
+      <a href="account/complete">点击这里</a>.
+    </p>
+  </div>
+</div>
+<div class="section">
+  <div id="lang-select"><form action="/sessions/change_locale" id="lf" method="post" style="margin-top:2px"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="66383470b0f71877c45f48ef1c2bb47521180ed9" /></div>
+  <select name="lang" onchange="document.getElementById('lf').submit();">
+    <option value="" selected="selected">选择语言...&nbsp;</option>
+  
+  <option value="hi">印地语 - हिन्दी</option>
+    
+  <option value="zh-cn">简体中文</option>
+  
+  <option value="pt">葡萄牙语 - Português</option>
+  
+  <option value="id">印尼语 - Bahasa Indonesia</option>
+      
+  <option value="hu">匈牙利语 - Magyar</option>
+  
+  <option value="it">意大利语 - Italiano</option>
+  
+  <option value="es">西班牙语 - Español</option>
+    
+  <option value="da">丹麦语 - Dansk</option>
+  
+  <option value="tr">土耳其语 - Türkçe</option>
+  
+  <option value="en">英语 - English</option>
+    
+  <option value="fil">菲律宾语 - Filipino</option>
+  
+  <option value="ko">朝鲜语
+       - 한국어</option>
+  
+  <option value="fr">法语 - français</option>
+  
+  <option value="sv">瑞典语 - Svenska</option>
+  
+  <option value="no">挪威语 - Norsk</option>
+    
+  <option value="zh-tw">繁体中文 - 繁體中文</option>
+  
+  <option value="nl">荷兰语 - Nederlands</option>
+  
+  <option value="ru">俄语 - Русский</option>
+  
+  <option value="de">德语 - Deutsch</option>
+  
+  <option value="ja">日语 - 日本語</option>
+  
+  <option value="fi">芬兰语 - Suomi</option>
+  
+  <option value="msa">马来语 - Bahasa Melayu</option>
+  
+  <option value="pl">波兰语 - Polski</option>
+
+  </select>
+</form>
+</div>
+</div>
+
+
+                  </div>
+                                </td>
+              
+            </tr>
+          </tbody>
+        </table>
+      
+
+      
+  <div id="footer" class="round">
+      <h3 class="offscreen">页脚</h3>
+      
+      
+      <ul class="footer-nav">
+          <li class="first">&copy; 2012 Twitter</li>
+          <li><a href="about">关于我们</a></li>
+          <li><a href="about/contact">联系</a></li>
+          <li><a href="../blog.twitter.com/default.htm">博客</a></li>
+          <li><a href="../status.twitter.com/default.htm">状态</a></li>
+                      <li><a href="about/resources">资源</a></li>
+                    <li><a href="../dev.twitter.com/default.htm">API</a></li>
+                      <li><a href="../business.twitter.com/index_zh-cn.html">商业</a></li>
+                    <li><a href="../support.twitter.com/default.htm">帮助</a></li>
+          <li><a href="help/jobs">工作机会</a></li>
+          <li><a href="tos">条款</a></li>
+          <li><a href="privacy">隐私</a></li>
+      </ul>
+  </div>
+
+
+
+    </div>
+
+    
+
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js" type="text/javascript"></script>
+<script src="../a0.twimg.com/a/1329190354/javascripts/twitter.js@1328380280" type="text/javascript"></script>
+<script src="../a2.twimg.com/a/1329190354/javascripts/lib/jquery.tipsy.min.js@1328380280" type="text/javascript"></script>
+<script type='text/javascript' src='//www.google.com/jsapi'></script>
+<script src="../a2.twimg.com/a/1329190354/javascripts/lib/gears_init.js@1328380280" type="text/javascript"></script>
+<script src="../a3.twimg.com/a/1329190354/javascripts/lib/mustache.js@1328380280" type="text/javascript"></script>
+<script src="../a3.twimg.com/a/1329190354/javascripts/geov1.js@1328380280" type="text/javascript"></script>
+<script src="../a3.twimg.com/a/1329190354/javascripts/api.js@1328380280" type="text/javascript"></script>
+<script src="../a2.twimg.com/a/1329190354/javascripts/i18n/zh-cn.js@1329194775" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+$.cookie('tz_offset_sec', (-1 * (new Date()).getTimezoneOffset())*60);
+//]]>
+</script>
+
+  <!--[if lte IE 7]>
+  <script type="text/javascript">
+    $(function() {
+      $(document).bind("signinMenu.show", function() {
+        $("#lang-select").css({visibility: "hidden"});
+      }).bind("signinMenu.hide", function() {
+        $("#lang-select").css({visibility: "visible"});
+      });
+    });
+  </script>
+  <![endif]-->
+  <script src="../a3.twimg.com/a/1329190354/javascripts/layout_newtwitter.js@1328380280" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+      page.controller_name = 'SessionsController';
+      page.action_name = 'new';
+      twttr.form_authenticity_token = '66383470b0f71877c45f48ef1c2bb47521180ed9';
+      $.ajaxSetup({ data: { authenticity_token: '66383470b0f71877c45f48ef1c2bb47521180ed9' } });
+
+      // FIXME: Reconcile with the kinds on the Status model.
+      twttr.statusKinds = {
+        UPDATE: 1,
+        SHARE: 2
+      };
+      twttr.ListPerUserLimit = 20;
+    
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+
+      $( function () {
+          if(document.activeElement.id != 'password') {
+    $('#username_or_email').focus();
+  }
+(function(g){function b(){var c=g.location.href.split("#!");if(c[1]){g.location.replace(g.HBR = (c[0].replace(/\/*$/, "") + "/" + c[1].replace(/^\/*/, "")));}else return true}var a="onhashchange"in g;if(!a&&g.setAttribute){g.setAttribute("onhashchange","return;");a=typeof g.onhashchange==="function"}if(a)$(g).bind("hashchange",b);else{var d=function(){b()&&setTimeout(d,250)};setTimeout(d,250)}}(window));
+      });
+    
+//]]>
+</script>
+
+        <!-- BEGIN google analytics -->
+
+  <!--ipt type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </scri-->
+
+  <!--ipt type="text/javascript">
+
+    try {
+      var pageTracker = _gat._getTracker("UA-30775-6");
+      pageTracker._setDomainName("twitter.com");
+            pageTracker._setVar('Not Logged In');
+            pageTracker._setVar('lang: zh-cn');
+            pageTracker._initData();
+                              pageTracker._trackPageview();
+                  } catch(err) { }
+
+  </scri-->
+
+  <!-- END google analytics -->
+
+
+
+
+    <div id="notifications"></div>
+
+      <h2 id="no_javascript_warning" style="margin-top: 100px;">不能在未启用 JavaScript 的浏览器中使用 Twitter 网站。请重新启用 JavaScript 并刷新本页。</h2>
+      <script type="text/javascript">
+//<![CDATA[
+document.getElementById('no_javascript_warning').style.display = 'none';
+//]]>
+</script>
+    
+
+    
+
+  </body>
+
+</html>
