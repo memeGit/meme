@@ -179,3 +179,19 @@ height: 290px
 	margin: 20px 45px;
 	padding: 0px 0px;
 }
+
+.hint {
+background: rgba(0, 0, 0, 0.9);
+color: #3D9400;
+font-size: 11px;
+font-weight: normal;
+margin: 0 auto;
+padding-bottom: 6px;
+padding-top: 6px;
+position: fixed;
+text-align: center;
+bottom: 0;
+width: 100%;
+text-shadow: 0 -1px black;
+right: 200px;
+}

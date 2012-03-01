@@ -10,35 +10,37 @@
 var cur_image_numbers = 0;
 var cur_image = 0;
 var show_image = 0;
+document.onkeydown=nextpage;
 function click_right()
 {
-	if( cur_image < cur_image_numbers-1 )
+	if( cur_image > cur_image_numbers -5 ){
+	xmlhttp=new XMLHttpRequest();
+	xmlhttp.open("GET","get_image.php",true);
+	
+	xmlhttp.onreadystatechange=function()
+	{
+		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				document.getElementById("image-list").innerHTML +=  make_next_html(xmlhttp.responseText,cur_image_numbers);
+				set_undisplay(cur_image-1);
+				set_display(cur_image);
+			}
+	}
+		xmlhttp.send(null);
+	}
+	if( cur_image <= cur_image_numbers-1 )
 	{
 		set_undisplay(cur_image);
 		cur_image++;
 		set_display(cur_image);
-		return false;
 	}
-	xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("GET","get_image.php",true);
-	
-  xmlhttp.onreadystatechange=function()
-  {
-	if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-		
-		document.getElementById("image-list").innerHTML +=  make_next_html(xmlhttp.responseText,cur_image_numbers);
-		set_undisplay(cur_image-1);
-		set_display(cur_image);
-	}
-  }
-	xmlhttp.send(null);
 	return false;
 }
 function click_left()
 {
 	if( cur_image == 0 )
 	{
+		set_undisplay(0);
 		cur_image = cur_image_numbers-1;
 		click_right();
 		return false;
@@ -54,7 +56,7 @@ function make_next_html(image_url,image_title)
 	var images = eval('('+image_url+	')');
 	var re_url = "";
 	var i = 0;
-	cur_images = cur_image_numbers;
+
 	for( i = 0 ; i < images.images.length; i++){
 	
 		re_url += "<div id =\"container_"+cur_image_numbers+"\" class = \"post_container\"  style=\"display:none;\">";
@@ -64,11 +66,25 @@ function make_next_html(image_url,image_title)
 		
 		var i_ul = images.images[i].filepath+"/"+images.images[i].filename;
 		
-		re_url += "<img src = \""+i_ul+"\" onclick=\"click_right()\"></>";
+		re_url += "<img src = \""+i_ul+"\" onclick=\"click_right()\"/>";
 		re_url += "</div>";
+		
+		
+		
 		re_url += "<div class=\"right-comment\">";
+		re_url += "<div id=\"ad_content\">";
+		re_url += "<div>";
+		re_url += "<img src=\"image/IMAG0003.jpg\" width=\"300px\" height=\"250px\"/>";
 		re_url += "</div>";
+		re_url += "</div>";
+		
+		re_url += "<div>";
+		re_url += "<p>This is where the comments lies<p>";
+		re_url += "</div>";
+		re_url += "</div>";
+		
 		re_url +="</div>";
+	//	alert(re_url);
 		cur_image_numbers++;
 	}
 		return re_url;
@@ -97,6 +113,19 @@ function set_undisplay(id)
 	}
 	return false;
 }
+
+function nextpage(event)   
+{
+    event = event ? event : (window.event ? window.event : null);
+    if (event.keyCode==37)
+	{
+		click_left();
+	}else if (event.keyCode==39)
+	{
+		click_right();
+	}
+}   
+
 </script>
 <body   onload="click_right()">
 
@@ -119,11 +148,7 @@ function set_undisplay(id)
 <div class="right">
 <a class="bx-next"   onclick="click_right()"> </a>
 </div>
-<div id="ad">
-<div id="ad_content">
-<img src="image/IMAG0003.jpg" width="300px" height="250px"/>
-</div>
-</div>
+<div class="hint">提示：用键盘-> 和 <- 查看图片</div>
 </body>
 
 
