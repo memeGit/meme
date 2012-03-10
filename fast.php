@@ -52,7 +52,6 @@ function click_left()
 function make_next_html(image_url,image_title)
 {
 
-	var images = eval({"images":[{"idx":"2","filename":"698C360_2012_02_28_12_26_.jpg","tn_filename":"698C360_2012_02_28_12_26__tn.jpg","filepath":"http:\/\/localhost\/weibo\/imagesharing\/images\/","add_dt":"1330431087","ip":"127.0.0.1","filesize":"503422","bandwidth":null,"ctr":"0"},{"idx":"1","filename":"143_.png","tn_filename":"143__tn.jpg","filepath":"http:\/\/localhost\/weibo\/imagesharing\/images\/","add_dt":"1330355566","ip":"127.0.0.1","filesize":"67449","bandwidth":"69796","ctr":"4"}]});
 	var images = eval('('+image_url+	')');
 	var re_url = "";
 	var i = 0;
@@ -74,7 +73,7 @@ function make_next_html(image_url,image_title)
 		re_url += "<div class=\"right-comment\">";
 		re_url += "<div id=\"ad_content\">";
 		re_url += "<div>";
-		re_url += "<img src=\"image/IMAG0003.jpg\" width=\"300px\" height=\"250px\"/>";
+		re_url += "<img src=\"+i_url+\" width=\"300px\" height=\"250px\"/>";
 		re_url += "</div>";
 		re_url += "</div>";
 		

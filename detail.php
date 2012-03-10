@@ -36,7 +36,7 @@
 				  <a class="signup-button green" href="https://9gag.com/signup" label="Header" onclick=" rmt('http://goo.gl/4L7Xz?a=694');">Y U No Signup?!</a>
 				   </li>
 				   <li><a href="https://9gag.com/login" class="button">µÇÂ¼</a></li>
-				   <li><a class="shuffle-button" href="http://9gag.com/random"><strong>Shuffle</strong></a></li>
+				   <li><a class="shuffle-button" href="http://prenoon.com/random"><strong>Shuffle</strong></a></li>
 				   <li><a class="search-button search-toggler" href="javascript:void(0);"><strong>Search</strong></a></li>
 
 				</ul>

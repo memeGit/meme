@@ -14,7 +14,7 @@
         $result1 = mysql_query($query1) or die("Query failed1.");
 				if(mysql_num_rows($result1) ==0) { ?>
 		<div id="error"><div class="msg" id="sucmsgid"> <?
-	echo "We don't have a photo with that name!"; ?>
+	echo "请求的图片不存在"; ?>
 	</div></div>
 		<META HTTP-EQUIV="refresh" CONTENT="3;URL=gallery.php">
 	<?
@@ -28,8 +28,6 @@
 		$date_added=date("jS F Y", $row[added]);
 
        }
-	   
-	   
 	   if($filesize1=="" or $file_path=="")
 	   {
 			$err = "Image Not found";
@@ -43,7 +41,6 @@
 	        $file_path=$line1[filepath];
 			}
 	   }
-        
         $query3 = "select count(*) as total from imagehits where filename='$file'";        
         $result3 = mysql_query($query3) or die("Query failed3.");
         while ($line2 = mysql_fetch_array($result3)) {         
@@ -145,17 +142,13 @@ _gaq.push(['_trackPageview']);
 
 </scri-->
 </head>
-
 <body id="page-post" class="main-body ">
-
-
 <div id="tmp-img" style="display:none"></div>
 <script type="text/javascript"> 
 function rmt(l) { var img = new Image(); img.src = l; document.getElementById('tmp-img').appendChild(img); } 
 function myWindow(location, address, gaCategory, gaAction) { _gaq.push(['_trackEvent', gaCategory, gaAction,  address, 1]); var w = 640; var h = 460; var sTop = window.screen.height/2-(h/2); var sLeft = window.screen.width/2-(w/2); var sharer = window.open(address, "Share on Facebook", "status=1,height="+h+",width="+w+",top="+sTop+",left="+sLeft+",resizable=0"); }
 function twttrWindow(location, address, gaCategory, gaAction) { _gaq.push(['_trackEvent', gaCategory, gaAction,  address, 1]); var w = 640; var h = 460; var sTop = window.screen.height/2-(h/2); var sLeft = window.screen.width/2-(w/2); var sharer = window.open(address, "Share on Twitter", "status=1,height="+h+",width="+w+",top="+sTop+",left="+sLeft+",resizable=0"); }
 </script>
-
 <script type='text/javascript' src='./partner.googleadservices.com/gampad/google_service.js'> </script>
 <script type='text/javascript'>
 try {
@@ -164,17 +157,12 @@ GS_googleEnableAllServices();
 } catch (e) {
 }
 </script>
-
-
 <script type='text/javascript'>
 try {
 GA_googleUseIframeRendering();
 } catch (e) {
 }
 </script>
-
-
-
 	<div id="headbar-wrap">
 
 		<div id="searchbar_container">
@@ -228,13 +216,6 @@ GA_googleUseIframeRendering();
 
 
 <div id="container" style="">
-
-
-
-
-
-
-
 				<div id="main">
 				<div id="block-content">
 					<div class="post-info-pad">
