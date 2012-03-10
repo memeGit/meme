@@ -270,7 +270,7 @@ GA_googleUseIframeRendering();
 			
 			src="<?$file_path.$file?>"
 		-->
-		<a href="view.php?filename=<?=$line[filename]?>">
+		<a href="detail.php?filename=<?=$line[filename]?>">
 		<img src="<?=$line[filepath].$line[filename] ?>" alt="I&#039;ll just tell him I have a nose fetish." border="0" style="max-width:450px"/>
 		</a>
 	</div>

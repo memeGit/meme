@@ -1,3 +1,71 @@
+<? require "imagesharing/header2.php"; 
+     $file = check_input($_GET['filename']);
+     $view = check_input($_GET['view']);
+        if ($file == "") {
+                header("Location: " . $server_url);
+                exit;
+        }
+        $t1=mktime(0,0,0,date("m"),date("d"),date("y"));
+        $t2=($t1+24*60*50)-1;
+        
+        $currentip = $_SERVER['REMOTE_ADDR'];
+        
+        $query1 = "select * from images where filename='$file'";        
+        $result1 = mysql_query($query1) or die("Query failed1.");
+				if(mysql_num_rows($result1) ==0) { ?>
+		<div id="error"><div class="msg" id="sucmsgid"> <?
+	echo "请求的图片不存在"; ?>
+	</div></div>
+		<META HTTP-EQUIV="refresh" CONTENT="3;URL=gallery.php">
+	<?
+	}
+
+		while ($row = mysql_fetch_array($result1))
+		{
+		$uploaderid=$row['userid'];
+		$filesize1=$row['filesize'];
+        $file_path=$row['filepath'];
+		$date_added=date("jS F Y", $row[added]);
+
+       }
+	   if($filesize1=="" or $file_path=="")
+	   {
+			$err = "Image Not found";
+
+			$query2 = "select filesize,filepath,filename,tn_filename from images order by rand() limit 1";        
+			$result2 = mysql_query($query2) or die("Query failed2.");
+
+			
+	        while ($line1 = mysql_fetch_array($result2)) {         
+	        $filesize1=$line1[filesize];
+	        $file_path=$line1[filepath];
+			}
+	   }
+        $query3 = "select count(*) as total from imagehits where filename='$file'";        
+        $result3 = mysql_query($query3) or die("Query failed3.");
+        while ($line2 = mysql_fetch_array($result3)) {         
+        $view1=$line2[total];
+        }
+        
+        
+	$referer = $_SERVER['HTTP_REFERER'];
+ /*       if($view1>0)
+        $kb=$view1*$filesize1;
+        else
+        $kb=$filesize1;
+		$timestamp=time();
+        $sql="insert into imagehits set referer='".$referer."', kb=$kb, filename='".$file."',ip='".$currentip."',timestamp='".$timestamp."'";
+        mysql_query($sql) or die("Query failed3.");
+*/
+
+		$timestamp=time();
+        $sql="insert into imagehits set referer='".$referer."', kb=$filesize1, filename='".$file."',ip='".$currentip."',timestamp='".$timestamp."'";
+        mysql_query($sql) or die("Query failed3.");
+
+
+?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
@@ -45,6 +113,7 @@
             </div><!--end div#head-bar -->
 </div>
 
+
 <div id="container" style="">
 	<div id="main">
 		<div id="block-content">
@@ -55,16 +124,21 @@
 				?>
 				</h1>
 				<p>
-				<a href="http://9gag.com/bjolfur">
+				<a href="
+				<?
+					// TODO URL OF USER
+				?>
+				">
 				<?php
-				// TODO USER ID
+				echo $uploaderid;
 				?>
 				</a>
 				<span class="seperator">|</span>
 				<?php
 				// TODO 发布日期
+				echo $date_added;
 				?>
-				日前<span class="comment"><?php
+				<span class="comment"><?php
 				// TODO 评论数量
 				?></span>
 				<span class="loved"><span id="love_count_
@@ -76,10 +150,11 @@
 				//TODO  VOTE COUNT
 				?>
 				
-				" score="0">
+				" score="
 				<?php 
 				// TODO score
 				?>
+				">
 				</span></span>		
 				</p>
 				<ul class="actions">
@@ -111,13 +186,11 @@
 		<div class="post-container">
 		<div class="img-wrap">							
 		<a href="/random">
-		<img src="
-		<?php
-		//TODO PIC URL
-		echo "image/IMAG0004.jpg"
-		?>
-		" alt="Some s**tty jobs">
+		<img src="<?=$file_path.$file?>" alt="I&#039;ll just tell him I have a nose fetish." border="0" style="max-width:800px"/>
 		</a>
+		
+		
+		
 		</div><!--end image-wrap-->
 		</div><!--end post-container-->
 		<div class="comment-section">
@@ -130,12 +203,17 @@
 								<span id="report-item-separator">|</span>
 								<a class="report" href="">举报</a>
 								<span id="report-item-separator">|</span>
-								unknown source	</p>
+								未知	</p>
 		</span>
 								<div id="entry-comments" style="text-align:center">
                                 <?php 
 								//评论系统
 								?>
+								
+								<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=90227" async=""></script>
+<!-- UY END -->
 								</div>
 							</div><!--end div.comment-section-->
 							<br>
