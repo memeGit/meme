@@ -116,8 +116,10 @@
 
 <div id="container" style="">
 	<div id="main">
+	
 		<div id="block-content">
 			<div class="post-info-pad">
+			
 				<h1>
 				<?php 
 				// TODO
@@ -166,27 +168,41 @@
 				</ul>
 					
 		</div><!--end post-info-pad-->
-		
-		<div id="post-control-bar" class="spread-bar-wrap badge-sticky-elements" data-y="52">
-			<div class="spread-bar">
-					<div class="facebook-share-btn"><div class="facebook_share_size_Small" onclick="fbWindow('Facebook Share', 'http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F9gag.com%2Fgag%2F2140534', 'Facebook-Share', 'PostClicked', 'http://9gag.com/gag/2140534');"><span class="FacebookConnectButton FacebookConnectButton_Small"><span class="FacebookConnectButton_Text">Share</span></span><span><span class="facebook_share_count_nub_right facebook_share_count_nub_right_pad"></span><span class="facebook_share_count facebook_share_count_right facebook_share_count_pad"><span class="facebook_share_count_inner">2661</span></span></span></div> </div>
-							<div class="facebook-btn"><fb:like href="http://9gag.com/gag/2140534" send="false" layout="button_count" width="90px" show_faces="false" font="" label="Post"></fb:like> </div>
-							<div class="google-btn"><div id="___plusone_0" style="height: 20px; width: 90px; display: inline-block; text-indent: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: transparent; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial; "><iframe allowtransparency="true" frameborder="0" hspace="0" id="I1_1330165484641" marginheight="0" marginwidth="0" name="I1_1330165484641" scrolling="no" src="https://plusone.google.com/_/+1/fastbutton?url=http%3A%2F%2F9gag.com%2Fgag%2F2140534&amp;size=medium&amp;count=true&amp;hl=en-US&amp;jsh=m%3B%2F_%2Fapps-static%2F_%2Fjs%2Fgapi%2F__features__%2Frt%3Dj%2Fver%3DRgHZH4z9hfs.zh_CN.%2Fsv%3D1%2Fam%3D!4ArSr93f4LuIjcmMGw%2Fd%3D1%2F#id=I1_1330165484641&amp;parent=http%3A%2F%2F9gag.com&amp;rpctoken=190306176&amp;_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart" style="width: 90px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; height: 20px; position: static; left: 0px; top: 0px; visibility: visible; " tabindex="-1" vspace="0" width="100%" title="+1"></iframe></div> </div>
-							<div class="stumbleupon-btn"> <iframe scrolling="no" frameborder="0" allowtransparency="true" style="overflow-x: hidden; overflow-y: hidden; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; " src="http://badge.stumbleupon.com/badge/embed/1/?url=http%3A%2F%2F9gag.com%2Fgag%2F2140534%3Fref%3Dstumbleupon" width="74" height="18" id="iframe-stmblpn-widget-1"></iframe> <script type="text/javascript"> (function() { var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true;  li.src = 'https://platform.stumbleupon.com/1/widgets.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s);  })(); </script> </div>
-							                            <div class="pinterest-btn"> <iframe src="http://d3io1k5o0zdpqr.cloudfront.net/pinit.html?url=http%3A%2F%2F9gag.com%2Fgag%2F2140534&amp;media=http%3A%2F%2Fd24w6bsrhbeh9d.cloudfront.net%2Fphoto%2F2140534_460s_v1.jpg&amp;description=Some%20s%2A%2Atty%20jobs&amp;layout=horizontal" scrolling="no" frameborder="0" style="border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; width: 90px; height: 20px; "></iframe> </div>
-													</div>
-
-												<div class="post-next-prev">
-							<a id="prev_post" class="prev-post" href="http://9gag.com/gag/2165382" onclick="_gaq.push(['_trackEvent', 'View-Post', 'Clicked', 'Previous', 1]);"></a>
-							<a id="next_post" class="next-post" href="http://9gag.com/gag/2167221" onclick="_gaq.push(['_trackEvent', 'View-Post', 'Clicked', 'Next', 1]);"></a>
+		<div id="post-control-bar" class="spread-bar-wrap">
+					
+		<div class="spread-bar">
+		<!-- JiaThis Button BEGIN -->
+		<div id="ckepop">
+			<span class="jiathis_txt">分享到：</span>
+			<a class="jiathis_button_tools_1"></a>
+			<a class="jiathis_button_tools_2"></a>
+			<a class="jiathis_button_tools_3"></a>
+			<a class="jiathis_button_tools_4"></a>
+			<a href="http://www.jiathis.com/share?uid=1586402" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+			<a class="jiathis_counter_style"></a>
+		</div>
+		</div>
+		<div class="post-next-prev">
+							<a id="prev_post" class="prev-post" href="http://9gag.com/gag/3256248" onclick="_gaq.push(['_trackEvent', 'View-Post', 'Clicked', 'Previous', 1]);"></a>
+							<a id="next_post" class="next-post" href="http://9gag.com/gag/3256314" onclick="_gaq.push(['_trackEvent', 'View-Post', 'Clicked', 'Next', 1]);"></a>
 						</div>
-											</div>
-	
+<script type="text/javascript">var jiathis_config = {data_track_clickback:true};</script>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jia.js?uid=1586402" charset="utf-8"></script>
+</div>
+<!-- JiaThis Button END -->
+		
+		<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">var jiathis_config = {data_track_clickback:true};</script>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jiathis_r.js?type=left&amp;move=0&amp;uid=1586402" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 	<div id="content">
 		<div class="post-container">
 		<div class="img-wrap">							
 		<a href="/random">
-		<img src="<?=$file_path.$file?>" alt="I&#039;ll just tell him I have a nose fetish." border="0" style="max-width:800px"/>
+		<img src="<?=$file_path.$file?>" alt="
+		<?
+		echo "filename";
+		?>" border="0" style="max-width:800px"/>
 		</a>
 		
 		
