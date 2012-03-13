@@ -83,7 +83,7 @@ if ($search_query != "") {
 <link rel="apple-touch-icon-precomposed" media="screen and (resolution: 326dpi)" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/icon114.png" />
 <script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/mootools/mootools-1.4.1-yui-compressed.js"></script>
 <script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/Libraries-v1.3.js"></script>
-<script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.6.3.js"></script>
+<script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.8.3.js"></script>
 
 <!-- Google Analytics -->
 <!--ipt type="text/javascript">
@@ -608,7 +608,10 @@ GA_googleFillSlotWithSize("ca-pub-0268871989845966", "Banner-bottom-728x90", 728
 
 
 
-
+<a id="footer-back-to-top" class="WhiteButton badge-back-to-top">
+    <strong>Back to Top</strong>
+    <span></span>
+</a>
 
 
 </body>
