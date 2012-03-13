@@ -693,7 +693,7 @@ window.addEvent("domready", function() {
 	});
 
 });
-// -->
+ -->
 //]]>
 </script>
 
