@@ -16,7 +16,7 @@
 	http://www.ragestache.com/submit
 
 
-7. back to top button.
+7. back to top button.  [half ok , not hide when on the top of the page]
 
 
 8. search/recommend.php
