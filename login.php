@@ -34,19 +34,11 @@ $code_url = $o->getAuthorizeURL( WB_CALLBACK_URL );
 <link rel="shortcut icon" href="img/favicon.gif" />-->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta content="width=device-width; initial-scale=1.0;" name="viewport" />
-<<<<<<< HEAD
-<link rel="stylesheet" href="./9gag_static/https@d24w6bsrhbeh9d.cloudfront.net/css/screen-v5.3.9.css" media="screen,projection" type="text/css" />
-
-<script type="text/javascript" src="./9gag_static/https@d24w6bsrhbeh9d.cloudfront.net/js/mootools/mootools-1.3.1-yui-compressed.js"></script>
-<script type="text/javascript" src="./9gag_static/https@d24w6bsrhbeh9d.cloudfront.net/js/Libraries-v1.3.js"></script>
-<script type="text/javascript" src="./9gag_static/https@d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.5.3.js"></script>
-=======
 <link rel="stylesheet" href="./https@d24w6bsrhbeh9d.cloudfront.net/css/screen-v5.3.9.css" media="screen,projection" type="text/css" />
 
 <script type="text/javascript" src="./https@d24w6bsrhbeh9d.cloudfront.net/js/mootools/mootools-1.3.1-yui-compressed.js"></script>
 <script type="text/javascript" src="./https@d24w6bsrhbeh9d.cloudfront.net/js/Libraries-v1.3.js"></script>
 <script type="text/javascript" src="./https@d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.5.3.js"></script>
->>>>>>> 9c3d6a78f38234484b5d73dbc3ac79420cd57caa
 
 </head>
 
@@ -108,11 +100,7 @@ $code_url = $o->getAuthorizeURL( WB_CALLBACK_URL );
 </div>
 
 <div id="fb-root"></div>
-<<<<<<< HEAD
-<script src="./9gag_static/https@connect.facebook.net/en_US/all.js" type="text/javascript"></script>
-=======
 <script src="./https@connect.facebook.net/en_US/all.js" type="text/javascript"></script>
->>>>>>> 9c3d6a78f38234484b5d73dbc3ac79420cd57caa
 
 <!-- Google Analytics -->
 <!--ipt type="text/javascript">
@@ -137,11 +125,7 @@ var _qevents = _qevents || [];
 
 (function() {
 var elem = document.createElement('script');
-<<<<<<< HEAD
-elem.src = (document.location.protocol == "https:" ? "./9gag_static/https@secure/" : "./9gag_static/edge/") + ".quantserve.com/quant.js";
-=======
 elem.src = (document.location.protocol == "https:" ? "./https@secure/" : "./edge/") + ".quantserve.com/quant.js";
->>>>>>> 9c3d6a78f38234484b5d73dbc3ac79420cd57caa
 elem.async = true;
 elem.type = "text/javascript";
 var scpt = document.getElementsByTagName('script')[0];
@@ -155,11 +139,7 @@ qacct:"p-f8Bn5MbvAQbXQ"
 
 <noscript>
 <div style="display:none;">
-<<<<<<< HEAD
-<img src="./9gag_static/https@pixel.quantserve.com/pixel/p-f8Bn5MbvAQbXQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
-=======
 <img src="./https@pixel.quantserve.com/pixel/p-f8Bn5MbvAQbXQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
->>>>>>> 9c3d6a78f38234484b5d73dbc3ac79420cd57caa
 </div>
 </noscript>
 <!-- End Quantcast tag -->
