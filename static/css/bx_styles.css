@@ -83,8 +83,10 @@ width: 120px;
 z-index: 999;
 }
 
-.img-wrap {
+.imgs-wrap {
 	text-align:center;
+	margin-top: 42px;
+	width: expression(width>700?"700px":width+"px");
 	right:400px;
 }
 

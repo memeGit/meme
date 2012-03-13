@@ -1913,16 +1913,17 @@ hr.arrow.may-like {
 	position: relative;
 }
 
-.post-container .image-wrap {
+.post-container .img-wrap {
 	position: relative;
 	overflow: hidden;
     margin-top: 42px;
 }
 
-.post-container image {
+.post-container img {
 	display: block;
 	border: none;
 	margin: 0 auto -40px;
+	width:560px;
 }
 
 .post-container .image-wrap .bigfatdick {
