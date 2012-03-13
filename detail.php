@@ -71,7 +71,7 @@
 <head>
 
 <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-<link href="css/detail.css" rel="stylesheet" type="text/css">
+<link href="static/css/detail.css" rel="stylesheet" type="text/css">
 </head>
 <body id="page-post" class="main-body">
 <div id="headbar-wrap">

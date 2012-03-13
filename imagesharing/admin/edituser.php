@@ -38,7 +38,7 @@ else
 		$ed_uid=$row['userid'];
 	}	
 	
-			if(($auth_gid=="2" && $ed_ugid=="1") || ($ed_uid=="1"){
+			if(($auth_gid=="2" && $ed_ugid=="1") || ($ed_uid=="1")){
 
 ?>
 		<div id="error"><div class="msg" id="sucmsgid"> <?

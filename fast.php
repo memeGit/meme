@@ -3,8 +3,8 @@
 
 <head>
 <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-<script src="lib/jquery.bxSlider.js" type="text/javascript"></script>
- <link href="css/bx_styles.css" rel="stylesheet" type="text/css">
+<script src="static/lib/jquery.bxSlider.js" type="text/javascript"></script>
+ <link href="static/css/bx_styles.css" rel="stylesheet" type="text/css">
 </head>
 <script type="text/javascript">
 var cur_image_numbers = 0;
