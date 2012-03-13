@@ -13,7 +13,7 @@ require "imagesharing/header2.php";
 //}
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W4C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 
 
@@ -90,7 +90,6 @@ _gaq.push(['_trackPageview']);
 </scri-->
 </head>
 
-
 <body id="page-post-item" class="main-body ">
 
 
@@ -142,8 +141,7 @@ GA_googleUseIframeRendering();
 
     <div id="head-bar">
 
-                				<h1><a class="snowman" href="./9gag_static/www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a>
-                				<a href="index.php">9GAG</a></h1>
+                				<h1><a class="snowman" href="./9gag_static/www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a><a href="default.htm">9GAG</a></h1>
 				<ul class="main-menu" style="overflow:visible">
 
 
@@ -214,6 +212,7 @@ window.title_blacklist = ["blowjob","truestory","truestorybro","youknowitstrue",
 					</ul>
 				</div>
 
+
 <div class="content form_photo">
 <?
 
@@ -231,11 +230,18 @@ if ($config[AcceptTerms] == "1") {
 	echo '<input type="hidden" name="tos" value="agree">';
 }
 ?>
+
+<!--
+	<form id="form-modal-post-image" class="modal" action="/submit/photo" enctype="multipart/form-data" method="post">
+		<input type="hidden" name="type" value="Photo" />
+		<input id="post_type" type="hidden" name="post_type" value="Photo"/>
+		-->
 		<h3>新增有趣圖片</h3>
 		<div class="field">
 			<label>
-				<h4>Pic File</h4>
-<?
+				<h4>Pic URL</h4>
+				<!---->
+				<?
 
 //nemo
 if (strtoupper($_GET['type']) == "URL") {
@@ -259,29 +265,6 @@ if (strtoupper($_GET['type']) == "URL") {
 	echo '<a class="post_link" href="submit.php?type=url"><strong>貼上圖片網址。</strong></a>';
 }
 ?>
-								JPEG, GIF or PNG. Max size: 2MB.			</p>
-		</div>
-
-
-					<li class="tab_photo current"><a class="photo" href="submit/photo">圖片</a></li>
-						<li class="tab_video "><a class="video" href="submit/video">笑片 </a></li>
-					</ul>
-				</div>
-
-
-<div class="content form_photo">
-	<form id="form-modal-post-image" class="modal" action="/submit/photo" enctype="multipart/form-data" method="post">
-		<input type="hidden" name="type" value="Photo" />
-		<input id="post_type" type="hidden" name="post_type" value="Photo"/>
-		<h3>新增有趣圖片</h3>
-		<div class="field">
-			<label>
-				<h4>Pic URL</h4>
-				<input id="photo_file_upload" class="file text " type="file" name="image" accept="image/gif,image/jpeg,image/jpg,image/png" style="display:none;"></input>
-				<input id="photo_post_url" type="text" class="text " name="url" value="" style="display:;"></input>
-			</label>
-			<p class="info">
-								<a class="upload_photo" href="submit_photo.php"><strong>上載圖片。</strong></a>
 								JPEG, GIF or PNG. Max size: 2MB.			</p>
 		</div>
 
@@ -318,22 +301,6 @@ if (strtoupper($_GET['type']) == "URL") {
 				這不適合在辦公室觀看 (NSFW)。			</label>
 		</div>
 
-				<div class="field checkbox">
-			<label for="submit-original">
-				<input id="submit-original" type="checkbox" class="checkbox" name="original" value="1" />
-				This is my original creation. I made it!			</label>
-		</div>
-	</form>
-	</div><!-- end content-->
-				<div class="actions">
-					<ul class="buttons">
-						<li class="loading-btn" style="visibility:hidden">
-							<a class="button loading" href="javascript:void(0);"></a></li>
-						<li class="form-btn"><a class="cancel" href="index.php">取消</a></li>
-						<li class="form-btn">
-						<a class="button send" href="javascript:void(0);" onClick="document.forms['newupload'].submit();">新增</a></li>
-					</ul>
-				</div>
 
 
 	</form>
@@ -344,7 +311,10 @@ if (strtoupper($_GET['type']) == "URL") {
 					<ul class="buttons">
 						<li class="loading-btn" style="visibility:hidden"><a class="button loading" href="javascript:void(0);"></a></li>
 						<li class="form-btn"><a class="cancel" href="index.php">取消</a></li>
-						<li class="form-btn"><a class="button send" href="javascript:void(0);">新增</a></li>
+						<!--nemo
+						-->
+						<li class="form-btn"><a class="button send" href="javascript:void(0);"
+						onClick="document.forms['newupload'].submit();">新增</a></li>
 					</ul>
 				</div>
 
@@ -352,8 +322,6 @@ if (strtoupper($_GET['type']) == "URL") {
 
 	</div><!--end block-content-->
 </div><!--end main-->
-
-<div class="side-dock">
 
 
 <div class="side-dock">
@@ -379,10 +347,7 @@ if (strtoupper($_GET['type']) == "URL") {
 
 	<li><b>Respect originality and creativity.</b> Try using <a href="./9gag_static/www.google.com/imghp" target="blank">Google Images</a> to find the origin of the post.</li>
 
-	<li><b>Think of a descriptive or creative title</b>, instead of "LOL", "True", ":)" or "if..then f**k you".</li>
-	<li><b>Respect originality and creativity.</b> Try using <a href="./www.google.com/imghp" target="blank">Google Images</a> to find the origin of the post.</li>
-
-	<li><b>Think of a descriptive or creative title</b>, instead of "LOL", "True", ":)" or "if.then f**k you".</li>
+	<li><b>Think of a descriptive or creative title</b>, instead of "LOL", "True", ":)" or "if...then f**k you".</li>
 
 	<li>Search for dupes before posting. <b>Posts with 9GAG watermark will be removed.</b></li>
 
@@ -396,20 +361,14 @@ if (strtoupper($_GET['type']) == "URL") {
 
 	<li><b>[Fixed] posts should be added using the "Fix this post" button.</b></li>
 
-	<li>Make sure you have checked our <a href="./9gag_static/rules" target="blank">9 Rules</a>.</li>
 	<li>Make sure you have checked our <a href="rules" target="blank">9 Rules</a>.</li>
 
 </ul>
 
 <p class="memo"><b>tldr:</b> Help 9GAG to be the best place of fun!<span class="badge-js" key="!"></span></p>
 
-</div><!--end div.side-dock-->
 
-</div><!--end #content-->
 
-<div id="footer" class="">
-    	<div class="section-2">
-		<div class="wrap">
 
 
 </div><!--end div.side-dock-->
@@ -430,14 +389,6 @@ if (strtoupper($_GET['type']) == "URL") {
 </ul><!--end ul.footer-left-->
 
 <ul class="info footer-right">
-	<li><a href="./9gag_static/about">关于</a></li>
-	<li>·<a href="./9gag_static/rules">9 條規則</a></li>
-	<li>·<a href="./9gag_static/faq">常见问题</a></li>
-	<li>·<a href="./9gag_static/tos">条款</a></li>
-	<li>·<a href="./9gag_static/privacy">私隐</a></li>
-	<li>·<a href="./9gag_static/contact">联络</a></li>
-
-<ul class="info footer-right">
 	<li><a href="about">关于</a></li>
 	<li>·<a href="rules">9 條規則</a></li>
 	<li>·<a href="faq">常见问题</a></li>
@@ -454,7 +405,6 @@ if (strtoupper($_GET['type']) == "URL") {
 
 <div id="overlay-shadow" class="hide"></div>
 <div id="overlay-container" class="hide" >
-
 
 
 <div id="modal-report" class="modal-box hide">
@@ -490,7 +440,6 @@ if (strtoupper($_GET['type']) == "URL") {
 		<form id="form-modal-share" class="modal" action="">
 				</form>
 	</div>
-	</div>
 </div>
 
 
@@ -501,47 +450,6 @@ if (strtoupper($_GET['type']) == "URL") {
 			<h3>Languages</h3>
 			<h4>Choose your language</h4>
 			<div class="field">
-
-				<label for="lang-en">
-				<input id="lang-en" class="" type="radio" name="lang-code" value="en" ></input>English
-				</label>
-
-				<label for="lang-zh">
-				<input id="lang-zh" class="" type="radio" name="lang-code" value="zh" ></input>&#32321;&#39636;&#20013;&#25991;
-				</label>
-
-				<label for="lang-zh_CN">
-				<input id="lang-zh_CN" class="current" type="radio" name="lang-code" value="zh_CN" checked="checked"></input>&#31777;&#39636;&#20013;&#25991;
-				</label>
-
-				<label for="lang-fr">
-				<input id="lang-fr" class="" type="radio" name="lang-code" value="fr" ></input>fran&#xE7;ais
-				</label>
-
-				<label for="lang-de">
-				<input id="lang-de" class="" type="radio" name="lang-code" value="de" ></input>Deutsch
-				</label>
-
-				<label for="lang-ja">
-				<input id="lang-ja" class="" type="radio" name="lang-code" value="ja" ></input>&#26085;&#26412;&#35486;
-				</label>
-
-				<label for="lang-es">
-				<input id="lang-es" class="" type="radio" name="lang-code" value="es" ></input>Espa&ntilde;ol
-				</label>
-
-				<label for="lang-pt">
-				<input id="lang-pt" class="" type="radio" name="lang-code" value="pt" ></input>Portugu&#234;s
-				</label>
-
-				<label for="lang-ru">
-				<input id="lang-ru" class="" type="radio" name="lang-code" value="ru" ></input>Русский
-				</label>
-
-				<label for="lang-tr">
-				<input id="lang-tr" class="" type="radio" name="lang-code" value="tr" ></input>T&uuml;rk&ccedil;e
-				</label>
-
 
 				<label for="lang-en">
 				<input id="lang-en" class="" type="radio" name="lang-code" value="en" ></input>English
@@ -612,16 +520,13 @@ if (strtoupper($_GET['type']) == "URL") {
 
 </div><!--end overlay-container-->
 
-<div style="display:none;">
-<span id="siteDomain">9gag.com</span>
-<span id="backUrl">%2Fsubmit%2Fphoto%3Ffile%3D1</span>
 
 
 
 
 <div style="display:none;">
 <span id="siteDomain">9gag.com</span>
-<span id="backUrl">%2Fsubmit</span>
+<span id="backUrl">%2Fsubmit%3Fref%3Dsidebar</span>
 <span id="fb-user-id">1597662142</span>
 <span id="fb-app-id">111569915535689</span>
 <span id="fb-timeline-ns">ninegag</span>
@@ -633,15 +538,12 @@ if (strtoupper($_GET['type']) == "URL") {
 (function() {
  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
  po.src = './9gag_static/https@apis.google.com/js/plusone.js';
- po.src = './https@apis.google.com/js/plusone.js';
  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
  })();
 </script>
 <div id="fb-root"></div>
 <script src="./9gag_static/connect.facebook.net/en_US/all.js" type="text/javascript"></script>
 <script src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/FB.Share.1.0.2.js" type="text/javascript"></script>
-<script src="./connect.facebook.net/en_US/all.js" type="text/javascript"></script>
-<script src="./d24w6bsrhbeh9d.cloudfront.net/js/FB.Share.1.0.2.js" type="text/javascript"></script>
 
 
 <script type="text/javascript">
@@ -651,7 +553,6 @@ window.addEvent("domready", function() {
 
 			$$('a.twitter_connect').setStyle('display', '');
 
-
 	$$('a.twitter_connect').addEvent('click', function(e) {
 	e.preventDefault();
 	var next = $(this).get('next');
@@ -659,7 +560,6 @@ window.addEvent("domready", function() {
 		next = '&amp;next='+next;
 	}
 
-	window.location = "./9gag_static/connect@twitter_login=1"+next;
 	window.location = "connect@twitter_login=1"+next;
 	});
 
@@ -678,7 +578,6 @@ var _qevents = _qevents || [];
 (function() {
 var elem = document.createElement('script');
 elem.src = (document.location.protocol == "https:" ? "./9gag_static/https@secure/" : "./9gag_static/edge/") + ".quantserve.com/quant.js";
-elem.src = (document.location.protocol == "https:" ? "./https@secure/" : "./edge/") + ".quantserve.com/quant.js";
 elem.async = true;
 elem.type = "text/javascript";
 var scpt = document.getElementsByTagName('script')[0];
@@ -693,15 +592,9 @@ qacct:"p-f8Bn5MbvAQbXQ"
 <noscript>
 <div style="display:none;">
 <img src="./9gag_static/pixel.quantserve.com/pixel/p-f8Bn5MbvAQbXQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
-<img src="./pixel.quantserve.com/pixel/p-f8Bn5MbvAQbXQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
 </div>
 </noscript>
 <!-- End Quantcast tag -->
-
-
-
-
-
 
 </body>
 </html>

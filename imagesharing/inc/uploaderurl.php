@@ -718,4 +718,6 @@ function download ($file_source, $file_target)
 
 }
 
+header( 'Location: ../../index.php' ) ;
+
 ?>
