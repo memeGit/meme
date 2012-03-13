@@ -6,6 +6,7 @@
 
 3. header.php/footer.php
 
+
 4. international language switch.
 
 5. google ads.
@@ -20,5 +21,10 @@
 
 8. search/recommend.php
 
+9. fast  ==> comment
 
- 
+
+10. hot and random ,unpload
+
+11. more sns account login
+12. links in the page
