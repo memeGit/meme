@@ -1,32 +1,31 @@
 <?php
 session_start();
 
+		$uid = $_COOKIE["userid"];
+		$uname=$_COOKIE["username"];
+		$utoken=$_COOKIE["usertoken"];
+		$usecret = $_COOKIE["usersecret"];
+		mysql_connect('localhost', 'root', '');
+		mysql_select_db('freeimage');
+		$query = mysql_query("SELECT * FROM iusers WHERE oauth_provider=weibo" .
+						" AND oauth_uid=".$uid.
+						" AND username=".$uname.
+						" AND oauth_token=".$utoken.
+						" AND oauth_secret=".$usecret);
+		$result = mysql_fetch_array($query);
+		if(!empty($result)){
+			header('Location: index.php');
+		}
+
+
 include_once( 'config.php' );
 include_once( 'saetv2.ex.class.php' );
-
 $o = new SaeTOAuthV2( WB_AKEY , WB_SKEY );
-
 $code_url = $o->getAuthorizeURL( WB_CALLBACK_URL );
-
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
-
-
-<!--
-
-   ____                    __      __
-  / __ \____ _____ _____ _/ /___  / /
- / /_/ / __ `/ __ `/ __ `/ / __ \/ / 
- \__, / /_/ / /_/ / /_/ / / /_/ / /  
-/____/\__, /\__,_/\__, /_/\____/_/   
-     /____/      /____/           
-
--->
 
 <head>
 <title>Just for Fun!</title>
@@ -34,20 +33,15 @@ $code_url = $o->getAuthorizeURL( WB_CALLBACK_URL );
 <link rel="shortcut icon" href="img/favicon.gif" />-->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta content="width=device-width; initial-scale=1.0;" name="viewport" />
-<link rel="stylesheet" href="./https@d24w6bsrhbeh9d.cloudfront.net/css/screen-v5.3.9.css" media="screen,projection" type="text/css" />
+<link rel="stylesheet" href="./9gag_static/https@d24w6bsrhbeh9d.cloudfront.net/css/screen-v5.3.9.css" media="screen,projection" type="text/css" />
 
-<script type="text/javascript" src="./https@d24w6bsrhbeh9d.cloudfront.net/js/mootools/mootools-1.3.1-yui-compressed.js"></script>
-<script type="text/javascript" src="./https@d24w6bsrhbeh9d.cloudfront.net/js/Libraries-v1.3.js"></script>
-<script type="text/javascript" src="./https@d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.5.3.js"></script>
+<script type="text/javascript" src="./9gag_static/https@d24w6bsrhbeh9d.cloudfront.net/js/mootools/mootools-1.3.1-yui-compressed.js"></script>
+<script type="text/javascript" src="./9gag_static/https@d24w6bsrhbeh9d.cloudfront.net/js/Libraries-v1.3.js"></script>
+<script type="text/javascript" src="./9gag_static/https@d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.5.3.js"></script>
 
 </head>
 
-
-
 <body id="page-signup">
-
-
-
 <div class="signup-login-wrap">
    <a class="signup-login-btn" href="signup.php">New to 9GAG? <b>Join today!</b></a>
 	<div class="header">
@@ -72,14 +66,14 @@ $code_url = $o->getAuthorizeURL( WB_CALLBACK_URL );
 				<label>帳戶名稱 或 電郵地址				</label>
 				<input id="login-username" type="text" class="text" name="username" placeholder="帳戶名稱 或 電郵地址" tabindex="1" maxlength="200"/>
 			</div>
-			
-            
+
+
 			<div id="login-password-block" class="field">
-				<label>密码 
-				
+				<label>密码
+
                 				<span>(<a href="recover.php">Forgot<span class="badge-js" style="color:#00a5f0;" key="?"></span></a>)</span>
-				
-				
+
+
 				</label>
 				<input id="login-password" type="password" class="text" name="password" placeholder="密码" tabindex="3" maxlength="32"/>
 			</div>
@@ -100,50 +94,13 @@ $code_url = $o->getAuthorizeURL( WB_CALLBACK_URL );
 </div>
 
 <div id="fb-root"></div>
-<script src="./https@connect.facebook.net/en_US/all.js" type="text/javascript"></script>
-
-<!-- Google Analytics -->
-<!--ipt type="text/javascript">
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-4838180-1']);
-_gaq.push(['_setDomainName', '.9gag.com']);
-_gaq.push(['_deleteCustomVar', 1]);
-_gaq.push(['_trackPageview']);
-
-(function() {
- var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
- ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
- var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
- })();
-
-</scri-->
-
-<!-- Quantcast Tag -->
-<script type="text/javascript">
-var _qevents = _qevents || [];
-
-(function() {
-var elem = document.createElement('script');
-elem.src = (document.location.protocol == "https:" ? "./https@secure/" : "./edge/") + ".quantserve.com/quant.js";
-elem.async = true;
-elem.type = "text/javascript";
-var scpt = document.getElementsByTagName('script')[0];
-scpt.parentNode.insertBefore(elem, scpt);
-})();
-
-_qevents.push({
-qacct:"p-f8Bn5MbvAQbXQ"
-});
-</script>
+<script src="./9gag_static/https@connect.facebook.net/en_US/all.js" type="text/javascript"></script>
 
 <noscript>
 <div style="display:none;">
-<img src="./https@pixel.quantserve.com/pixel/p-f8Bn5MbvAQbXQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
+<img src="./9gag_static/https@pixel.quantserve.com/pixel/p-f8Bn5MbvAQbXQ.gif" border="0" height="1" width="1" alt="Quantcast"/>
 </div>
 </noscript>
-<!-- End Quantcast tag -->
-
 
 	</body>
 </html>

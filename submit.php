@@ -1,4 +1,5 @@
-<?//nemo
+<?
+//nemo
 require "imagesharing/header2.php";
 //if ($uploads == 0) {
 //} else {
@@ -14,20 +15,16 @@ require "imagesharing/header2.php";
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# ninegag: http://ogp.me/ns/fb/ninegag#">
-<title>9GAG - Just for Fun!</title>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 
 
 <!--
 
    ____                    __      __
   / __ \____ _____ _____ _/ /___  / /
- / /_/ / __ `/ __ `/ __ `/ / __ \/ / 
- \__, / /_/ / /_/ / /_/ / / /_/ / /  
-/____/\__, /\__,_/\__, /_/\____/_/   
-     /____/      /____/           
+ / /_/ / __ `/ __ `/ __ `/ / __ \/ /
+ \__, / /_/ / /_/ / /_/ / / /_/ / /
+/____/\__, /\__,_/\__, /_/\____/_/
+     /____/      /____/
 
 -->
 
@@ -38,28 +35,10 @@ require "imagesharing/header2.php";
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="keywords" content="9gag,jokes,interesting, cool,fun collection, fun portfolio, admire,fun,humor,humour,just for fun,笑圖,笑片,搞笑,搞gag,笑話"/>
 <meta name="description" content="9GAG is the easiest way to have fun!"/>
-<meta property="og:title" content="Just for Fun!"/>
-<meta property="og:site_name" content="9GAG"/>
-<meta property="og:type" content="blog" />
-<meta property="fb:app_id" content="111569915535689"/>
-<meta property="og:image" content="http://d24w6bsrhbeh9d.cloudfront.net/img/9gag-fb-pic.png" />
-<meta property="wb:webmaster" content="9b0f6143ed77469a" />
-<meta name="viewport" content="width=device-width" />
-<meta name="verify-v1" content="vvFhqhXLAn+191Kl3iZjjHHY6wzkyGG0CJqGMoFIZEg=" />
-<link rel="alternate" href="./9gag_static/rss/site/feed.rss" type="application/rss+xml" title="9GAG site feed" />
-<link rel="stylesheet" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/css/screen-v5.4.3.css" media="screen,projection" type="text/css" />
-<link rel="stylesheet" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/css/lang/zh_CN.css" media="screen,projection" type="text/css" />
-<link rel="shortcut icon" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/favicon_v2.png" />
-<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/icon57.png" />
-<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/icon72.png" />
-<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 326dpi)" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/icon114.png" />
-<script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/mootools/mootools-1.4.1-yui-compressed.js"></script>
-<script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/Libraries-v1.3.js"></script>
-<script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.6.3.js"></script>
 
 <meta property="og:title" content="Just for Fun!"/>
 <meta property="og:site_name" content="9GAG"/>
-<meta property="og:url" content="http://9gag.com/submit"/>
+<meta property="og:url" content="http://9gag.com/submit?ref=sidebar"/>
 <meta property="og:type" content="blog" />
 <meta property="fb:app_id" content="111569915535689"/>
 
@@ -72,24 +51,24 @@ require "imagesharing/header2.php";
 
 
 <link rel="alternate" href="rss/site/feed.rss" type="application/rss+xml" title="9GAG site feed" />
-<link rel="stylesheet" href="./d24w6bsrhbeh9d.cloudfront.net/css/screen-v5.4.3.css" media="screen,projection" type="text/css" />
-<link rel="stylesheet" href="./d24w6bsrhbeh9d.cloudfront.net/css/lang/zh_CN.css" media="screen,projection" type="text/css" />
+<link rel="stylesheet" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/css/screen-v5.4.3.css" media="screen,projection" type="text/css" />
+<link rel="stylesheet" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/css/lang/zh_CN.css" media="screen,projection" type="text/css" />
 
 
 
-<link rel="shortcut icon" href="./d24w6bsrhbeh9d.cloudfront.net/img/favicon_v2.png" />
-<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="./d24w6bsrhbeh9d.cloudfront.net/img/icon57.png" />
-<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="./d24w6bsrhbeh9d.cloudfront.net/img/icon72.png" />
-<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 326dpi)" href="./d24w6bsrhbeh9d.cloudfront.net/img/icon114.png" />
+<link rel="shortcut icon" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/favicon_v2.png" />
+<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 163dpi)" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/icon57.png" />
+<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 132dpi)" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/icon72.png" />
+<link rel="apple-touch-icon-precomposed" media="screen and (resolution: 326dpi)" href="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/icon114.png" />
 
 
-<script type="text/javascript" src="./d24w6bsrhbeh9d.cloudfront.net/js/mootools/mootools-1.4.1-yui-compressed.js"></script>
+<script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/mootools/mootools-1.4.1-yui-compressed.js"></script>
 
 
 
 
-<script type="text/javascript" src="./d24w6bsrhbeh9d.cloudfront.net/js/Libraries-v1.3.js"></script>
-<script type="text/javascript" src="./d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.6.3.js"></script>
+<script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/Libraries-v1.3.js"></script>
+<script type="text/javascript" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/js/gag.min-v2.6.3.js"></script>
 
 
 
@@ -111,21 +90,20 @@ _gaq.push(['_trackPageview']);
 </scri-->
 </head>
 
+
 <body id="page-post-item" class="main-body ">
 
-<div id="tmp-img" style="display:none"></div>
-<div id="headbar-wrap">
 
 <div id="tmp-img" style="display:none"></div>
-<script type="text/javascript"> 
-function rmt(l) { var img = new Image(); img.src = l; document.getElementById('tmp-img').appendChild(img); } 
+<script type="text/javascript">
+function rmt(l) { var img = new Image(); img.src = l; document.getElementById('tmp-img').appendChild(img); }
 function fbWindow(location, address, gaCategory, gaAction, entryLink) { _gaq.push(['_trackEvent', gaCategory, gaAction, entryLink, 1]); var w = 640; var h = 460; var sTop = window.screen.height/2-(h/2); var sLeft = window.screen.width/2-(w/2); var sharer = window.open(address, "Share on Facebook", "status=1,height="+h+",width="+w+",top="+sTop+",left="+sLeft+",resizable=0"); }
 function twttrWindow(location, address, gaCategory, gaAction, entryLink) { _gaq.push(['_trackEvent', gaCategory, gaAction, entryLink, 1]); var w = 640; var h = 460; var sTop = window.screen.height/2-(h/2); var sLeft = window.screen.width/2-(w/2); var sharer = window.open(address, "Share on Twitter", "status=1,height="+h+",width="+w+",top="+sTop+",left="+sLeft+",resizable=0"); }
 </script>
 
 
 
-<script type='text/javascript' src='./partner.googleadservices.com/gampad/google_service.js'> </script>
+<script type='text/javascript' src='./9gag_static/partner.googleadservices.com/gampad/google_service.js'> </script>
 <script type='text/javascript'>
 try {
 GS_googleAddAdSenseService("ca-pub-0268871989845966");
@@ -146,10 +124,10 @@ GA_googleUseIframeRendering();
 
 
 
-			
+
 <div id="headbar-wrap">
 
-           
+
        <div id="searchbar_container">
 		<div id="searchbar_wrapper">
 			<div id="header_searchbar"  style="display:none;">
@@ -163,62 +141,40 @@ GA_googleUseIframeRendering();
 		</div>
 
     <div id="head-bar">
-                				<h1><a class="snowman" href="./9gag_static/www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a><a href="index.php">9GAG</a></h1>
-				<ul class="main-menu" style="overflow:visible">
-					<li><a class="" href="./9gag_static/hot">笑料</a></li>
 
-										<li><a href="./9gag_static/fast" onclick="_gaq.push(['_trackEvent', 'Lab', 'Clicked', 'Go', 1]); ">Fast</a></li>
-
-										<li><a class="add-post current" href="submit.php" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Upload</a></li>
-
-
-				</ul>
-                             <ul class="main-2-menu">
-										<li>
-						<div id="profile-menu" class="profile-menu">
-													<a id="profile-username" href="./9gag_static/onedream87" class="profile-button">onedream87</a>
-													<ul>
-																<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
-																<li><a href="./9gag_static/logout">退出</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a class="shuffle-button" href="./9gag_static/random"><strong>Shuffle</strong></a></li>
-					<li><a class="search-button search-toggler" href="javascript:void(0);"><strong>Search</strong></a></li>
-				</ul>
-                        
-                				<h1><a class="snowman" href="./www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a><a href="default.htm">9GAG</a></h1>
+                				<h1><a class="snowman" href="./9gag_static/www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a>
+                				<a href="index.php">9GAG</a></h1>
 				<ul class="main-menu" style="overflow:visible">
 
 
 					<li><a class="" href="hot">笑料</a></li>
-					
+
 										<li><a href="fast" onclick="_gaq.push(['_trackEvent', 'Lab', 'Clicked', 'Go', 1]); ">Fast</a></li>
 
-										<li><a class="add-post current" href="submit.php" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Upload</a></li>
-					
+										<li><a class="add-post current" href="submit" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Upload</a></li>
+
 
 				</ul>
-				
+
                              <ul class="main-2-menu">
 
-				
 
-				
-										
-                    
-					
+
+
+
+
+
 
 										<li>
 						<div id="profile-menu" class="profile-menu">
 													<a id="profile-username" href="onedream87" class="profile-button">onedream87</a>
 													<ul>
-																<li><a href="./https@9gag.com/settings">控制面板</a></li>
+																<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
 																<li><a href="logout">退出</a></li>
 							</ul>
 						</div>
 					</li>
-					
+
 					<li><a class="shuffle-button" href="random"><strong>Shuffle</strong></a></li>
 					<li><a class="search-button search-toggler" href="javascript:void(0);"><strong>Search</strong></a></li>
 
@@ -230,20 +186,18 @@ GA_googleUseIframeRendering();
 
 
 <div id="container" style="">
+
+
+
+
+
 <input id="message_input_data" type="hidden" value="Missing or invalid data."></input>
+
+
 <p class="error hide form-message">Oh, you made a mistake.</p>
 <script type="text/javascript">
 //<![CDATA[
 window.title_filters = ["faggot","pervert","nigger","./9gag_static//com","./9gag_static//net","./9gag_static//info","http","title","likethisif","votethis","likeif","voteif","amithe","llgetthis","llgetit","shouldgetit","shouldgetthis","llunderstand","llknowit","dildo","jailbait","9fag","9fap","9gagarmy","9gagtroop","9gagsolider","voter","votepage","trending","firstpost"];
-
-
-<input id="message_input_data" type="hidden" value="Missing or invalid data."></input>
-
-
-<p class="error hide form-message">Oh, you made a mistake.</p>
-<script type="text/javascript">
-//<![CDATA[
-window.title_filters = ["faggot","pervert","nigger",".//com",".//net",".//info","http","title","likethisif","votethis","likeif","voteif","amithe","llgetthis","llgetit","shouldgetit","shouldgetthis","llunderstand","llknowit","dildo","jailbait","9fag","9fap","9gagarmy","9gagtroop","9gagsolider","voter","votepage","trending","firstpost"];
 window.title_blacklist = ["blowjob","truestory","truestorybro","youknowitstrue","sotrue","truth","thetruth","thatstrue","thatsthetruth","sofunny","socute","sosad","masturbate","masturbation","nudity","pedobear","penis","naked","vagina","pervert","twitter","newfags","facebook","fapfapfapfap","fapfapfap","fapfap","fap","apple","iphone","microsoft","youtube","twilight","twilightisgay","twilightisforgay","twilightisforgays","justinbieber","justinbieberisgay","justinbieberisagay","jbisgay","justinbieberislesbian","justinbieberisalesbian","tumblr","reddit","ohreddit","ohtumblr","oh4chan","america","american","americans","africa","african","africans","brazilian","brazilians","brazil","brasil","unitedstates","brasilian","brasilians","ohamerica","ohamerican","ohamericans","unitedstates","european","europeans","europe","creative","funny","descriptive","clever","aliens","alien","epiccommentisepic","ohmygod","troll","trolled","trolling","awesome","justawesome","fabulous","fixed","megusta","memes","reposts","repost","noreposts","hopeitsnotrepost","hopeitsnotarepost","hopenotarepost","hopenotrepost","notsureifrepost","notsureifitsrepost","notsureifitsarepost","notsureifthisisrepost","notsureifthisisarepost","notsureifthisrepost","dontknowifitsarepost","sorryifrepost","sorryifitsarepost","sorryifisarepost","sorryisarepost","sorryifitisarepost","sorryifthisisarepost","sorryifthisisrepost","sorryifthisrepost","sorryifthisarepost","Hopeisnotarepost","hopeitisnotarepost","hopenorepost","hopeisnorepost","hopeitsnotarepost","fuckyou","fuckyoutitles","fuckyoutitle","women","woman","womans","becausefuckyou","becausefuckyouthatswhy","fuckyou9gag","fuckyou9gaggers","fuckyou9gagger","fuckyou9gager","fuckyou9gagers","foreveralone","trololol","notbad","fuckyea","fuckyeah","jesus","sweetjesus","jesuschrist","justjesus","sadbuttrue","wantone","wantit","dowant","iwant","iwantit","iwantone","justwantthis","wantthis","iwantthis","justepic","justawesome","thisisawesome","thisawesome","thisisepic","thisiscool","thisiscreative","thisepic","thiscool","thiscreative","thisgenius","genius"];
 //]]>
 </script>
@@ -255,22 +209,23 @@ window.title_blacklist = ["blowjob","truestory","truestorybro","youknowitstrue",
 
 				<div class="head">
 					<ul class="switch">
-						<li class="tab_photo current"><a class="photo" href="photo">圖片</a></li>
-						<li class="tab_video "><a class="video" href="video">笑片 </a></li>
+						<li class="tab_photo current"><a class="photo" href="submit/photo">圖片</a></li>
+						<li class="tab_video "><a class="video" href="submit/video">笑片 </a></li>
 					</ul>
 				</div>
 
-
 <div class="content form_photo">
-<?//nemo
+<?
+
+//nemo
 if (strtoupper($_GET['type']) == "URL") {
 	echo '<form class="modal" name="newupload" id="newupload1" method="post"
-			action="imagesharing/inc/uploaderurl.php" enctype="multipart/form-data"
-			onSubmit="return show_loading1();">';
+				action="imagesharing/inc/uploaderurl.php" enctype="multipart/form-data"
+				onSubmit="return show_loading1();">';
 } else {
 	echo '<form class="modal" name="newupload" id="newupload" method="post"
-		    	action="imagesharing/inc/uploader.php" enctype="multipart/form-data"
-		    	onSubmit="return show_loading();">';
+			    	action="imagesharing/inc/uploader.php" enctype="multipart/form-data"
+			    	onSubmit="return show_loading();">';
 }
 if ($config[AcceptTerms] == "1") {
 	echo '<input type="hidden" name="tos" value="agree">';
@@ -280,7 +235,9 @@ if ($config[AcceptTerms] == "1") {
 		<div class="field">
 			<label>
 				<h4>Pic File</h4>
-<?//nemo
+<?
+
+//nemo
 if (strtoupper($_GET['type']) == "URL") {
 	echo '<input type="text" class="text " size="50" name="thefile0" />';
 } else {
@@ -293,7 +250,9 @@ if (strtoupper($_GET['type']) == "URL") {
 			</label>
 			<p class="info">
 								<input type="hidden" name="file" value="1"/>
-<?//nemo
+<?
+
+//nemo
 if (strtoupper($_GET['type']) == "URL") {
 	echo '<a class="post_link" href="submit.php?type=file"><strong>上传本地图片。</strong></a>';
 } else {
@@ -309,7 +268,7 @@ if (strtoupper($_GET['type']) == "URL") {
 					</ul>
 				</div>
 
-								
+
 <div class="content form_photo">
 	<form id="form-modal-post-image" class="modal" action="/submit/photo" enctype="multipart/form-data" method="post">
 		<input type="hidden" name="type" value="Photo" />
@@ -325,8 +284,8 @@ if (strtoupper($_GET['type']) == "URL") {
 								<a class="upload_photo" href="submit_photo.php"><strong>上載圖片。</strong></a>
 								JPEG, GIF or PNG. Max size: 2MB.			</p>
 		</div>
-		
-		
+
+
 	   <input type="hidden" id="csrftoken" name="csrftoken" value="c9b4421c112648ba1cf2dc95b348386f"></input>
 		<div class="field">
 			<label>
@@ -375,16 +334,16 @@ if (strtoupper($_GET['type']) == "URL") {
 						<a class="button send" href="javascript:void(0);" onClick="document.forms['newupload'].submit();">新增</a></li>
 					</ul>
 				</div>
-		
+
 
 	</form>
 </div><!-- end content-->
 
-				
+
 				<div class="actions">
 					<ul class="buttons">
 						<li class="loading-btn" style="visibility:hidden"><a class="button loading" href="javascript:void(0);"></a></li>
-						<li class="form-btn"><a class="cancel" href="default.htm">取消</a></li>
+						<li class="form-btn"><a class="cancel" href="index.php">取消</a></li>
 						<li class="form-btn"><a class="button send" href="javascript:void(0);">新增</a></li>
 					</ul>
 				</div>
@@ -400,11 +359,11 @@ if (strtoupper($_GET['type']) == "URL") {
 <div class="side-dock">
 
 
-	
-	    	            
-    
 
-    			
+
+
+
+
 <div class="message-block notice">
 	<h3>Upload Quota</h3>
 	<p>You can upload <b>1 post/day</b>.</p>
@@ -438,7 +397,7 @@ if (strtoupper($_GET['type']) == "URL") {
 	<li><b>[Fixed] posts should be added using the "Fix this post" button.</b></li>
 
 	<li>Make sure you have checked our <a href="./9gag_static/rules" target="blank">9 Rules</a>.</li>
-	<li>Make sure you have checked our <a href="rules" target="blank">9 Rules</a>.</li>                        
+	<li>Make sure you have checked our <a href="rules" target="blank">9 Rules</a>.</li>
 
 </ul>
 
@@ -451,20 +410,20 @@ if (strtoupper($_GET['type']) == "URL") {
 <div id="footer" class="">
     	<div class="section-2">
 		<div class="wrap">
-   	
-        
+
+
 </div><!--end div.side-dock-->
 
 
 </div><!--end #content-->
 
 <div id="footer" class="">
-	
-	
-			
+
+
+
     	<div class="section-2">
 		<div class="wrap">
-						
+
 <ul class="info footer-left">
 	<li>9GAG &copy; 2011</li>
 	<li>·<a class="badge-language-selector" href="javascript:void(0);">&#31777;&#39636;&#20013;&#25991; ( zh_CN )</a></li>
@@ -477,7 +436,7 @@ if (strtoupper($_GET['type']) == "URL") {
 	<li>·<a href="./9gag_static/tos">条款</a></li>
 	<li>·<a href="./9gag_static/privacy">私隐</a></li>
 	<li>·<a href="./9gag_static/contact">联络</a></li>
-	
+
 <ul class="info footer-right">
 	<li><a href="about">关于</a></li>
 	<li>·<a href="rules">9 條規則</a></li>
@@ -489,7 +448,7 @@ if (strtoupper($_GET['type']) == "URL") {
 
 					</div><!--end wrap-->
 	</div><!--end div.section-2-->
-   
+
 </div><!--end div#footer-->
 
 
@@ -497,7 +456,7 @@ if (strtoupper($_GET['type']) == "URL") {
 <div id="overlay-container" class="hide" >
 
 
-	
+
 <div id="modal-report" class="modal-box hide">
 	<div class="content">
  	   <a href="javascript:void(0);" class="close-btn"></a>
@@ -531,7 +490,7 @@ if (strtoupper($_GET['type']) == "URL") {
 		<form id="form-modal-share" class="modal" action="">
 				</form>
 	</div>
-	</div>                
+	</div>
 </div>
 
 
@@ -583,47 +542,47 @@ if (strtoupper($_GET['type']) == "URL") {
 				<input id="lang-tr" class="" type="radio" name="lang-code" value="tr" ></input>T&uuml;rk&ccedil;e
 				</label>
 
-												
+
 				<label for="lang-en">
 				<input id="lang-en" class="" type="radio" name="lang-code" value="en" ></input>English
 				</label>
-								
+
 				<label for="lang-zh">
 				<input id="lang-zh" class="" type="radio" name="lang-code" value="zh" ></input>&#32321;&#39636;&#20013;&#25991;
 				</label>
-								
+
 				<label for="lang-zh_CN">
 				<input id="lang-zh_CN" class="current" type="radio" name="lang-code" value="zh_CN" checked="checked"></input>&#31777;&#39636;&#20013;&#25991;
 				</label>
-								
+
 				<label for="lang-fr">
 				<input id="lang-fr" class="" type="radio" name="lang-code" value="fr" ></input>fran&#xE7;ais
 				</label>
-								
+
 				<label for="lang-de">
 				<input id="lang-de" class="" type="radio" name="lang-code" value="de" ></input>Deutsch
 				</label>
-								
+
 				<label for="lang-ja">
 				<input id="lang-ja" class="" type="radio" name="lang-code" value="ja" ></input>&#26085;&#26412;&#35486;
 				</label>
-								
+
 				<label for="lang-es">
 				<input id="lang-es" class="" type="radio" name="lang-code" value="es" ></input>Espa&ntilde;ol
 				</label>
-								
+
 				<label for="lang-pt">
 				<input id="lang-pt" class="" type="radio" name="lang-code" value="pt" ></input>Portugu&#234;s
 				</label>
-								
+
 				<label for="lang-ru">
 				<input id="lang-ru" class="" type="radio" name="lang-code" value="ru" ></input>Русский
 				</label>
-								
+
 				<label for="lang-tr">
 				<input id="lang-tr" class="" type="radio" name="lang-code" value="tr" ></input>T&uuml;rk&ccedil;e
 				</label>
-				
+
 			</div>
 		</form>
 	</div>
@@ -692,7 +651,7 @@ window.addEvent("domready", function() {
 
 			$$('a.twitter_connect').setStyle('display', '');
 
-	
+
 	$$('a.twitter_connect').addEvent('click', function(e) {
 	e.preventDefault();
 	var next = $(this).get('next');
