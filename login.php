@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-		$uid = $_COOKIE["userid"];
-		$uname=$_COOKIE["username"];
-		$utoken=$_COOKIE["usertoken"];
-		$usecret = $_COOKIE["usersecret"];
+		$uid = $_COOKIE["iuserid"];
+		$uname=$_COOKIE["iusername"];
+		$utoken=$_COOKIE["iusertoken"];
+		$usecret = $_COOKIE["iusersecret"];
 		mysql_connect('localhost', 'root', '');
 		mysql_select_db('freeimage');
 		$query = mysql_query("SELECT * FROM iusers WHERE oauth_provider=weibo" .
@@ -13,7 +13,7 @@ session_start();
 						" AND oauth_token=".$utoken.
 						" AND oauth_secret=".$usecret);
 		$result = mysql_fetch_array($query);
-		if(!empty($result)){
+		if(empty($result)){
 			header('Location: index.php');
 		}
 

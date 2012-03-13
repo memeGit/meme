@@ -145,22 +145,28 @@ GA_googleUseIframeRendering();
 		</div>
 
     <div id="head-bar">
-                <h1><a class="snowman" href="./9gag_static/www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a><a href="default.htm">9GAG</a></h1>
+                <h1><a class="snowman" href="http://www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a><a href="index.php">9GAG</a></h1>
 				<ul class="main-menu" style="overflow:visible">
-					<li><a class="current" href="hot">笑料</a></li>
-										<li><a href="fast" onclick="_gaq.push(['_trackEvent', 'Lab', 'Clicked', 'Go', 1]); ">Fast</a></li>
+					<li><a class="current" href="index.php">笑料</a></li>
+										<li><a href="fast.php" onclick="_gaq.push(['_trackEvent', 'Lab', 'Clicked', 'Go', 1]); ">Fast</a></li>
 										<li><a class="add-post " href="submit.php" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Upload</a></li>
 				</ul>
 				<ul class="main-2-menu">
-						<li>
-						<div id="profile-menu" class="profile-menu">
-													<a id="profile-username" href="onedream87" class="profile-button">onedream87</a>
-													<ul>
-																<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
-																<li><a href="logout">退出</a></li>
-							</ul>
+				<?//nemo
+				if ($_Session['islogin']==1){
+					echo '<li><a href="https://9gag.com/login" class="button">Login</a></li>';
+
+				}else{
+					echo '<li><div id="profile-menu" class="profile-menu">
+						<a id="profile-username" href="onedream87" class="profile-button">onedream87</a>
+						<ul>
+							<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
+							<li><a href="logout">退出</a></li>
+						</ul>
 						</div>
-					</li>
+					</li>';
+				}
+				?>
 
 					<li><a class="shuffle-button" href="random"><strong>Shuffle</strong></a></li>
 					<li><a class="search-button search-toggler" href="javascript:void(0);"><strong>Search</strong></a></li>
@@ -179,7 +185,7 @@ GA_googleUseIframeRendering();
 			<div class="filter-bar ">
 
 				<ul class="content-type">
-										<li> <a class="current" href="hot"><strong>熱門</strong></a></li>
+										<li> <a class="current" href="index.php"><strong>熱門</strong></a></li>
 					<li> <a class="" href="trending"><strong>趨勢</strong></a></li>
 					<li> <a class="" href="vote"><strong>Vote</strong></a></li>
 

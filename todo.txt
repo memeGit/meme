@@ -20,5 +20,7 @@
 
 8. search/recommend.php
 
+9. social sharing button should not hide when we scroll down the page. (detail.php)
+
 
  
