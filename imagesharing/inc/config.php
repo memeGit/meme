@@ -10,7 +10,7 @@ $query = "SELECT * from config";
 
 $result = mysql_query($query) or die("Query failed");
 
-while ($row = mysql_fetch_assoc($result)) { 
+while ($row = mysql_fetch_assoc($result)) {
 
         $config[$row['soption']]=$row['svalue'];
 
@@ -19,11 +19,11 @@ while ($row = mysql_fetch_assoc($result)) {
 $site_name = $config['SiteName'];
 
 	$sql="select * from users where userid='1'";
-	
+
 	$result = mysql_query($sql) or die("Query failed.");
-	while ($row = mysql_fetch_array($result)) 
+	while ($row = mysql_fetch_array($result))
 	{
-		$support_email=$row['email'];		
+		$support_email=$row['email'];
 	}
 
 $server_url = $config['SiteUrl'];
@@ -49,11 +49,7 @@ $server_root = $config['SiteRoot'];
 
 $server_directory = "";
 
-$server_save_directory = $server_directory . "/images/"; //      /folder/     
-
-
-
-
+$server_save_directory = $server_directory . "/images/"; //      /folder/
 
 // do not change the following variables
 //global $server_dir;
@@ -74,11 +70,10 @@ function getSize($imageurl)
 {
     if ( intval(phpversion()) < 5 )
         die ( 'PHP5 Required' );
-    
+
     $headers = get_headers($imageurl, 1);
     return $headers['Content-Length'];
-} 
-
+}
 
 
 /*

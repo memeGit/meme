@@ -47,9 +47,13 @@ if ($token) {
 			//Update the tokens
 			$query = mysql_query("UPDATE iusers SET oauth_token = '{$utoken}', oauth_secret = '{$usecret}' WHERE oauth_provider = 'weibo' AND oauth_uid = {$uid}");
 		}
-		header('Location: index.php');	
+		setcookie("userid", $uid, time()+24*60*60);
+		setcookie("username", $uname, time()+24*60*60);
+		setcookie("usertoken", $utoken, time()+24*60*60);
+		setcookie("usersecret", $usecret, time()+24*60*60);
+		header('Location: index.php');
 	} else {
-		header('Location: login.php');	
+		header('Location: login.php');
 	}
 
 
