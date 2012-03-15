@@ -23,3 +23,5 @@ CREATE TABLE `iusers` (
 
 [4] localhost/meme/index.php
 
+[5] <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+

@@ -14,7 +14,7 @@
         $result1 = mysql_query($query1) or die("Query failed1.");
 				if(mysql_num_rows($result1) ==0) { ?>
 		<div id="error"><div class="msg" id="sucmsgid"> <?
-	echo "ÇëÇóµÄÍ¼Æ¬²»´æÔÚ"; ?>
+	echo "è¯·æ±‚çš„å›¾ç‰‡ä¸å­˜åœ¨"; ?>
 	</div></div>
 		<META HTTP-EQUIV="refresh" CONTENT="3;URL=gallery.php">
 	<?
@@ -67,53 +67,15 @@
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<html >
 <head>
 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 <link href="static/css/detail.css" rel="stylesheet" type="text/css">
 </head>
 <body id="page-post" class="main-body">
-<div id="headbar-wrap">
-
-           
-       <div id="searchbar_container">
-		<div id="searchbar_wrapper">
-			<div id="header_searchbar" style="display:none;">
-				<div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; position: static; overflow-x: hidden; overflow-y: hidden; height: 0px; "><div id="search_wrapper" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; margin-top: 0px; ">
-					<form action="http://prenoon.com/search">
-							<input id="sitebar_search_header" type="text" class="search search_input" name="query" tabindex="1" placeholder="Search" autocomplete="off">
-					</form>
-				</div></div>
-			</div>
-		</div>
-		</div>
-
-    <div id="head-bar">
-                        
-                				<h1><a class="snowman" href="http://www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a><a href="http://9gag.com/">9GAG</a></h1>
-				<ul class="main-menu" style="overflow:visible">
-
-
-					<li><a class="" href="http://prenoon.com/hot">ÈÈÃÅ</a></li>
-					<li><a href="http://prenoon.com/fast" onclick="_gaq.push(['_trackEvent', 'Lab', 'Clicked', 'Go', 1]); ">¿ìËÙ·ÃÎÊ</a></li>
-					<li><a class="add-post " href="http://9gag.com/submit" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Upload</a></li>
-				</ul>
-				  <ul class="main-2-menu">
-				  <li id="headbar-signup-button" style="display: none; ">
-				  <a class="signup-button green" href="https://9gag.com/signup" label="Header" onclick=" rmt('http://goo.gl/4L7Xz?a=694');">Y U No Signup?!</a>
-				   </li>
-				   <li><a href="https://9gag.com/login" class="button">µÇÂ¼</a></li>
-				   <li><a class="shuffle-button" href="http://prenoon.com/random"><strong>Shuffle</strong></a></li>
-				   <li><a class="search-button search-toggler" href="javascript:void(0);"><strong>Search</strong></a></li>
-
-				</ul>
-
-
-            </div><!--end div#head-bar -->
-</div>
-
-
+	<? require "header.php"?>      
 <div id="container" style="">
 	<div id="main">
 	
@@ -137,11 +99,11 @@
 				</a>
 				<span class="seperator">|</span>
 				<?php
-				// TODO ·¢²¼ÈÕÆÚ
+				// TODO
 				echo $date_added;
 				?>
 				<span class="comment"><?php
-				// TODO ÆÀÂÛÊýÁ¿
+				// TODO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				?></span>
 				<span class="loved"><span id="love_count_
 				<?php 
@@ -173,12 +135,12 @@
 		<div class="spread-bar">
 		<!-- JiaThis Button BEGIN -->
 		<div id="ckepop">
-			<span class="jiathis_txt">·ÖÏíµ½£º</span>
+			<span class="jiathis_txt">è¯„è®º</span>
 			<a class="jiathis_button_tools_1"></a>
 			<a class="jiathis_button_tools_2"></a>
 			<a class="jiathis_button_tools_3"></a>
 			<a class="jiathis_button_tools_4"></a>
-			<a href="http://www.jiathis.com/share?uid=1586402" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">¸ü¶à</a>
+			<a href="http://www.jiathis.com/share?uid=1586402" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">åˆ†äº«</a>
 			<a class="jiathis_counter_style"></a>
 		</div>
 		</div>
@@ -210,20 +172,19 @@
 		</div><!--end image-wrap-->
 		</div><!--end post-container-->
 		<div class="comment-section">
-		<h3 class="title" id="comments">ÁôÑÔ</h3>
+		<h3 class="title" id="comments">è¯„è®º</h3>
 		<span class="report-and-source">
 								<p>																																
 								<a class="fix" href="<?php
-			//					ÅÐ¶ÏÊÇ·ñµÇÂ¼²¢ÇÒµÇÂ¼
-								?>">Ìû×ÓÓÐÎÊÌâ</a>
+			//					ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Òµï¿½Â¼
+								?>">å¸–å­æœ‰é—®é¢˜</a>
 								<span id="report-item-separator">|</span>
-								<a class="report" href="">¾Ù±¨</a>
+								<a class="report" href="">Xå’Œè°</a>
 								<span id="report-item-separator">|</span>
 								Î´Öª	</p>
 		</span>
 								<div id="entry-comments" style="text-align:center">
                                 <?php 
-								//ÆÀÂÛÏµÍ³
 								?>
 								
 								<!-- UY BEGIN -->
@@ -247,7 +208,7 @@
 <div class="side-dock">
 	      <div id="special-button">
 		  <script type="text/javascript">rmt('http://goo.gl/ktrVc?a=148');</script>  
-		  <a class="special-btn green" href="https://prenoon.com/signup" label="Sidebar" onclick="rmt('http://goo.gl/4L7Xz?a=402');">Äã»¹Î´µÇÂ¼</a>
+		  <a class="special-btn green" href="https://prenoon.com/signup" label="Sidebar" onclick="rmt('http://goo.gl/4L7Xz?a=402');">ï¿½ã»¹Î´ï¿½ï¿½Â¼</a>
 			
 	    </div>
 		<div class="s-300">
@@ -262,10 +223,10 @@ GA_googleFillSlotWithSize("ca-pub-0268871989845966", "Top-Right-300x250", 300, 2
 </div>
  <div id="post-gag-stay" class="_badge-sticky-elements" data-y="60">
  <div class="popular-block">
- <h3>³ÏÒâÍÆ½é</h3>
+ <h3>ï¿½ï¿½ï¿½ï¿½ï¿½Æ½ï¿½</h3>
 	<ol>
 <?php
-// TODO	ÍÆ¼öÄ£¿é
+// TODO	ï¿½Æ¼ï¿½Ä£ï¿½ï¿½
 ?>	
 	</ol>
 </div>

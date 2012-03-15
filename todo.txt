@@ -1,3 +1,4 @@
+0.5： user。php hot.php
 1. console 404 error
 
 2. 404 pages

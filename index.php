@@ -130,82 +130,36 @@ GA_googleUseIframeRendering();
 }
 </script>
 
-<div id="headbar-wrap">
 
-       <div id="searchbar_container">
-		<div id="searchbar_wrapper">
-			<div id="header_searchbar"  style="display:none;">
-				<div id="search_wrapper">
-					<form action="http://9gag.com/search">
-							<input id="sitebar_search_header" type="text" class="search search_input" name="query" tabindex="1" placeholder="Search"/>
-					</form>
-				</div>
-			</div>
-		</div>
-		</div>
-
-    <div id="head-bar">
-                <h1><a class="snowman" href="./9gag_static/www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a><a href="default.htm">9GAG</a></h1>
-				<ul class="main-menu" style="overflow:visible">
-					<li><a class="current" href="hot">笑料</a></li>
-										<li><a href="fast" onclick="_gaq.push(['_trackEvent', 'Lab', 'Clicked', 'Go', 1]); ">Fast</a></li>
-										<li><a class="add-post " href="submit.php" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Upload</a></li>
-				</ul>
-				<ul class="main-2-menu">
-						<li>
-						<div id="profile-menu" class="profile-menu">
-													<a id="profile-username" href="onedream87" class="profile-button">onedream87</a>
-													<ul>
-																<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
-																<li><a href="logout">退出</a></li>
-							</ul>
-						</div>
-					</li>
-
-					<li><a class="shuffle-button" href="random"><strong>Shuffle</strong></a></li>
-					<li><a class="search-button search-toggler" href="javascript:void(0);"><strong>Search</strong></a></li>
-
-				</ul>
-
-
-            </div><!--end div#head-bar -->
-</div><!--end headbar-wrap-->
-
-<div id="container" style="">
+<!--
+	move to header.php
+-->
+  <?
+	require "header.php";
+  ?>
+  <div id="container" style="">
 
 
 <div id="main">
-		<div id="block-content">
-			<div class="filter-bar ">
-
-				<ul class="content-type">
-										<li> <a class="current" href="hot"><strong>熱門</strong></a></li>
-					<li> <a class="" href="trending"><strong>趨勢</strong></a></li>
-					<li> <a class="" href="vote"><strong>Vote</strong></a></li>
-
-
-				</ul>
+	<div id="block-content">
+		<div class="filter-bar ">
+			<ul class="content-type">
+				<li> <a class="current" href="hot"><strong>热门</strong></a></li>
+				<li> <a class="" href="trending"><strong>趋势</strong></a></li>
+				<li> <a class="" href="vote"><strong>投票</strong></a></li>
+			</ul>
 				<a class="safe-mode-toggle " href="pref/safe-browse@enable=0&url=_252F">&nbsp;</a>
-			</div>
-
-
-			<div id="content" listPage="hot">
-
-
-				<div id="view-controller">
-					<div id="view-info" class="list-tips">
-																							<div id="shortcut-event-label" style="display:none">Tip-Press-2</div>
-								<span><b>Tip</b>: Press the '<b>J</b>' and '<b>K</b>' keys to quickly navigate through posts.</span>
-																<a href="#keyboard" class="keyboard_link">Use 9GAG Like A Boss!</a>
-
+		</div>
+	<div id="content" listPage="hot">
+		<div id="view-controller">
+				<div id="view-info" class="list-tips">
+					<div id="shortcut-event-label" style="display:none">Tips</div>
+						<span><b>Tip</b>: 使用 '<b>J</b>' and '<b>K</b>' 进行导航.</span>
+							<a href="#keyboard" class="keyboard_link">Use SRT Like A Boss!</a>
 					</div>
 				</div>
-
-
-
-<div id="entry-list" class="list">
-	<ul id="entry-list-ul" class="col-1">
-
+	<div id="entry-list" class="list">
+		<ul id="entry-list-ul" class="col-1">
 
 <?
 
@@ -213,20 +167,21 @@ $ctr = 0;
 while ($line = mysql_fetch_array($result)) {
 	$ctr++;
 	$short_name = substr($line[filename], 0, 30);
+	
+	$data_url = "url";
+	$image_title = "title";
+	$meme_id = "meme_id";
+	$id="id"+$crt;
+	$love_count=100;
+	$score = 100;
+	
+	$comment_url="comment_url";
 ?>
-
-<li class=" entry-item" data-url="http://9gag.com/gag/2644365" data-text="I&#039;ll just tell him I have a nose fetish." gagId="2644365" itemType="list" id="entry-2644365">
+<li class="entry-item" data-url="<?=$data_url?>" data-text="<?=$image_title?>" gagId="<?=$meme_id?>" itemType="list" id="<?=$id?>">
 <div class="content">
 		<div class="img-wrap">
-		<!--<a href="imagesharing/view2.php?filename=<?=$line[filename]?>">-->
-		<!--<a href="gag/2644365"  target="_blank" >-->
-		<!--
-			src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/photo/2644365_460s.jpg"
-
-			src="<?$file_path.$file?>"
-		-->
 		<a href="detail.php?filename=<?=$line[filename]?>">
-		<img src="<?=$line[filepath].$line[filename] ?>" alt="I&#039;ll just tell him I have a nose fetish." border="0" style="max-width:450px"/>
+		<img src="<?=$line[filepath].$line[filename] ?>" alt="<?=$image_title?>" border="0" style="max-width:450px"/>
 		</a>
 	</div>
 	<div class="fatbigdick"></div>
@@ -237,48 +192,35 @@ while ($line = mysql_fetch_array($result)) {
 		<h1><a href="gag/2644365"  target="_blank" >I&#039;ll just tell him I have a nose fetish.</a></h1>
 	<h4>
 		<a href="klopezq_93">klopezq_93</a>
-		<p>20 小時前</p>
+		<p>
+		<?="时间未确定"?>
+		</p>
 	</h4>
 <p>
 	<span class="comment">
-            27    	</span>
-	<span id="love_count_2644365" class="loved" votes="19472" score="0">19472</span>
+     <?
+     	//TODO 评论数量
+     ?></span>
+	<span id="love_count_<?=$id?>" class="loved" votes="
+	<?=$love_count
+	?>
+	" score="0">
+	<?=$score
+	?></span>
 </p>
 <ul class="actions">
 <li>
-    <a class="comment " href="gag/2644365#comments" onclick="window.location =  'gag/2644365#comments';"><span>Comment</span></a>
+    <a class="comment " href="<?=$comment_url?>" onclick="window.location = '<?=$comment_url?>';"><span>评论</span></a>
 </li>
 <li>
-    <a id="vote-up-btn-2644365" class="love badge-vote-up " entryId="2644365" href="javascript:void(0);"> <span>Love</span></a>
+<?
+	//TODO love 这个按钮必须跟后台连起来
+?>
+    <a id="vote-up-btn-2644365" class="love badge-vote-up " entryId="2644365" href="javascript:void(0);"> <span>赞</span></a>
 </li>
 </ul>
 
-<div class="sharing-box" >
-<hr class="arrow" />
-
-<ul class="sharing weibo" >
-<li class="facebook sharing-row" id="share1-2644365" >
-
-
-
-<span id="list-share-weibo-2644365">
-<iframe allowTransparency="true" frameborder="0" scrolling="no" src="./9gag_static/hits.sinajs.cn/A1/weiboshare.html@url=http_253A_252F_252F9gag.com_252Fgag_252F2644365&type=2&count=1&appkey=494936745&title=I%26_2523039_253B032FCC07D5" width="80" height="24"></iframe></span>
-
-<div class="facebook_share_size_Small" onclick="myWindow('Facebook Share', './9gag_static/www.facebook.com/sharer/sharer.php@u=http_253A_252F_252F9gag.com_252Fgag_252F2644365', 'Facebook-Share-List', 'Clicked');">
-    <span class="FacebookConnectButton FacebookConnectButton_Small">
-        <span class="FacebookConnectButton_Text">Share</span>
-    </span>
-    <span class="facebook_share_count_nub_right"></span>
-    <span class="facebook_share_count facebook_share_count_right">
-        <span class="facebook_share_count_inner">576</span>
-    </span>
 </div>
-</li>
-
-</ul>
-</div>
-<a class="fix" href="./9gag_static/https@9gag.com/login@ref=_252Ffix_252F2644365">Fix this post</a>
-    </div>
 
 </div><!--end div.info-->
 </li>
@@ -297,7 +239,7 @@ mysql_close($link);
     <div id="pagination" class="flip" style="text-align:center">
 
         <a id="next_button" class='next' href="hot/id/2625004" style="width:700px;display:none;" plink="/hot/" data-more="2625004" list="hot">I want more fun!</a>
-        <a id="more_button" class='next' href="hot/id/2625004" style="width:700px" data-more="2625004" plink="/hot/" currPage="5453" list="hot">More</a>
+        <a id="more_button" class='next' href="hot/id/2625004" style="width:700px" data-more="2625004" plink="/hot/" currPage="5453" list="hot">更多</a>
         <img id="more_img" src="img/loading.gif" style="display:none"></img>
     </div><!--end pagination-->
 
@@ -312,145 +254,69 @@ mysql_close($link);
 
 
 <div class="side-dock">
-
-
-
-
-				<script type="text/javascript">rmt('./9gag_static/goo.gl/ktrVc@a=189');</script>
-
+	<script type="text/javascript">rmt('./9gag_static/goo.gl/ktrVc@a=189');</script>
 	<div id="special-button">
-				<a class="special-btn green" href="signup.php" label="Sidebar" onclick="rmt('./9gag_static/goo.gl/4L7Xz@a=325');">Y U No Signup?!</a>
-			</div>
-
-
-
-							<div class="s-300">
+		<a class="special-btn green" href="signup.php" label="Sidebar" onclick="rmt('./9gag_static/goo.gl/4L7Xz@a=325');">你还没登录</a>
+	</div>
+<div class="s-300">
 <script type='text/javascript'>
 try {
 GA_googleFillSlotWithSize("ca-pub-0268871989845966", "Top-Right-300x250", 300, 250);
 } catch (e) {}
+<?
+//TODO google adds
+?>
 </script>
 </div>
-
-
-		<div class="social-block">
-	<h3>Show your love to 9GAG</h3>
+<div class="social-block">
+	<h3>show your love to syt</h3>
 	<div class="facebook-like">
 		<fb:like href="http://facebook.com/9gag" send="false" width="270" show_faces="true" font="" label="Sidebar"></fb:like>
 	</div>
-
-
-		 <div class="weibo-follow">
+	<div class="weibo-follow">
 	 <iframe width="136" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" frameborder="No" border="0" src="./9gag_static/widget.weibo.com/relationship/followbutton.php@language=zh_cn&width=136&height=24&uid=1727916553&style=2&btn=red&dpc=1"></iframe>	 </div>
 
 	<div class="google-plus">
 			<p>Recommend on Google</p>
 			<g:plusone size="medium" href="http://9gag.com"></g:plusone>
 	</div>
+	<?
+	//TODO follow
+	?>
 </div>
-
-
-		<div id="top-gag-stay">
-							<div class="s-300">
-<iframe id="sidebar-ads2" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/static/ads/sidebar-ads2.html" scrolling="no" height="250px" width="320px" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+<div id="top-gag-stay">
+	<div class="s-300">
+	<iframe id="sidebar-ads2" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/static/ads/sidebar-ads2.html" scrolling="no" height="250px" width="320px" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 </div>
-
-
-
 <div class="popular-block">
 	<h3>诚意推介</h3>
-	<ol>
-						<a class="wrap" href="gag/2659799@ref=discuss"  onclick="GAG.GA.track('RelatedContent', 'Clicked-PopularPost', 'gag/2659799', 1)" >
-<li>
-						<img src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/photo/2659799_220x145.jpg" alt="Hard to unsee it.." />
-						<h4>Hard to unsee it..</h4>
-		<p class="meta">
-			<span class="comment">
-                        77            			</span>
-			<span class="loved">11871</span>
-		</p>
-				<span class="medal-gold"></span>
-		</li>
-	</a>
-
-							<a class="wrap" href="gag/2659791@ref=discuss"  onclick="GAG.GA.track('RelatedContent', 'Clicked-PopularPost', 'gag/2659791', 1)" >
-<li>
-						<img src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/photo/2659791_220x145.jpg" alt="How I feel.." />
-						<h4>How I feel..</h4>
-		<p class="meta">
-			<span class="comment">
-                        54            			</span>
-			<span class="loved">14101</span>
-		</p>
-				<span class="medal-silver"></span>
-		</li>
-	</a>
-
-							<a class="wrap" href="gag/2659832@ref=discuss"  onclick="GAG.GA.track('RelatedContent', 'Clicked-PopularPost', 'gag/2659832', 1)" >
-<li>
-				<img src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/img/nsfw-thumbnail.jpg" alt="NSFW" />
-				<h4>When you see it</h4>
-		<p class="meta">
-			<span class="comment">
-                        14            			</span>
-			<span class="loved">8107</span>
-		</p>
-				<span class="medal-bronze"></span>
-		</li>
-	</a>
-
-
-	</ol>
+	<?
+	//TODO 推荐
+	?>
 </div>
 
 <div class="message-block">
 	<h3>Hey..</h3>
 	<p>Press <b>Ctrl+D</b> or <b>⌘+D</b> (if you're using Mac) to bookmark 9GAG now!</p>
 </div>
-
-
-
-<div class="section-2">
-<div class="wrap">
-
-<ul class="info footer-left">
-	<li>9GAG &copy; 2011</li>
-	<li>·<a class="badge-language-selector" href="javascript:void(0);">&#31777;&#39636;&#20013;&#25991; ( zh_CN )</a></li>
-</ul><!--end ul.footer-left-->
-
-<ul class="info footer-right">
-	<li><a href="about">关于</a></li>
-	<li>·<a href="rules">9 條規則</a></li>
-	<li>·<a href="faq">常见问题</a></li>
-	<li>·<a href="tos">条款</a></li>
-	<li>·<a href="privacy">私隐</a></li>
-	<li>·<a href="contact">联络</a></li>
-</ul><!--end ul.footer-right-->
-
-</div>
-</div>
-
-
-	</div><!--end div#top-gag-stay-->
-
-
+</div><!--end div#top-gag-stay-->
 </div><!--end div.side-dock-->
-
-
 </div><!--end #content-->
-
+<?
+//move to footer
+require "footer.php"
+?>
 <div id="footer" class="">
-
-
-		<div id="main-bottom-ad-tray">
-			<div>
-<script type='text/javascript'>
-try {
-GA_googleFillSlotWithSize("ca-pub-0268871989845966", "Banner-bottom-728x90", 728, 90);
-} catch(e) {}
-</script>
+<div id="main-bottom-ad-tray">
+	<div>
+		<script type='text/javascript'>
+			try {
+				GA_googleFillSlotWithSize("ca-pub-0268871989845966", "Banner-bottom-728x90", 728, 90);
+			} catch(e) {}
+		<!-- TODO google ads-->
+		</script>
+	</div>
 </div>
-		</div>
 
 
 
