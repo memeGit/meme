@@ -4,6 +4,7 @@
 <head>
 <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 <script src="static/lib/jquery.bxSlider.js" type="text/javascript"></script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
  <link href="static/css/bx_styles.css" rel="stylesheet" type="text/css">
 </head>
 <script type="text/javascript">
@@ -132,11 +133,11 @@ function nextpage(event)
 <a href="http://prenoon.com"></a>
 </div>
 <?php
-// TODO ·µ»Ø³£¹æÄ£Ê½µÄ´úÂë
+// TODO ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½Ä£Ê½ï¿½Ä´ï¿½ï¿½ï¿½
 ?>
 
 
-<div><a id="close" href="javascript:void(0);" style="text-decoration: none;">¡Á ³£¹æÄ£Ê½</a></div>
+<div><a id="close" href="javascript:void(0);" style="text-decoration: none;">å¸¸è§„æ¨¡å¼</a></div>
 <div id="block-content">
 <div class="page" id="image-list">
 </div>
@@ -147,7 +148,7 @@ function nextpage(event)
 <div class="right">
 <a class="bx-next"   onclick="click_right()"> </a>
 </div>
-<div class="hint">ÌáÊ¾£ºÓÃ¼üÅÌ-> ºÍ <- ²é¿´Í¼Æ¬</div>
+<div class="hint">æç¤º:ä½¿ç”¨->å’Œ<- æŸ¥çœ‹é¡µé¢</div>
 </body>
 
 

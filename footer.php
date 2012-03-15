@@ -5,8 +5,9 @@
  * To change the template for this generated file go to
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
+ require "config.php"
 ?>
-<div class="section-2">
+<div class="section-2 hide">
 <div class="wrap">
 
 <ul class="info footer-left">
@@ -15,12 +16,12 @@
 </ul><!--end ul.footer-left-->
 
 <ul class="info footer-right">
-	<li><a href="about">关于</a></li>
-	<li>·<a href="rules">9 條規則</a></li>
-	<li>·<a href="faq">常见问题</a></li>
-	<li>·<a href="tos">条款</a></li>
-	<li>·<a href="privacy">私隐</a></li>
-	<li>·<a href="contact">联络</a></li>
+	<li><a href="about"><?=$text_footer_about?></a></li>
+	<li>·<a href="rules"><?=$text_footer_rules?></a></li>
+	<li>·<a href="faq"><?=$text_footer_faq?></a></li>
+	<li>·<a href="tos"><?=$text_footer_tos?></a></li>
+	<li>·<a href="privacy"><?=$text_footer_privacy?></a></li>
+	<li>·<a href="contact"><?=$text_footer_contact?></a></li>
 </ul><!--end ul.footer-right-->
 
 </div>

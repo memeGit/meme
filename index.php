@@ -61,7 +61,7 @@ if ($search_query != "") {
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# ninegag: http://ogp.me/ns/fb/ninegag#">
-<title>9GAG - Just for Fun!</title>
+<title>srt - 为乐而生</title>
 <meta name="title" content="9GAG - Just for Fun!" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta name="keywords" content="9gag,jokes,interesting, cool,fun collection, fun portfolio, admire,fun,humor,humour,just for fun,笑圖,笑片,搞笑,搞gag,笑話"/>
@@ -131,61 +131,6 @@ GA_googleUseIframeRendering();
 }
 </script>
 
-
-<div id="headbar-wrap">
-
-       <div id="searchbar_container">
-		<div id="searchbar_wrapper">
-			<div id="header_searchbar"  style="display:none;">
-				<div id="search_wrapper">
-					<form action="http://9gag.com/search">
-							<input id="sitebar_search_header" type="text" class="search search_input" name="query" tabindex="1" placeholder="Search"/>
-					</form>
-				</div>
-			</div>
-		</div>
-		</div>
-
-    <div id="head-bar">
-                <h1><a class="snowman" href="http://www.facebook.com/9gag" target="_blank" onclick="_gaq.push(['_trackEvent', 'Facebook-Page', 'Clicked', 'Nav', 1]);">Facebook</a><a href="index.php">9GAG</a></h1>
-				<ul class="main-menu" style="overflow:visible">
-					<li><a class="current" href="index.php">笑料</a></li>
-										<li><a href="fast.php" onclick="_gaq.push(['_trackEvent', 'Lab', 'Clicked', 'Go', 1]); ">Fast</a></li>
-										<li><a class="add-post " href="submit.php" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">Upload</a></li>
-				</ul>
-				<ul class="main-2-menu">
-				<?//nemo
-				if (isset($_SESSION['is_ilogin']))
-				{
-					if ($_SESSION['is_ilogin']==1){
-						echo '<li><div id="profile-menu" class="profile-menu">
-						<a id="profile-username" href="onedream87" class="profile-button">onedream87</a>
-						<ul>
-							<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
-							<li><a href="logout.php">退出</a></li>
-						</ul>
-						</div>
-					</li>';
-
-					}else{
-						echo '<li><a href="login.php" class="button">Login</a></li>';
-					}
-				}else{
-					echo '<li><a href="login.php" class="button">Login</a></li>';
-				}
-
-
-				?>
-
-					<li><a class="shuffle-button" href="random"><strong>Shuffle</strong></a></li>
-					<li><a class="search-button search-toggler" href="javascript:void(0);"><strong>Search</strong></a></li>
-
-				</ul>
-
-
-            </div><!--end div#head-bar -->
-</div><!--end headbar-wrap-->
-
 <div id="container" style="">
 
 <!--
@@ -203,9 +148,9 @@ GA_googleUseIframeRendering();
 	<div id="block-content">
 		<div class="filter-bar ">
 			<ul class="content-type">
-				<li> <a class="current" href="index.php"><strong>热门</strong></a></li>
-				<li> <a class="" href="trending"><strong>趋势</strong></a></li>
-				<li> <a class="" href="vote"><strong>投票</strong></a></li>
+				<li> <a class="current" href="index.php"><strong><?=$text_hot?></strong></a></li>
+				<li> <a class="" href="trending"><strong><?=$text_trend?></strong></a></li>
+				<li> <a class="" href="vote"><strong><?=$text_vote?></strong></a></li>
 			</ul>
 
 				<a class="safe-mode-toggle " href="pref/safe-browse@enable=0&url=_252F">&nbsp;</a>
@@ -214,7 +159,7 @@ GA_googleUseIframeRendering();
 		<div id="view-controller">
 				<div id="view-info" class="list-tips">
 					<div id="shortcut-event-label" style="display:none">Tips</div>
-						<span><b>Tip</b>: 使用 '<b>J</b>' and '<b>K</b>' 进行导航.</span>
+						<span><?=$text_index_hint?></span>
 							<a href="#keyboard" class="keyboard_link">Use SRT Like A Boss!</a>
 					</div>
 				</div>
@@ -229,13 +174,14 @@ while ($line = mysql_fetch_array($result)) {
 	$short_name = substr($line[filename], 0, 30);
 	
 	$data_url = "url";
-	$image_title = "title";
-	$meme_id = "meme_id";
-	$id="id"+$crt;
+	$image_title = "title".strval($ctr);
+	$meme_id = "meme_id".strval($ctr);
+	$id="id".strval($ctr);
 	$love_count=100;
 	$score = 100;
-	
+	$usr_id="user";
 	$comment_url="comment_url";
+	
 ?>
 <li class="entry-item" data-url="<?=$data_url?>" data-text="<?=$image_title?>" gagId="<?=$meme_id?>" itemType="list" id="<?=$id?>">
 <div class="content">
@@ -248,10 +194,13 @@ while ($line = mysql_fetch_array($result)) {
 </div><!--end div.content-->
 
 <div class="info jump_stop jump_focus" >
-    <div class="sticky-items" id="sticky-item-2644365">
-		<h1><a href="gag/2644365"  target="_blank" >I&#039;ll just tell him I have a nose fetish.</a></h1>
+    <div class="sticky-items" id="sticky-item-<?=$meme_id?>">
+		<h1><a href="gag/2644365"  target="_blank" ><?=$image_title?></a></h1>
 	<h4>
-		<a href="klopezq_93">klopezq_93</a>
+		<a href="<?=$usr_id?>">
+		<?=$usr_id
+		?>
+		</a>
 		<p>
 		<?="时间未确定"?>
 		</p>
@@ -270,13 +219,13 @@ while ($line = mysql_fetch_array($result)) {
 </p>
 <ul class="actions">
 <li>
-    <a class="comment " href="<?=$comment_url?>" onclick="window.location = '<?=$comment_url?>';"><span>评论</span></a>
+    <a class="comment " href="<?=$comment_url?>" onclick="window.location = '<?=$comment_url?>';"><span><?=$text_comment?></span></a>
 </li>
 <li>
 <?
 	//TODO love 这个按钮必须跟后台连起来
 ?>
-    <a id="vote-up-btn-2644365" class="love badge-vote-up " entryId="2644365" href="javascript:void(0);"> <span>赞</span></a>
+    <a id="vote-up-btn-2644365" class="love badge-vote-up " entryId="2644365" href="javascript:void(0);"> <span><?=$text_love?></span></a>
 </li>
 </ul>
 
@@ -349,7 +298,7 @@ GA_googleFillSlotWithSize("ca-pub-0268871989845966", "Top-Right-300x250", 300, 2
 	<iframe id="sidebar-ads2" src="./9gag_static/d24w6bsrhbeh9d.cloudfront.net/static/ads/sidebar-ads2.html" scrolling="no" height="250px" width="320px" marginheight="0" marginwidth="0" frameborder="0"></iframe>
 </div>
 <div class="popular-block">
-	<h3>诚意推介</h3>
+	<h3><?=$text_index_popular?></h3>
 	<?
 	//TODO 推荐
 	?>
@@ -382,12 +331,6 @@ require "footer.php"
 
 
 </div><!--end div#footer-->
-
-<a id="footer-back-to-top" class="WhiteButton badge-back-to-top offscreen">
-    <strong>Back to Top</strong>
-    <span></span>
-</a>
-
 <div id="overlay-shadow" class="hide"></div>
 <div id="overlay-container" class="hide" >
 
@@ -529,7 +472,7 @@ require "footer.php"
 
 
 <a id="footer-back-to-top" class="WhiteButton badge-back-to-top">
-    <strong>Back to Top</strong>
+    <strong><?=$text_util_back_top?></strong>
     <span></span>
 </a>
 
