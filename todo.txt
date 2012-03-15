@@ -22,10 +22,15 @@
 
 8. search/recommend.php
 
+
+9. social sharing button should not hide when we scroll down the page. (detail.php)
+
+
 9. fast  ==> comment
 
 
 10. hot and random ,unpload
+
 
 11. more sns account login
 12. links in the page

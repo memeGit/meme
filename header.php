@@ -28,15 +28,21 @@
 										<li><a class="add-post " href="submit.php" onclick="_gaq.push(['_trackEvent', 'New-Post', 'Clicked', 'Headbar', 1]);">上传</a></li>
 				</ul>
 				<ul class="main-2-menu">
-						<li>
-						<div id="profile-menu" class="profile-menu">
-													<a id="profile-username" href="onedream87" class="profile-button">onedream87</a>
-													<ul>
-																<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
-																<li><a href="logout">退出</a></li>
-							</ul>
+			<?//nemo
+				if ($_Session['islogin']==1){
+					echo '<li><a href="./login。php" class="button">Login</a></li>';
+
+				}else{
+					echo '<li><div id="profile-menu" class="profile-menu">
+						<a id="profile-username" href="onedream87" class="profile-button">onedream87</a>
+						<ul>
+							<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
+							<li><a href="logout">退出</a></li>
+						</ul>
 						</div>
-					</li>
+					</li>';
+				}
+				?>
 
 					<li><a class="shuffle-button" href="random"><strong>随机访问</strong></a></li>
 					<li><a class="search-button search-toggler" href="javascript:void(0);"><strong>搜索</strong></a></li>

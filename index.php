@@ -130,7 +130,6 @@ GA_googleUseIframeRendering();
 }
 </script>
 
-
 <!--
 	move to header.php
 -->
@@ -141,13 +140,15 @@ GA_googleUseIframeRendering();
 
 
 <div id="main">
+<<<<<<< HEAD
 	<div id="block-content">
 		<div class="filter-bar ">
 			<ul class="content-type">
-				<li> <a class="current" href="hot"><strong>热门</strong></a></li>
+				<li> <a class="current" href="index.php"><strong>热门</strong></a></li>
 				<li> <a class="" href="trending"><strong>趋势</strong></a></li>
 				<li> <a class="" href="vote"><strong>投票</strong></a></li>
 			</ul>
+
 				<a class="safe-mode-toggle " href="pref/safe-browse@enable=0&url=_252F">&nbsp;</a>
 		</div>
 	<div id="content" listPage="hot">
