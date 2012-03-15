@@ -140,7 +140,6 @@ GA_googleUseIframeRendering();
 
 
 <div id="main">
-<<<<<<< HEAD
 	<div id="block-content">
 		<div class="filter-bar ">
 			<ul class="content-type">

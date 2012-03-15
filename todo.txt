@@ -5,10 +5,11 @@
 
 	http://limeshot.com/2009/10-cute-404-page-illustrations
 
-3. header.php/footer.php
+3. header.php/footer.php 【half , 还没有替换所有页面】
 
 
 4. international language switch.
+	
 
 5. google ads.
 
