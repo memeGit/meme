@@ -47,6 +47,7 @@ if ($token) {
 			//Update the tokens
 			$query = mysql_query("UPDATE iusers SET oauth_token = '{$utoken}', oauth_secret = '{$usecret}' WHERE oauth_provider = 'weibo' AND oauth_uid = {$uid}");
 		}
+		$_SESSION['is_ilogin'] = 1;
 		setcookie("iuserid", $uid, time()+24*60*60);
 		setcookie("iusername", $uname, time()+24*60*60);
 		setcookie("iusertoken", $utoken, time()+24*60*60);

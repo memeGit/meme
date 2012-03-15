@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 require "imagesharing/header2.php";
 $search_query = check_input($_REQUEST['query']);
 $totalcount = $config[GalleryPhotoNo];
@@ -153,19 +154,26 @@ GA_googleUseIframeRendering();
 				</ul>
 				<ul class="main-2-menu">
 				<?//nemo
-				if ($_Session['islogin']==1){
-					echo '<li><a href="https://9gag.com/login" class="button">Login</a></li>';
-
-				}else{
-					echo '<li><div id="profile-menu" class="profile-menu">
+				if (isset($_SESSION['is_ilogin']))
+				{
+					if ($_SESSION['is_ilogin']==1){
+						echo '<li><div id="profile-menu" class="profile-menu">
 						<a id="profile-username" href="onedream87" class="profile-button">onedream87</a>
 						<ul>
 							<li><a href="./9gag_static/https@9gag.com/settings">控制面板</a></li>
-							<li><a href="logout">退出</a></li>
+							<li><a href="logout.php">退出</a></li>
 						</ul>
 						</div>
 					</li>';
+
+					}else{
+						echo '<li><a href="login.php" class="button">Login</a></li>';
+					}
+				}else{
+					echo '<li><a href="login.php" class="button">Login</a></li>';
 				}
+
+
 				?>
 
 					<li><a class="shuffle-button" href="random"><strong>Shuffle</strong></a></li>
