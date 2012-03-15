@@ -12,37 +12,56 @@ var cur_image_numbers = 0;
 var cur_image = 0;
 var show_image = 0;
 document.onkeydown=nextpage;
+var begin = 0;
+var count = 30;
+var loading = 0;
+var use_left = 0;
 function click_right()
 {
+	if(loading)return false;
+	loading = 1;
 	if( cur_image > cur_image_numbers -5 ){
 	xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("GET","get_image.php",true);
-	
+	xmlhttp.open("GET","get_image.php?begin="+begin+"&&count="+count,true);
 	xmlhttp.onreadystatechange=function()
 	{
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
+				if(xmlhttp.responseText.length==0)
+				{
+					loading=0;
+					alert("Last");
+					return false;	
+				}
 				document.getElementById("image-list").innerHTML +=  make_next_html(xmlhttp.responseText,cur_image_numbers);
-				set_undisplay(cur_image-1);
+				if(use_left)
+				{
+					set_undisplay(0);
+					use_left=0;
+				}else{
+					set_undisplay(cur_image-1);
+				}
 				set_display(cur_image);
+				loading=0;
+				
 			}
 	}
 		xmlhttp.send(null);
 	}
-	if( cur_image <= cur_image_numbers-1 )
+	if( cur_image < cur_image_numbers-1 && use_left==0)
 	{
 		set_undisplay(cur_image);
 		cur_image++;
 		set_display(cur_image);
 	}
+	if(use_left) use_left=0;
 	return false;
 }
 function click_left()
 {
 	if( cur_image == 0 )
-	{
-		set_undisplay(0);
-		cur_image = cur_image_numbers-1;
+	{	
+		use_left=1;
 		click_right();
 		return false;
 	}
@@ -56,6 +75,12 @@ function make_next_html(image_url,image_title)
 	var images = eval('('+image_url+	')');
 	var re_url = "";
 	var i = 0;
+	if(images.images.length==0)
+	{
+
+		alert("已经是最后一张");
+		return false;
+	}
 
 	for( i = 0 ; i < images.images.length; i++){
 	
@@ -87,6 +112,7 @@ function make_next_html(image_url,image_title)
 	//	alert(re_url);
 		cur_image_numbers++;
 	}
+	begin+=images.images.length;
 		return re_url;
 }
 function set_display(id)
