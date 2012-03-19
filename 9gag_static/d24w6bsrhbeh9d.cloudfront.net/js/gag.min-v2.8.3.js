@@ -624,10 +624,10 @@ GAG.Ajax.LoadPage = {
         if (GAG.Ajax.LoadPage._isLoading) {
             return
         }
-        var h = this.getMorePostId();
-        if (!h) {
-            return
-        }
+       var h = this.getMorePostId();
+       if (!h) {
+          h = 100;
+     }
         var g = $(this._loadButtonId).get("list");
         GAG.GA.track("InfiniteScrolling", "Loaded-" + g, "Load-" + (this._loadCount + 1), 1);
         GAG.Ads.reloadIframe("sidebar-ads2");
@@ -636,7 +636,8 @@ GAG.Ajax.LoadPage = {
         var a = "list";
         GAG.Ajax.LoadPage._isLoading = true;
         GAG.Ajax.LoadPage.showLoading(true);
-        var c = "/new/json?list=" + g + "&id=" + h;
+     //   var c = "/new/json?list=" + g + "&id=" + h;
+       var c = "/meme/json.php?type=random&&count=2&&begin=0";
         var d = new Request.JSON({
             url: c,
             onSuccess: function(q) {
@@ -644,7 +645,7 @@ GAG.Ajax.LoadPage = {
                 $(GAG.Ajax.LoadPage._loadButtonId).set("data-more", q.prevId);
                 GAG.Ajax.LoadPage.updateButtons(1, q.prevId);
                 GAG.Effect.Read.save();
-                var p = "items-wrap-" + h;
+                var p = "items-wrap-" +h;
                 if (a == "list") {
                     var n = "";
                     if (q.items) {
@@ -664,7 +665,7 @@ GAG.Ajax.LoadPage = {
                     GAG.Ajax.Vote.bindVoteUpElements("#" + p + " .badge-vote-up", "click", GAG.Ajax.Vote.voteUpEntrySuccessCb, GAG.Ajax.Vote.voteUpEntryFailureCb, GAG.Ajax.Vote.unvoteEntrySuccessCb, GAG.Ajax.Vote.unvoteEntryFailureCb);
                     GAG.Ajax.Vote.bindVoteDownElements("#" + p + " .badge-vote-down", "click", GAG.Ajax.Vote.voteDownEntrySuccessCb, GAG.Ajax.Vote.voteDownEntryFailureCb, GAG.Ajax.Vote.unvoteEntrySuccessCb, GAG.Ajax.Vote.unvoteEntryFailureCb);
                     GAG.Ajax.Report.bindReportLink("#" + p + " .report-item", "click");
-                    FB.Share._onFirst();
+                   // FB.Share._onFirst();
                     var j = o.getElements("li.entry-item");
                     if (j) {
                         for (var l = 0; l < j.length; l++) {
@@ -714,7 +715,7 @@ GAG.Ajax.LoadPage = {
             $("more_button").setStyle("display", "")
         }
     },
-    bindFooterEvent: function() {
+    bindEvent: function() {
         if (!$("more_button")) {
             return
         }
