@@ -626,7 +626,7 @@ GAG.Ajax.LoadPage = {
         }
        var h = this.getMorePostId();
        if (!h) {
-          h = 100;
+          h=100;
      }
         var g = $(this._loadButtonId).get("list");
         GAG.GA.track("InfiniteScrolling", "Loaded-" + g, "Load-" + (this._loadCount + 1), 1);
@@ -715,7 +715,7 @@ GAG.Ajax.LoadPage = {
             $("more_button").setStyle("display", "")
         }
     },
-    bindEvent: function() {
+    bindFooterEvent: function() {
         if (!$("more_button")) {
             return
         }

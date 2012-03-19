@@ -130,18 +130,15 @@ GA_googleUseIframeRendering();
 } catch (e) {
 }
 </script>
-
-<div id="container" style="">
-
 <!--
 	move to header.php
 -->
   <?
 	require "header.php";
   ?>
-  <div id="container" style="">
 
 
+<div id="container" style="">
 
 <div id="main">
 
@@ -235,13 +232,16 @@ GA_googleFillSlotWithSize("ca-pub-0268871989845966", "Top-Right-300x250", 300, 2
 	<h3>Hey..</h3>
 	<p>Press <b>Ctrl+D</b> or <b>⌘+D</b> (if you're using Mac) to bookmark 9GAG now!</p>
 </div>
-</div><!--end div#top-gag-stay-->
-</div><!--end div.side-dock-->
-</div><!--end #content-->
+
 <?
 //move to footer
 require "footer.php"
 ?>
+
+
+</div><!--end div#top-gag-stay-->
+</div><!--end div.side-dock-->
+</div><!--end #content-->
 <div id="footer" class="">
 <div id="main-bottom-ad-tray">
 	<div>
@@ -253,11 +253,8 @@ require "footer.php"
 		</script>
 	</div>
 </div>
-
-
-
-
 </div><!--end div#footer-->
+
 <div id="overlay-shadow" class="hide"></div>
 <div id="overlay-container" class="hide" >
 
@@ -403,6 +400,8 @@ require "footer.php"
     <span></span>
 </a>
 
-
+ <script>
+ GAG.Ajax.LoadPage.loadPage();
+ </script>
 </body>
 </html>
