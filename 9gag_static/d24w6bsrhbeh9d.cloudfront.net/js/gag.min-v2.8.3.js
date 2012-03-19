@@ -629,6 +629,7 @@ GAG.Ajax.LoadPage = {
           h=100;
      }
         var g = $(this._loadButtonId).get("list");
+        
         GAG.GA.track("InfiniteScrolling", "Loaded-" + g, "Load-" + (this._loadCount + 1), 1);
         GAG.Ads.reloadIframe("sidebar-ads2");
         GAG.Effect.Read.save(true);
@@ -637,7 +638,9 @@ GAG.Ajax.LoadPage = {
         GAG.Ajax.LoadPage._isLoading = true;
         GAG.Ajax.LoadPage.showLoading(true);
      //   var c = "/new/json?list=" + g + "&id=" + h;
-       var c = "/meme/json.php?type=random&&count=2&&begin=0";
+        var count = 30;
+        var begin = 0;
+        var c = "/meme/json.php?type=random&&count="+count+"&&begin="+begin;
         var d = new Request.JSON({
             url: c,
             onSuccess: function(q) {
