@@ -18,7 +18,7 @@
 	http://www.ragestache.com/submit
 
 
-7. back to top button.  [half ok , not hide when on the top of the page]
+7. back to top button.  [half ok , not hide when on the top of the page ,sovled [2012.3.20]]
 
 
 8. search/recommend.php
