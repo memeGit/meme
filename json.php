@@ -108,7 +108,8 @@ while ($line = mysql_fetch_array($result)) {
         
 <?
 }
-$response .="}}";
+$response .="},\"prevId\":".$ctr; 	
+$response .="}";
 	echo ($response);
 	mysql_free_result($result);
 	 

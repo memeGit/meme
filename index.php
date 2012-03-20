@@ -171,8 +171,8 @@ GA_googleUseIframeRendering();
 
     <div id="pagination" class="flip" style="text-align:center">
 
-        <a id="next_button" class='next' href="hot/id/2625004" style="width:700px;display:none;" plink="/hot/" data-more="2625004" list="hot">I want more fun!</a>
-        <a id="more_button" class='next' href="hot/id/2625004" style="width:700px" data-more="2625004" plink="/hot/" currPage="5453" list="hot">更多</a>
+        <a id="next_button" class='next' href="hot/id/2625004" style="width:700px;display:none;" plink="/hot/" data-more="0" data-count="10" list="hot">I want more fun!</a>
+        <a id="more_button" class='next' href="hot/id/2625004" style="width:700px" data-more="0" data-count="10" plink="/hot/" currPage="5453" list="hot">更多</a>
         <img id="more_img" src="img/loading.gif" style="display:none"></img>
     </div><!--end pagination-->
 

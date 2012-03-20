@@ -613,6 +613,10 @@ GAG.Ajax.LoadPage = {
     getMorePostId: function() {
         return $(this._loadButtonId).get("data-more")
     },
+    getCount:function(){
+    	return $(this._loadButtonId).get("data-count")
+    }
+    ,
     getLoadCountMax: function() {
         if (this._loadCoutMax == null) {}
         return this._loadCoutMax
@@ -627,7 +631,17 @@ GAG.Ajax.LoadPage = {
        var h = this.getMorePostId();
        if (!h) {
           h=100;
-     }
+       }
+       var begin = this.getMorePostId();
+       if( !begin )
+       {
+    	   begin = 0;
+       }
+       var count = this.getCount();
+       if( !count ){
+    	   count = 10;
+       }
+       
         var g = $(this._loadButtonId).get("list");
         
         GAG.GA.track("InfiniteScrolling", "Loaded-" + g, "Load-" + (this._loadCount + 1), 1);
@@ -638,14 +652,14 @@ GAG.Ajax.LoadPage = {
         GAG.Ajax.LoadPage._isLoading = true;
         GAG.Ajax.LoadPage.showLoading(true);
      //   var c = "/new/json?list=" + g + "&id=" + h;
-        var count = 30;
-        var begin = 0;
+        
         var c = "/meme/json.php?type=random&&count="+count+"&&begin="+begin;
         var d = new Request.JSON({
             url: c,
             onSuccess: function(q) {
                 GAG.Ajax.LoadPage._currPage++;
                 $(GAG.Ajax.LoadPage._loadButtonId).set("data-more", q.prevId);
+                $(GAG.Ajax.LoadPage._loadButtonId).set("data-count",count)
                 GAG.Ajax.LoadPage.updateButtons(1, q.prevId);
                 GAG.Effect.Read.save();
                 var p = "items-wrap-" +h;
